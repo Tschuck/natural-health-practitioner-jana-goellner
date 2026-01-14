@@ -1,0 +1,72 @@
+{
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.1.1",
+    "@lingui/cli": "^5.7.0",
+    "@lingui/core": "^5.7.0",
+    "@lingui/react": "^5.7.0",
+    "autoprefixer": "^10.4.18",
+    "heroicons": "^2.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.3",
+    "react-markdown": "^10.0.1",
+    "react-qr-code": "^2.0.13",
+    "react-router-dom": "^6.22.2",
+    "react-toastify": "^10.0.5",
+    "react-tooltip": "^5.26.4",
+    "react-transition-group": "^4.4.5",
+    "vite-tsconfig-paths": "^4.3.2",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "eslint-plugin-lingui": "^0.11.0",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
+    "@eslint/js": "9.39.2",
+    "@lingui/vite-plugin": "^5.7.0",
+    "@types/node": "^22.13.10",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@types/react-transition-group": "^4.4.12",
+    "@types/uuid": "^9.0.8",
+    "@typescript-eslint/eslint-plugin": "^8.53.0",
+    "@typescript-eslint/parser": "^8.53.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^9.39.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "lint-staged": "^15.2.2",
+    "postcss": "^8.4.35",
+    "prettier": "3.2.5",
+    "serve": "^14.2.3",
+    "tailwindcss": "^3.4.1",
+    "terser": "^5.31.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.7"
+  },
+  "name": "homepage-jana-goellner",
+  "packageManager": "pnpm@9.13.0",
+  "scripts": {
+    "lingui:extract": "lingui extract",
+    "build": "tsc && vite build",
+    "deploy:prepare": "rm -rf ./.deploy && mkdir ./.deploy && cp -r ./dist ./.deploy/app && rsync -r --exclude 'node_modules' ./server/* ./.deploy",
+    "pre:dev": "pnpm lingui:extract",
+    "dev": "vite",
+    "download-definition-images": "tsx ./src/download-definition-images.ts",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --fix --max-warnings 0",
+    "lint-staged": "lint-staged",
+    "preview": "vite preview",
+    "serve": "serve -s ./dist -l 3000"
+  },
+  "type": "module",
+  "version": "0.0.1"
+}

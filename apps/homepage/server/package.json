@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "fastify": "^3.29.5",
+    "fastify-static": "^3.4.0",
+    "pino-pretty": "^4.8.0"
+  },
+  "name": "hebamme-jana-winkler-server",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "type": "module"
+}
