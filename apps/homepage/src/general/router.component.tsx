@@ -1,13 +1,8 @@
-import { RootWrapper } from "@/general/components/root-wrapper.component";
+import { RootWrapper } from '@/general/components/root-wrapper.component';
 import { DataSecurityView } from '@/general/modules/data-security/data-security.view';
 import { HomeView } from '@/general/modules/home/home.view';
 import { msg } from '@lingui/core/macro';
-import {
-  NonIndexRouteObject,
-  RouteObject,
-  RouterProvider,
-  createHashRouter,
-} from "react-router-dom";
+import { NonIndexRouteObject, RouteObject, RouterProvider, createHashRouter } from 'react-router-dom';
 
 interface KnownHandle {
   name: string | undefined;
@@ -23,22 +18,20 @@ export const pageRoutes: PageRoute[] = [
   {
     path: '/',
     Component: HomeView,
-    handle: { name: msg`Willkommen`.message, hide: false }
+    handle: { name: msg`Willkommen`.message, hide: false },
   },
   {
     path: '/data-security',
     Component: DataSecurityView,
-    handle: { name: msg`Datensicherheit`.message, hide: false }
-  }
+    handle: { name: msg`Datensicherheit`.message, hide: false },
+  },
 ];
 
 export const routes: RouteObject[] = [
   {
-    path: "/",
+    path: '/',
     element: <RootWrapper />,
-    children: [
-      ...pageRoutes
-    ],
+    children: [...pageRoutes],
   },
 ];
 

@@ -2,6 +2,7 @@
   "name": "heilpraktikerin-jana-goellner",
   "private": true,
   "packageManager": "pnpm@10.12.4",
+  "type": "module",
   "scripts": {
     "build": "pnpm -r build",
     "dev": "pnpm -r dev",
@@ -10,15 +11,34 @@
     "start": "pm2 start ecosystem.config.cjs"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.8.1",
+    "@commitlint/config-conventional": "^17.8.1",
+    "@commitlint/cz-commitlint": "^20.3.1",
+    "@eslint/js": "9.39.2",
     "@typescript-eslint/eslint-plugin": "^8.34.0",
     "@typescript-eslint/parser": "^8.34.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.39.2",
-    "pm2": "6.0.14",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-lingui": "^0.11.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.2",
+    "pm2": "6.0.14",
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "dotenv": "^17.2.3"
+    "@eslint-react/eslint-plugin": "^2.6.4",
+    "dotenv": "^17.2.3",
+    "eslint-plugin-prettier": "^5.5.5",
+    "typescript-eslint": "^8.53.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
