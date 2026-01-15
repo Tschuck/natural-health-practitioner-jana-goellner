@@ -1,9 +1,9 @@
 import { pageRoutes } from '@/general/router.component';
 import { Button, ButtonType } from '@/general/components/button.component';
-import { BaseComponentProps } from '@/general/interfaces/component-props.interface';
 import { classNames } from '@/general/utils/utils';
 import { Trans } from '@lingui/react/macro';
 import { Link, useLocation } from 'react-router-dom';
+import { BaseComponentProps } from '@/general/types/component-props.type';
 
 export interface SidePanelProps extends BaseComponentProps {
   isOpen: boolean;

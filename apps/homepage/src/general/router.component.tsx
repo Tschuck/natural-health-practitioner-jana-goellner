@@ -1,30 +1,20 @@
 import { RootWrapper } from '@/general/components/root-wrapper.component';
-import { DataSecurityView } from '@/general/modules/data-security/data-security.view';
-import { HomeView } from '@/general/modules/home/home.view';
-import { msg } from '@lingui/core/macro';
-import { NonIndexRouteObject, RouteObject, RouterProvider, createHashRouter } from 'react-router-dom';
-
-interface KnownHandle {
-  name: string | undefined;
-  hide?: boolean;
-}
-
-interface PageRoute extends NonIndexRouteObject {
-  path: string;
-  handle: KnownHandle;
-}
+import { aboutMeRoutes } from '@/general/modules/about-me/routes';
+import { contactAndImprintRoutes } from '@/general/modules/contact-and-imprint/routes';
+import { downloadRoutes } from '@/general/modules/downloads/routes';
+import { homeRoutes } from '@/general/modules/home/routes';
+import { hormonBalanceRoutes } from '@/general/modules/hormon-balance/routes';
+import { psychosomaticsRoutes } from '@/general/modules/psychosomatics/routes';
+import { PageRoute } from '@/general/types/page-route.type';
+import { RouteObject, RouterProvider, createHashRouter } from 'react-router-dom';
 
 export const pageRoutes: PageRoute[] = [
-  {
-    path: '/',
-    Component: HomeView,
-    handle: { name: msg`Willkommen`.message, hide: false },
-  },
-  {
-    path: '/data-security',
-    Component: DataSecurityView,
-    handle: { name: msg`Datensicherheit`.message, hide: false },
-  },
+  ...homeRoutes,
+  ...hormonBalanceRoutes,
+  ...psychosomaticsRoutes,
+  ...aboutMeRoutes,
+  ...downloadRoutes,
+  ...contactAndImprintRoutes,
 ];
 
 export const routes: RouteObject[] = [

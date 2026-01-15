@@ -7,7 +7,14 @@ import prettierPlugin from 'eslint-plugin-prettier';
 
 export default defineConfig(
   eslintJs.configs.recommended,
-  tsLint.configs.recommended,
+  tsLint.configs.recommendedTypeChecked,
+  {
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+      },
+    },
+  },
   eslintConfigPrettier,
   {
     plugins: {
@@ -38,6 +45,9 @@ export default defineConfig(
     rules: {
       'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': ['error'],
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-floating-promises': 'warn',
+      '@typescript-eslint/no-unsafe-argument': 'warn',
     },
   },
   {

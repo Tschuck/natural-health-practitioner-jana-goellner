@@ -1,5 +1,5 @@
-import { BaseComponentProps } from '@/general/interfaces/component-props.interface';
 import { pageRoutes } from '@/general/router.component';
+import { BaseComponentProps } from '@/general/types/component-props.type';
 import { classNames } from '@/general/utils/utils';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ export function Navigation({ className }: BaseComponentProps) {
 
           return (
             <Link
-              to={route.path!}
+              to={route.path}
               className={classNames(
                 'flex relative cursor-pointer items-center justify-center font-inter text-gray-800 text-md',
                 isActive ? 'font-bold text-primary' : ''

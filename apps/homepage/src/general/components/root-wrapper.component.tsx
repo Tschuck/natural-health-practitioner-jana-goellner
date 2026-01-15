@@ -1,4 +1,3 @@
-import Favicon from '@/assets/favicon.svg';
 import { Button, ButtonType } from '@/general/components/button.component';
 import { CookieDisclaimer } from '@/general/components/cookie-disclaimer.component';
 import { Navigation } from '@/general/components/navigation.component';
@@ -16,7 +15,7 @@ export function RootWrapper() {
     <div className="flex flex-col h-full bg-background">
       <div className="flex items-center gap-4 px-4 py-1 sm:pt-4 sm:px-8 xl:px-32">
         <div className="flex items-center">
-          <img src={Favicon} className="w-12 -ml-4 md:w-20" />
+          {/* <img src={Favicon} className="w-12 -ml-4 md:w-20" /> */}
           <div className="relative">
             <Link to="/" className="text-2xl text-gray-900 md:text-3xl font-yeseva" viewTransition>
               Heilpraktikerin Jana Goellner

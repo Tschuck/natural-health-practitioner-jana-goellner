@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@heroicons/react": "^2.1.1",
+    "@lingui/babel-plugin-lingui-macro": "^5.7.0",
     "@lingui/cli": "^5.7.0",
     "@lingui/core": "^5.7.0",
     "@lingui/react": "^5.7.0",
@@ -38,7 +39,7 @@
     "typescript": "^5.2.2",
     "vite": "^5.1.7"
   },
-  "name": "homepage-jana-goellner",
+  "name": "@natural-health-practitioner-jana-goellner/homepage",
   "packageManager": "pnpm@9.13.0",
   "scripts": {
     "lingui:extract": "lingui extract",
