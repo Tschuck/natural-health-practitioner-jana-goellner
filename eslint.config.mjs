@@ -7,14 +7,13 @@ import prettierPlugin from 'eslint-plugin-prettier';
 
 export default defineConfig(
   eslintJs.configs.recommended,
-  tsLint.configs.recommendedTypeChecked,
-  {
-    languageOptions: {
-      parserOptions: {
-        projectService: true,
-      },
-    },
-  },
+  // just apply those rules to ts and tsx files, js files will fail because type linting could
+  // not be generated without parseOptions:projectServicd
+  ...tsLint.configs.recommendedTypeChecked.map((config) => ({
+    ...config,
+    files: ['**/*.ts', '**/*.tsx'],
+  })),
+
   eslintConfigPrettier,
   {
     plugins: {
@@ -48,6 +47,11 @@ export default defineConfig(
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-floating-promises': 'warn',
       '@typescript-eslint/no-unsafe-argument': 'warn',
+    },
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+      },
     },
   },
   {

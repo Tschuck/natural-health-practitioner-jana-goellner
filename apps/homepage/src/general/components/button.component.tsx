@@ -16,7 +16,7 @@ export interface ButtonProps extends PropsWithChildren {
   link?: string;
   onClick?: MouseEventHandler<HTMLButtonElement> | undefined;
   type: ButtonType;
-  buttonElement?: ElementType | string;
+  buttonElement?: ElementType;
 }
 
 export function Button({ buttonElement, children, className, Icon, link, onClick, type }: ButtonProps) {
