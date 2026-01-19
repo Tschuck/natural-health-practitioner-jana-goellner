@@ -1,17 +1,23 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { lingui } from '@lingui/vite-plugin';
 import dotenv from 'dotenv';
+import react from '@vitejs/plugin-react-swc';
 
 dotenv.config({ path: ['.env.default', '.env'], quiet: true });
 
 export default defineConfig({
   plugins: [
     react({
-      babel: {
-        plugins: ['@lingui/babel-plugin-lingui-macro'],
-      },
+      tsDecorators: true,
+      plugins: [
+        [
+          '@lingui/swc-plugin',
+          {
+            runtime: 'automatic',
+          },
+        ],
+      ],
     }),
     tsconfigPaths(),
     lingui(),
