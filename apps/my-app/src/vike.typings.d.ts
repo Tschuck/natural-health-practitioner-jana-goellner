@@ -2,6 +2,7 @@ declare global {
   namespace Vike {
     interface PageContext {
       locale: string;
+      Page: React.ComponentType;
     }
   }
 }

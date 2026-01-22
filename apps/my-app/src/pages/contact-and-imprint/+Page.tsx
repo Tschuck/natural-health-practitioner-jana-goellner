@@ -1,13 +1,13 @@
 import { InputWithLabel } from '@//components/input.component';
 import { useForm } from 'react-hook-form';
 
-import { ContactSchema } from '@//modules/contact-and-imprint/schemas/contact.dto';
 import { classValidatorResolver } from '@hookform/resolvers/class-validator';
 import { Trans } from '@lingui/react/macro';
+import { ContactSchema } from '@/pages/contact-and-imprint/schemas/contact.dto';
 
 const contactResolver = classValidatorResolver(ContactSchema);
 
-export function ContactView() {
+export default function ContactView() {
   const formRef = useForm({
     values: {
       name: '',

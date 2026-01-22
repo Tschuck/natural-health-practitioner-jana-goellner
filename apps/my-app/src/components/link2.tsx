@@ -6,9 +6,10 @@ import { usePageContext } from 'vike-react/usePageContext';
 export interface LinkParams extends BaseComponentPropsWithChildren {
   href: string;
   locale?: string;
+  activeClassName?: string;
 }
 
-export function Link({ href, children, locale: providedLocale, className }: LinkParams) {
+export function Link({ href, activeClassName, children, locale: providedLocale, className }: LinkParams) {
   const pageContext = usePageContext();
   const { urlPathname } = pageContext;
 
@@ -17,10 +18,11 @@ export function Link({ href, children, locale: providedLocale, className }: Link
     href = '/' + locale + href;
   }
 
+  console.log(urlPathname);
   const isActive = href === '/' ? urlPathname === href : urlPathname.startsWith(href);
 
   return (
-    <a href={href} className={classNames(className, isActive ? 'is-active' : undefined)}>
+    <a href={href} className={classNames(className, isActive ? activeClassName : undefined)}>
       {children}
     </a>
   );

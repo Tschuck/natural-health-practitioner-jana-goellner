@@ -1,24 +1,23 @@
 import { Button, ButtonType } from '@//components/button.component';
-import { useState } from 'react';
+import { useCookieStore } from '@/stores/cookie-disclamer.store';
 import { Trans } from '@lingui/react/macro';
 
 export function CookieDisclaimer() {
-  const [wasRead, setWasRead] = useState(sessionStorage.getItem('cookies-accepted') === 'true');
-
-  function markAsRead() {
-    setWasRead(true);
-    sessionStorage.setItem('cookies-accepted', 'true');
-  }
+  const accepted = useCookieStore((state) => state.accepted);
+  const accept = useCookieStore((state) => state.accept);
 
   return (
     <div>
-      {!wasRead && (
+      {!accepted && (
         <div className="fixed z-20">
           <div className="fixed p-3 text-justify text-white shadow-xl left-0 right-0 md:left-[20%] md:right-[20%] z-50 bg-hjg-light-green bottom-4">
             <small className="text-xs">
               <Trans id="data-security.cookie-disclaimer">
-                Diese Website verwendet Cookies. Es werden nur technisch notwendige Cookies in Ihrem Browser
-                gespeichert, da sie für das Funktionieren grundlegender Funktionalitäten der Website unerlässlich sind.
+                <Trans>
+                  Diese Website verwendet Cookies. Es werden nur technisch notwendige Cookies in Ihrem Browser
+                  gespeichert, da sie für das Funktionieren grundlegender Funktionalitäten der Website unerlässlich
+                  sind.
+                </Trans>
               </Trans>
             </small>
 
@@ -31,7 +30,7 @@ export function CookieDisclaimer() {
                 <Trans>Mehr lesen</Trans>
               </Button>
 
-              <Button onClick={markAsRead} type={ButtonType.SECONDARY}>
+              <Button onClick={accept} type={ButtonType.SECONDARY}>
                 <Trans>Ok</Trans>
               </Button>
             </div>

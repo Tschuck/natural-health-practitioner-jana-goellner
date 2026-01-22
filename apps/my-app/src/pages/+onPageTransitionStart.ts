@@ -1,9 +1,7 @@
 // https://vike.dev/onPageTransitionStart
 
-import type { PageContextClient } from "vike/types";
+import type { PageContextClient } from 'vike/types';
 
-export async function onPageTransitionStart(pageContext: Partial<PageContextClient>) {
-  console.log("Page transition start");
-  console.log("pageContext.isBackwardNavigation", pageContext.isBackwardNavigation);
-  document.body.classList.add("page-transition");
+export function onPageTransitionStart(pageContext: Partial<PageContextClient>) {
+  document.body.classList.add('page-transition');
 }

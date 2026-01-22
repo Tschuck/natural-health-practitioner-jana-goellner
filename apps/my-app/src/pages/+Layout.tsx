@@ -1,15 +1,15 @@
 import '@/index.css';
 import '@/tailwind.css';
 
-import { Link } from '@/components/link2';
-import { siteConfig } from '@/config/site-config';
-import { useState } from 'react';
 import { Button, ButtonType } from '@//components/button.component';
 import { CookieDisclaimer } from '@//components/cookie-disclaimer.component';
 import { SidePanel } from '@//components/side-panel.component';
+import { Link } from '@/components/link2';
+import { Navigation } from '@/components/navigation.component';
+import { siteConfig } from '@/config/site-config';
 import { Bars3Icon, PhoneIcon } from '@heroicons/react/24/solid';
 import { Trans } from '@lingui/react/macro';
-import { Navigation } from '@/components/navigation.component';
+import { useState } from 'react';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [showSidePanel, setShowSidePanel] = useState(false);
@@ -21,7 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* <img src={Favicon} className="w-12 -ml-4 md:w-20" /> */}
           <div className="relative">
             <Link href="/" className="text-2xl text-gray-900 md:text-3xl font-yeseva">
-              Heilpraktikerin Jana Goellner
+              <Trans>Heilpraktikerin Jana Goellner</Trans>
             </Link>
             <Navigation className="absolute flex w-screen -mt-3 lg:hidden" />
           </div>
@@ -44,7 +44,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <SidePanel isOpen={showSidePanel} onClose={() => setShowSidePanel(false)} />
 
       <CookieDisclaimer />
-      <div className="py-4 overflow-y-auto">{children}</div>
+      <div className="overflow-y-auto">{children}</div>
     </div>
   );
 }

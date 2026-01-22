@@ -3,12 +3,14 @@ import { useState } from 'react';
 import { Trans } from '@lingui/react/macro';
 
 export function CookieDisclaimer() {
-  const [wasRead, setWasRead] = useState(sessionStorage.getItem('cookies-accepted') === 'true');
+  // TODO: fix session storage
+  // const [wasRead, setWasRead] = useState(sessionStorage.getItem('cookies-accepted') === 'true');
+  const [wasRead] = useState(true);
 
-  function markAsRead() {
-    setWasRead(true);
-    sessionStorage.setItem('cookies-accepted', 'true');
-  }
+  // function markAsRead() {
+  //   setWasRead(true);
+  //   sessionStorage.setItem('cookies-accepted', 'true');
+  // }
 
   return (
     <div>
