@@ -1,11 +1,25 @@
+import { ProtonConfig } from '@/modules/contact/config/proton.config';
 import { ContactDto } from '@/modules/contact/dto/contact.dto';
 import { Body, Controller, HttpStatus, Post } from '@nestjs/common';
 import { ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { Throttle } from '@nestjs/throttler';
+import { createTransport, Transporter } from 'nodemailer';
+import SMTPTransport from 'nodemailer/lib/smtp-transport';
 
 @Controller('contact')
 export class ContactController {
-  constructor() {}
+  private nodemailerTransport: Transporter<SMTPTransport.SentMessageInfo, SMTPTransport.Options>;
+
+  constructor(private readonly protonConfig: ProtonConfig) {
+    this.nodemailerTransport = createTransport({
+      host: protonConfig.host,
+      port: protonConfig.port,
+      auth: {
+        user: protonConfig.backendEmail,
+        pass: protonConfig.smtpToken,
+      },
+    });
+  }
 
   @Post()
   @ApiOperation({ summary: 'Send a contact request via mail to info mail' })
@@ -18,7 +32,35 @@ export class ContactController {
       limit: 1, // maximum 1 requests every 5 minutes
     },
   })
-  public contact(@Body() contact: ContactDto): void {
-    console.log(contact);
+  public async contact(@Body() contact: ContactDto) {
+    await this.nodemailerTransport.sendMail({
+      from: `"Homepage backend" <from: <${this.protonConfig.backendEmail}>`,
+      to: this.protonConfig.infoEmail,
+      subject: `Kontaktanfrage: ${contact.name}`,
+      replyTo: contact.email,
+      text: `
+Du hast eine neue Kontaktanfrage ueber die Homepage erhalten.
+
+---
+
+## Sender Details
+
+Name: ${contact.name}
+Email: ${contact.email}
+Phone: ${contact.phone}
+
+---
+
+## Nachricht
+
+${contact.message}
+
+---
+
+Automatisch versendet von deinem backend.
+`,
+    });
+
+    console.log(`Successfully sent contact request to info mail: ${new Date().toString()}`);
   }
 }

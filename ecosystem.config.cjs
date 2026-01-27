@@ -3,13 +3,15 @@ module.exports = {
     {
       name: 'backend',
       cwd: './apps/backend',
-      script: 'dist/main.js',
+      autorestart: true,
+      script: 'pnpm start',
+      watch: ['./build/development/**/*', './build/development/*', './.env', './.env.default'],
     },
     {
-      name: 'frontend',
+      name: 'homepage',
       cwd: './apps/homepage',
-      script: 'pnpm',
-      args: 'preview',
+      script: 'pnpm dev',
+      watch: ['./build/development/**/*', './build/development/*', './.env', './.env.default'],
     },
   ],
 };

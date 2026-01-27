@@ -13,10 +13,6 @@ export class ContactDto {
   @IsNotEmpty()
   public name: string;
 
-  @IsDate()
-  @IsNotEmpty()
-  public birthdate: Date;
-
   @IsString()
   @IsNotEmpty()
   @MaxLength(500)
