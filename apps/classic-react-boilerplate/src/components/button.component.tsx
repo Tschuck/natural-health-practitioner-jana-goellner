@@ -1,6 +1,6 @@
-import { Link } from '@/components/link';
-import { classNames } from '@/utils/utils';
+import { classNames } from '@//utils/utils';
 import { ElementType, MouseEventHandler, PropsWithChildren } from 'react';
+import { Link } from 'react-router-dom';
 
 export enum ButtonType {
   ICON = 'ICON',

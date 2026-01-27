@@ -1,9 +1,9 @@
-import tailwindcss from '@tailwindcss/vite';
-import react from '@vitejs/plugin-react-swc';
-import { lingui } from '@lingui/vite-plugin';
-import vike from 'vike/plugin';
 import { defineConfig } from 'vite';
+import tsconfigPaths from 'vite-tsconfig-paths';
+import { lingui } from '@lingui/vite-plugin';
 import dotenv from 'dotenv';
+import react from '@vitejs/plugin-react-swc';
+import ssr from 'vite-plugin-ssr/plugin';
 
 dotenv.config({ path: ['.env.default', '.env'], quiet: true });
 
@@ -20,21 +20,15 @@ export default defineConfig({
         ],
       ],
     }),
-    vike(),
-    tailwindcss(),
+    tsconfigPaths(),
     lingui(),
+    ssr(),
   ],
-  resolve: {
-    alias: {
-      '@': `${__dirname}/src`,
-    },
-  },
   server: {
     port: 3111,
     allowedHosts: [],
   },
-  preview: {
-    port: 3111,
-    allowedHosts: [],
+  build: {
+    minify: 'terser',
   },
 });

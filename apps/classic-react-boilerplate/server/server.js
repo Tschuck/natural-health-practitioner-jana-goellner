@@ -16,7 +16,7 @@ const server = fastify({
 });
 
 server.register(fastifyStatic, {
-  root: path.resolve('../dist/client'),
+  root: path.resolve('./app'),
 });
 
 server.listen(1990, '0.0.0.0', (err) => {

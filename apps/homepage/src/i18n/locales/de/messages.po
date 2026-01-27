@@ -1,0 +1,208 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-01-14 21:14+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: de\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. placeholder {0}: route.name
+#: src/components/side-panel.component.tsx:38
+msgid "{0}"
+msgstr "{0}"
+
+#: src/pages/index/+Page.tsx:111
+msgid "{item}"
+msgstr "{item}"
+
+#: src/pages/index/+Page.tsx:99
+#~ msgid "Akupressur"
+#~ msgstr "Akupressur"
+
+#: src/pages/index/+Page.tsx:100
+#~ msgid "Akupunktur"
+#~ msgstr "Akupunktur"
+
+#: src/pages/+Layout.tsx:38
+msgid "Anrufen"
+msgstr "Anrufen"
+
+#: src/pages/index/+Page.tsx:80
+msgid "Auf dieser Basis und Ihren persönlichen Ressourcen entscheiden wir gemeinsam, wie ich Sie bestmöglich unterstützen kann."
+msgstr "Auf dieser Basis und Ihren persönlichen Ressourcen entscheiden wir gemeinsam, wie ich Sie bestmöglich unterstützen kann."
+
+#: src/pages/index/+Page.tsx:16
+msgid "Aus dem Gleichgewicht geraten?"
+msgstr "Aus dem Gleichgewicht geraten?"
+
+#: src/pages/index/+Page.tsx:122
+msgid "Bereit für mehr Balance?"
+msgstr "Bereit für mehr Balance?"
+
+#: src/pages/contact-and-imprint/schemas/contact.dto.ts:11
+msgid "Bitte geben Sie eine korrekte Telefonnummer an."
+msgstr "Bitte geben Sie eine korrekte Telefonnummer an."
+
+#: src/pages/contact-and-imprint/schemas/contact.dto.ts:14
+msgid "Bitte geben Sie eine persoenliche Nachricht ein."
+msgstr "Bitte geben Sie eine persoenliche Nachricht ein."
+
+#: src/pages/contact-and-imprint/schemas/contact.dto.ts:8
+msgid "Bitte geben sie eine valide E-Mail-Adresse ein."
+msgstr "Bitte geben sie eine valide E-Mail-Adresse ein."
+
+#: src/pages/contact-and-imprint/routes.ts:10
+#~ msgid "Datensicherheit"
+#~ msgstr "Datensicherheit"
+
+#: src/pages/contact-and-imprint/schemas/contact.dto.ts:15
+msgid "Die persoenliche Nachricht muss mindestens 10 Zeichen und maximal 500."
+msgstr "Die persoenliche Nachricht muss mindestens 10 Zeichen und maximal 500."
+
+#. js-lingui-explicit-id
+#: src/components/cookie-disclaimer.component.tsx:15
+msgid "data-security.cookie-disclaimer"
+msgstr "Diese Website verwendet Cookies. Es werden nur technisch notwendige Cookies in Ihrem Browser gespeichert, da sie für das Funktionieren grundlegender Funktionalitäten der Website unerlässlich sind."
+
+#: src/pages/contact-and-imprint/schemas/contact.dto.ts:5
+msgid "Dieses Feld muss mindestens 2 und maximal 50 Zeichen enthalten."
+msgstr "Dieses Feld muss mindestens 2 und maximal 50 Zeichen enthalten."
+
+#: src/pages/downloads/routes.ts:6
+#~ msgid "Downloads"
+#~ msgstr "Downloads"
+
+#: src/pages/index/+Page.tsx:108
+#~ msgid "Embodiment"
+#~ msgstr "Embodiment"
+
+#: src/pages/index/+Page.tsx:98
+#~ msgid "Ernährungsberatung"
+#~ msgstr "Ernährungsberatung"
+
+#: src/pages/index/+Page.tsx:20
+msgid "Gerne begleite ich Sie auf Ihrem Weg zu mehr Gesundheit, Wohlbefinden und innerer Balance."
+msgstr "Gerne begleite ich Sie auf Ihrem Weg zu mehr Gesundheit, Wohlbefinden und innerer Balance."
+
+#: src/pages/+Layout.tsx:29
+msgid "Heilpraktikerin Jana Goellner"
+msgstr "Heilpraktikerin Jana Goellner"
+
+#: src/pages/index/+Page.tsx:38
+msgid "Herzlich Willkommen"
+msgstr "Herzlich Willkommen"
+
+#: src/pages/index/+Page.tsx:42
+msgid "Herzlich Willkommen in meiner Naturheilpraxis für Hormonbalance und Psychosomatik. Ich freue mich, dass Sie den Weg zu mir gefunden haben und mehr darüber erfahren möchten, wie ich arbeite."
+msgstr "Herzlich Willkommen in meiner Naturheilpraxis für Hormonbalance und Psychosomatik. Ich freue mich, dass Sie den Weg zu mir gefunden haben und mehr darüber erfahren möchten, wie ich arbeite."
+
+#: src/pages/index/+Page.tsx:107
+#~ msgid "Homöopathische Hormonpräparate"
+#~ msgstr "Homöopathische Hormonpräparate"
+
+#: src/pages/hormon-balance/routes.ts:6
+#~ msgid "Hormonbalance"
+#~ msgstr "Hormonbalance"
+
+#: src/pages/index/+Page.tsx:105
+#~ msgid "Hormonmassagen"
+#~ msgstr "Hormonmassagen"
+
+#: src/pages/index/+Page.tsx:57
+msgid "Ihr Körper sendet Ihnen diese Signale. Ich kann Ihnen helfen, sie zu verstehen. Gemeinsam definieren wir Ziele und finden Wege, wie Sie Stück für Stück zu mehr Lebensqualität zurückfinden – wie Körper, Geist und Seele wieder in Einklang kommen können."
+msgstr "Ihr Körper sendet Ihnen diese Signale. Ich kann Ihnen helfen, sie zu verstehen. Gemeinsam definieren wir Ziele und finden Wege, wie Sie Stück für Stück zu mehr Lebensqualität zurückfinden – wie Körper, Geist und Seele wieder in Einklang kommen können."
+
+#: src/pages/index/+Page.tsx:69
+msgid "Individuelle Begleitung"
+msgstr "Individuelle Begleitung"
+
+#: src/pages/contact-and-imprint/routes.ts:6
+#~ msgid "Kontakt"
+#~ msgstr "Kontakt"
+
+#: src/pages/index/+Page.tsx:130
+msgid "Kontakt aufnehmen"
+msgstr "Kontakt aufnehmen"
+
+#: src/pages/contact-and-imprint/+Page.tsx:33
+msgid "Kontaktformular"
+msgstr "Kontaktformular"
+
+#: src/pages/index/+Page.tsx:126
+msgid "Lassen Sie uns gemeinsam Ihren Weg zu mehr Gesundheit und Wohlbefinden beginnen."
+msgstr "Lassen Sie uns gemeinsam Ihren Weg zu mehr Gesundheit und Wohlbefinden beginnen."
+
+#: src/components/cookie-disclaimer.component.tsx:30
+msgid "Mehr lesen"
+msgstr "Mehr lesen"
+
+#: src/pages/index/+Page.tsx:91
+msgid "Meine Schwerpunkte"
+msgstr "Meine Schwerpunkte"
+
+#: src/pages/index/+Page.tsx:103
+#~ msgid "Mykotherapie"
+#~ msgstr "Mykotherapie"
+
+#: src/pages/index/+Page.tsx:73
+msgid "Nach einer ausführlichen Anamnese und Diagnostik erarbeiten wir Ihren persönlichen Therapieplan. Sie stehen bei mir im Mittelpunkt. Mir ist wichtig, dass Sie sich gesehen und verstanden fühlen."
+msgstr "Nach einer ausführlichen Anamnese und Diagnostik erarbeiten wir Ihren persönlichen Therapieplan. Sie stehen bei mir im Mittelpunkt. Mir ist wichtig, dass Sie sich gesehen und verstanden fühlen."
+
+#: src/pages/index/+Page.tsx:12
+msgid "Naturheilpraxis"
+msgstr "Naturheilpraxis"
+
+#: src/pages/index/+Page.tsx:101
+#~ msgid "Ohrakupunktur"
+#~ msgstr "Ohrakupunktur"
+
+#: src/components/cookie-disclaimer.component.tsx:34
+msgid "Ok"
+msgstr "Ok"
+
+#: src/pages/index/+Page.tsx:97
+#~ msgid "Phytotherapie & Adaptogene"
+#~ msgstr "Phytotherapie & Adaptogene"
+
+#: src/pages/psychosomatics/routes.ts:6
+#~ msgid "Psychosomatik"
+#~ msgstr "Psychosomatik"
+
+#: src/pages/index/+Page.tsx:102
+#~ msgid "Reflexzonenmassage"
+#~ msgstr "Reflexzonenmassage"
+
+#: src/components/side-panel.component.tsx:47
+msgid "Schließen"
+msgstr "Schließen"
+
+#: src/pages/index/+Page.tsx:24
+msgid "Termin vereinbaren"
+msgstr "Termin vereinbaren"
+
+#: src/pages/about-me/routes.ts:6
+#~ msgid "Über mich"
+#~ msgstr "Über mich"
+
+#: src/pages/index/+Page.tsx:49
+msgid "Unsere heutige Zeit ist geprägt von vielseitigen Herausforderungen – ständige Erreichbarkeit, Stress, hastiges Essen, wenig oder unruhiger Schlaf, zu wenig Zeit für sich selbst und noch so vieles mehr. Dabei geht das Gefühl für die eigenen Bedürfnisse und die Wahrnehmung des Körpers schnell verloren."
+msgstr "Unsere heutige Zeit ist geprägt von vielseitigen Herausforderungen – ständige Erreichbarkeit, Stress, hastiges Essen, wenig oder unruhiger Schlaf, zu wenig Zeit für sich selbst und noch so vieles mehr. Dabei geht das Gefühl für die eigenen Bedürfnisse und die Wahrnehmung des Körpers schnell verloren."
+
+#: src/pages/index/+Page.tsx:104
+#~ msgid "Vitalstoffe"
+#~ msgstr "Vitalstoffe"
+
+#: src/pages/index/routes.ts:6
+#~ msgid "Willkommen"
+#~ msgstr "Willkommen"
+
+#: src/pages/index/+Page.tsx:106
+#~ msgid "Wirbelsäulentherapie (Dorn & Breuß)"
+#~ msgstr "Wirbelsäulentherapie (Dorn & Breuß)"

@@ -4,31 +4,30 @@ Homepage for a midwife and Alternative practitioner from germany, thuringia. Vis
 
 - [https://heilpraktikerin-jana-goellner.de](https://heilpraktikerin-jana-goellner.de/)
 
-## React + TypeScript + Vite
+## React + TypeScript + Vite + Vike
 
-This project was bootstrapped with [Vite](https://vitejs.dev/).
+Generated with [vike.dev/new](https://vike.dev/new) ([version 566](https://www.npmjs.com/package/create-vike/v/0.0.566)).
 
 ## How to start
 
 1. Clone the project
 
    ```bash
-   git clone git@github.com:Tschuck/heilpraktikerin-jana-goellner.git
+   git clone git@github.com:Tschuck/natural-health-practitioner-jana-goellner.git
    ```
 
-2. Bootstrap the project
+2. Install
 
    ```bash
-   cd ./heilpraktikerin-jana-goellner.git
+   cd ./natural-health-practitioner-jana-goellner
    pnpm install
    ```
-
-   This will install dev dependencies.
 
 3. Start the application
 
    ```bash
-   pnpm run dev
+   cd apps/homepage && pnpm run dev
+   cd apps/backend && pnpm run start
    ```
 
 4. Build the application

@@ -1,22 +1,22 @@
-import { Router } from '@//router.component';
+import '@/index.css';
+import '@/tailwind.css';
+
+import { useAppLocale } from '@/i18n/i18n';
 import { i18n } from '@lingui/core';
 import { I18nProvider } from '@lingui/react';
-import { Suspense } from 'react';
-import { HelmetProvider, HelmetServerState } from 'react-helmet-async';
-import './app.css';
+import { QueryClientProvider } from '@tanstack/react-query';
+import { Toaster } from 'sonner';
+import { queryClient } from '@/query-client';
 
-function Application(helmetContext: { helmet?: HelmetServerState }) {
+export default function App({ children }: { children: React.ReactNode }) {
+  useAppLocale();
+
   return (
-    <>
-      <HelmetProvider context={helmetContext}>
-        <Suspense fallback={<>loading</>}>
-          <I18nProvider i18n={i18n}>
-            <Router />
-          </I18nProvider>
-        </Suspense>
-      </HelmetProvider>
-    </>
+    <I18nProvider i18n={i18n}>
+      <QueryClientProvider client={queryClient}>
+        <Toaster />
+        <>{children}</>
+      </QueryClientProvider>
+    </I18nProvider>
   );
 }
-
-export default Application;
