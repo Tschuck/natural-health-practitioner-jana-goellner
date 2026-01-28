@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "vike build",
+    "build": "vike build && pnpm copy-to-backend",
+    "copy-to-backend": "rm -rf ../backend/dist/homepage && cp -r ./dist/client ../backend/dist/homepage",
     "dev": "vike dev",
     "lingui:extract": "lingui extract",
     "lint": "eslint .",

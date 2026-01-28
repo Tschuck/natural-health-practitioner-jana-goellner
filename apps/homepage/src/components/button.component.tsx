@@ -17,9 +17,21 @@ export interface ButtonProps extends PropsWithChildren {
   onClick?: MouseEventHandler<HTMLButtonElement> | undefined;
   type: ButtonType;
   buttonElement?: ElementType;
+  isLoading?: boolean;
+  disabled?: boolean;
 }
 
-export function Button({ buttonElement, children, className, Icon, link, onClick, type }: ButtonProps) {
+export function Button({
+  buttonElement,
+  children,
+  isLoading,
+  disabled,
+  className,
+  Icon,
+  link,
+  onClick,
+  type,
+}: ButtonProps) {
   const buttonClasses = [className];
   const ButtonElement: ElementType = buttonElement || link ? Link : 'button';
 
@@ -58,7 +70,12 @@ export function Button({ buttonElement, children, className, Icon, link, onClick
 
   return (
     <>
-      <ButtonElement className={classNames(...buttonClasses)} onClick={onClick} {...(link ? { to: link } : {})}>
+      <ButtonElement
+        className={classNames(...buttonClasses)}
+        onClick={onClick}
+        {...(link ? { to: link } : {})}
+        disabled={isLoading || disabled}
+      >
         {Icon && <Icon className="w-4 h-4" />}
         {children}
       </ButtonElement>

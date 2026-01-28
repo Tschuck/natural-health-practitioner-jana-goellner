@@ -4,8 +4,9 @@
   "packageManager": "pnpm@10.12.4",
   "type": "module",
   "scripts": {
-    "build": "pnpm -r build",
+    "build": "cd ./apps/backend && pnpm build && cd ../homepage && pnpm build",
     "dev": "pnpm -r dev",
+    "prepare:deploy": "./scripts/prepare-deploy.sh",
     "lint": "eslint .",
     "prepare": "husky install",
     "start": "pm2 start ecosystem.config.cjs"

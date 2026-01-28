@@ -1,4 +1,4 @@
-import { IsDate, IsEmail, IsNotEmpty, IsPhoneNumber, IsString, MaxLength } from 'class-validator';
+import { IsEmail, IsNotEmpty, IsPhoneNumber, IsString, MaxLength } from 'class-validator';
 
 export class ContactDto {
   @IsEmail()

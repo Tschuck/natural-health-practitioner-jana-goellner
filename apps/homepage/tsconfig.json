@@ -29,7 +29,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
   },
-  "include": ["src"],
+  "include": ["src", "vite.config.ts"],
   "exclude": [
     "dist"
   ]
