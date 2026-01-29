@@ -14,6 +14,9 @@ import { join } from 'path';
     ContactModule,
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'homepage'),
+      serveStaticOptions: {
+        fallthrough: true,
+      },
     }),
   ],
 })

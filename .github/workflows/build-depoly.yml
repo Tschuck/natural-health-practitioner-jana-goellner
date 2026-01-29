@@ -1,0 +1,33 @@
+name: build-deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: 'package.json'
+          cache: 'pnpm'
+
+      - run: pnpm install
+      - run: pnpm run build
+      - run: pnpm run deploy:prepare
+
+      - name: copy file via ssh key
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SCP_HOST }}
+          username: ${{ secrets.SCP_USERNAME }}
+          key: ${{ secrets.SCP_KEY }}
+          port: ${{ secrets.SCP_PORT }}
+          source: .deploy
+          strip_components: 1
+          overwrite: true
+          target: /home/bitnami/projects/natural-health-practitioner-jana-goellner

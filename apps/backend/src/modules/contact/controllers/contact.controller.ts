@@ -6,7 +6,7 @@ import { Throttle } from '@nestjs/throttler';
 import { createTransport, Transporter } from 'nodemailer';
 import SMTPTransport from 'nodemailer/lib/smtp-transport';
 
-@Controller('contact')
+@Controller('api/contact')
 export class ContactController {
   private nodemailerTransport: Transporter<SMTPTransport.SentMessageInfo, SMTPTransport.Options>;
 
