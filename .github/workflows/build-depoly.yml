@@ -18,7 +18,7 @@ jobs:
 
       - run: pnpm install
       - run: pnpm run build
-      - run: pnpm run deploy:prepare
+      - run: pnpm run prepare:deploy
 
       - name: copy file via ssh key
         uses: appleboy/scp-action@v0.1.7

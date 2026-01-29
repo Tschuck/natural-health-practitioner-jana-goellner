@@ -3,11 +3,11 @@ import { classNames } from '@/utils/utils';
 import { ElementType, MouseEventHandler, PropsWithChildren } from 'react';
 
 export enum ButtonType {
-  ICON = 'ICON',
+  ACTION = 'ACTION',
+  OUTLINE_DARK = 'OUTLINE_DARK',
+  OUTLINE_GREEN = 'OUTLINE_GREEN',
   ICON_PRIMARY = 'ICON_PRIMARY',
-  PRIMARY = 'PRIMARY',
-  BORDER_GRAY = 'BORDER_GRAY',
-  SECONDARY = 'SECONDARY',
+  ICON = 'ICON',
 }
 
 export interface ButtonProps extends PropsWithChildren {
@@ -36,19 +36,17 @@ export function Button({
   const ButtonElement: ElementType = buttonElement || link ? Link : 'button';
 
   switch (type) {
-    case ButtonType.PRIMARY: {
+    case ButtonType.ACTION: {
+      buttonClasses.push('flex items-center gap-4 px-4 py-2 border border-dark-gray hover:primary-hover font-archivo');
+      break;
+    }
+    case ButtonType.OUTLINE_DARK: {
       buttonClasses.push(
-        'flex items-center gap-4 px-4 py-2 bg-primary border rounded-lg hover:primary-hover text-white font-archivo'
+        'flex items-center gap-4 px-4 py-2 border border-dark-gray hover:bg-dark-gray hover:text-white font-archivo cursor-pointer'
       );
       break;
     }
-    case ButtonType.SECONDARY: {
-      buttonClasses.push(
-        'flex items-center gap-4 px-4 py-2 bg-secondary border rounded-lg hover:secondary-hover text-white font-archivo'
-      );
-      break;
-    }
-    case ButtonType.BORDER_GRAY: {
+    case ButtonType.OUTLINE_GREEN: {
       buttonClasses.push(
         'flex items-center gap-4 px-4 py-2 border rounded-lg hover:bg-gray-100 text-gray-900 font-archivo'
       );

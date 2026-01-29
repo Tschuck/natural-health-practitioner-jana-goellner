@@ -43,7 +43,7 @@ export function SidePanel({ className, isOpen, onClose }: SidePanelProps) {
 
             <div className="flex-grow" />
             <div className="flex items-center justify-center mt-4">
-              <Button type={ButtonType.BORDER_GRAY} onClick={onClose}>
+              <Button type={ButtonType.ACTION} onClick={onClose}>
                 <Trans>Schließen</Trans>
               </Button>
             </div>

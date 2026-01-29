@@ -1,26 +1,26 @@
 export const navigationEntries = [
   {
     path: '/',
-    name: 'Willkommen',
-  },
-  {
-    path: '/hormon-balance',
-    name: 'Hormonbalance',
-  },
-  {
-    path: '/psychosomatics',
-    name: 'Psychosomatik',
+    name: 'Startseite',
   },
   {
     path: '/about-me',
     name: 'Über mich',
   },
   {
+    path: '/treaments',
+    name: 'Behandungen',
+  },
+  {
     path: '/downloads',
     name: 'Downloads',
   },
   {
-    path: '/contact-and-imprint',
+    path: '/faq',
+    name: 'FAQ',
+  },
+  {
+    path: '/contact',
     name: 'Kontakt',
   },
 ];

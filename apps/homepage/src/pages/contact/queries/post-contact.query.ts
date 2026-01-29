@@ -1,5 +1,5 @@
 import config from '@/config/config';
-import { ContactSchema } from '@/pages/contact-and-imprint/schemas/contact.dto';
+import { ContactSchema } from '@/pages/contact/schemas/contact.dto';
 import { msg } from '@lingui/core/macro';
 import { useMutation } from '@tanstack/react-query';
 import axios, { HttpStatusCode } from 'axios';

@@ -1,8 +1,8 @@
 import { InputWithLabel } from '@//components/input.component';
 import { useForm } from 'react-hook-form';
 
-import { useContactMutation } from '@/pages/contact-and-imprint/queries/post-contact.query';
-import { ContactSchema } from '@/pages/contact-and-imprint/schemas/contact.dto';
+import { useContactMutation } from '@/pages/contact/queries/post-contact.query';
+import { ContactSchema } from '@/pages/contact/schemas/contact.dto';
 import { classValidatorResolver } from '@hookform/resolvers/class-validator';
 import { msg } from '@lingui/core/macro';
 import { Trans } from '@lingui/react/macro';

@@ -25,12 +25,12 @@ export function CookieDisclaimer() {
               <Button
                 className="text-white button primary hover:text-primary"
                 link={`/data-security`}
-                type={ButtonType.BORDER_GRAY}
+                type={ButtonType.OUTLINE_DARK}
               >
                 <Trans>Mehr lesen</Trans>
               </Button>
 
-              <Button onClick={accept} type={ButtonType.SECONDARY}>
+              <Button onClick={accept} type={ButtonType.OUTLINE_DARK}>
                 <Trans>Ok</Trans>
               </Button>
             </div>

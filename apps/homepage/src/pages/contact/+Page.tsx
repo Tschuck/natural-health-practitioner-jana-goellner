@@ -1,4 +1,4 @@
-import ContactFormular from '@/pages/contact-and-imprint/components/contact-formular.component';
+import ContactFormular from '@/pages/contact/components/contact-formular.component';
 
 export default function ContactView() {
   return (
