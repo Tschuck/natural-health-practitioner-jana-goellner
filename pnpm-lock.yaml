@@ -384,6 +384,9 @@ importers:
       '@lingui/react':
         specifier: ^5.7.0
         version: 5.7.0(@lingui/babel-plugin-lingui-macro@5.7.0(typescript@5.9.3))(react@19.2.3)
+      '@lingui/swc-plugin':
+        specifier: ^5.10.1
+        version: 5.10.1(@lingui/core@5.7.0(@lingui/babel-plugin-lingui-macro@5.7.0(typescript@5.9.3)))(@swc/core@1.15.8)
       '@lingui/vite-plugin':
         specifier: ^5.7.0
         version: 5.7.0(typescript@5.9.3)(vite@7.3.1(@types/node@22.19.6)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))
