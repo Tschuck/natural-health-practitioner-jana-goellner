@@ -5,6 +5,7 @@ import { ElementType, MouseEventHandler, PropsWithChildren } from 'react';
 export enum ButtonType {
   ACTION = 'ACTION',
   OUTLINE_DARK = 'OUTLINE_DARK',
+  OUTLINE_WHITE = 'OUTLINE_WHITE',
   OUTLINE_GREEN = 'OUTLINE_GREEN',
   ICON_PRIMARY = 'ICON_PRIMARY',
   ICON = 'ICON',
@@ -43,6 +44,12 @@ export function Button({
     case ButtonType.OUTLINE_DARK: {
       buttonClasses.push(
         'flex items-center gap-4 px-4 py-2 border border-dark-gray hover:bg-dark-gray hover:text-white font-archivo cursor-pointer'
+      );
+      break;
+    }
+    case ButtonType.OUTLINE_WHITE: {
+      buttonClasses.push(
+        'flex items-center gap-4 px-4 py-2 border border-hjg-whitesmoke hover:bg-dark-gray hover:text-white font-archivo cursor-pointer text-hjg-whitesmoke'
       );
       break;
     }

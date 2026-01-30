@@ -5,8 +5,8 @@ html {
 html, body, #root {
   height: 100vh;
   font-family: "Inter";
+  /* font-size: 1em; */
 }
-
 
 @font-face {
   font-family: "Inter";

@@ -12,15 +12,16 @@ import config from '@/config/config';
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import { Trans } from '@lingui/react/macro';
 import { useState } from 'react';
+import { Footer } from '@/components/footer.component';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [showSidePanel, setShowSidePanel] = useState(false);
 
   return (
-    <div style={{ width: 1366 }}>
+    <div style={{ width: 1366, height: 1300 }}>
       <App>
-        <div className="flex flex-col h-full bg-background">
-          <div className="flex items-center gap-4 p-4 w-full justify-between">
+        <div className="flex flex-col h-full bg-background px-8">
+          <div className="flex items-center gap-4 py-4 w-full justify-between">
             <Link href="/" className="">
               <img src={MainLogo} className="h-14" />
             </Link>
@@ -39,7 +40,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <SidePanel isOpen={showSidePanel} onClose={() => setShowSidePanel(false)} />
 
           <CookieDisclaimer />
-          <div className="overflow-y-auto">{children}</div>
+          <div className="overflow-y-auto">
+            {children}
+            <Footer />
+          </div>
         </div>
       </App>
     </div>

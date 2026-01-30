@@ -1,26 +1,19 @@
+export const links = {
+  startPage: { path: '/', name: 'Startseite' },
+  aboutMe: { path: '/about-me', name: 'Über mich' },
+  treatments: { path: '/treatments', name: 'Behandungen' },
+  downloads: { path: '/downloads', name: 'Downloads' },
+  faq: { path: '/faq', name: 'FAQ' },
+  contact: { path: '/contact', name: 'Kontakt' },
+  imprint: { path: '/imprint', name: 'Impressum' },
+  dataSecurity: { path: '/data-security', name: 'Datenschutz' },
+};
+
 export const navigationEntries = [
-  {
-    path: '/',
-    name: 'Startseite',
-  },
-  {
-    path: '/about-me',
-    name: 'Über mich',
-  },
-  {
-    path: '/treaments',
-    name: 'Behandungen',
-  },
-  {
-    path: '/downloads',
-    name: 'Downloads',
-  },
-  {
-    path: '/faq',
-    name: 'FAQ',
-  },
-  {
-    path: '/contact',
-    name: 'Kontakt',
-  },
+  links.startPage,
+  links.aboutMe,
+  links.treatments,
+  links.downloads,
+  links.faq,
+  links.contact,
 ];
