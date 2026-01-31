@@ -18,34 +18,32 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [showSidePanel, setShowSidePanel] = useState(false);
 
   return (
-    <div style={{ width: 1366, height: 1300 }}>
-      <App>
-        <div className="flex flex-col h-full bg-background px-8">
-          <div className="flex items-center gap-4 py-4 w-full justify-between">
-            <Link href="/" className="">
-              <img src={MainLogo} className="h-14" />
-            </Link>
-            <Navigation className="flex justify-center grow" />
-            <div className="flex items-center justify-between">
-              <div className="flex justify-between gap-2 sm:ml-4 lg:ml-12">
-                <Button className="hidden lg:flex" link={`tel:${config.phoneNumber}`} type={ButtonType.OUTLINE_DARK}>
-                  <Trans>Termin Buchen</Trans>
-                </Button>
-                <Button type={ButtonType.ICON} className="flex lg:hidden" onClick={() => setShowSidePanel(true)}>
-                  <Bars3Icon className="w-4 h-4" />
-                </Button>
-              </div>
+    <App>
+      <div className="flex flex-col h-full bg-background ">
+        <div className="flex items-center gap-4 py-4 w-full justify-between px-8">
+          <Link href="/" className="">
+            <img src={MainLogo} className="h-14" />
+          </Link>
+          <Navigation className="flex justify-center grow" />
+          <div className="flex items-center justify-between">
+            <div className="flex justify-between gap-2 sm:ml-4 lg:ml-12">
+              <Button className="hidden lg:flex" link={`tel:${config.phoneNumber}`} type={ButtonType.OUTLINE_GREEN}>
+                <Trans>Termin Buchen</Trans>
+              </Button>
+              <Button type={ButtonType.ICON} className="flex lg:hidden" onClick={() => setShowSidePanel(true)}>
+                <Bars3Icon className="w-4 h-4" />
+              </Button>
             </div>
           </div>
-          <SidePanel isOpen={showSidePanel} onClose={() => setShowSidePanel(false)} />
-
-          <CookieDisclaimer />
-          <div className="overflow-y-auto">
-            {children}
-            <Footer />
-          </div>
         </div>
-      </App>
-    </div>
+        <SidePanel isOpen={showSidePanel} onClose={() => setShowSidePanel(false)} />
+
+        <CookieDisclaimer />
+        <div className="overflow-y-scroll -mr-4" id="jhg-content">
+          {children}
+          <Footer />
+        </div>
+      </div>
+    </App>
   );
 }

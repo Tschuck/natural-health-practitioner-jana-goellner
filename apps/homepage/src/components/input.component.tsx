@@ -18,9 +18,8 @@ export interface InputWithLabelProps<T extends FieldValues> extends InputProps<T
 }
 
 const inputClassNames = `
-block w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900
+block w-full rounded-lg border border-hjg-dark-green px-3 py-2 text-sm text-hjg-dark-green
 placeholder:text-gray-400
-shadow-sm
 transition-all duration-150
 
 focus:hjg-dark-green

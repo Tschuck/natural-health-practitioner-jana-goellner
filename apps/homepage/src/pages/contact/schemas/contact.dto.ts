@@ -11,7 +11,10 @@ export class ContactSchema {
   @IsPhoneNumber('DE', { message: msg`Bitte geben Sie eine korrekte Telefonnummer an.`.message })
   public phone: string;
 
-  @IsString({ message: msg`Bitte geben Sie eine persoenliche Nachricht ein.`.message })
+  @IsString({ message: msg`Bitte geben Sie eine persönliche Nachricht ein.`.message })
   @Length(10, 500, { message: msg`Die persoenliche Nachricht muss mindestens 10 Zeichen und maximal 500.`.message })
   public message: string;
+
+  @IsPhoneNumber('DE', { message: msg`Bitte bestätigen Sie die Datenschutzbestimmungen.`.message })
+  public consent: boolean;
 }

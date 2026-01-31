@@ -14,7 +14,7 @@ export enum ButtonType {
 export interface ButtonProps extends PropsWithChildren {
   className?: string;
   Icon?: ElementType;
-  link?: string;
+  href?: string;
   onClick?: MouseEventHandler<HTMLButtonElement> | undefined;
   type: ButtonType;
   buttonElement?: ElementType;
@@ -29,45 +29,47 @@ export function Button({
   disabled,
   className,
   Icon,
-  link,
+  href,
   onClick,
   type,
 }: ButtonProps) {
   const buttonClasses = [className];
-  const ButtonElement: ElementType = buttonElement || link ? Link : 'button';
+  const ButtonElement: ElementType = buttonElement || href ? Link : 'button';
 
   switch (type) {
     case ButtonType.ACTION: {
-      buttonClasses.push('flex items-center gap-4 px-4 py-2 border border-dark-gray hover:primary-hover font-archivo');
+      buttonClasses.push(
+        'w-full rounded-lg bg-hjg-dark-green px-4 py-2.5 text-sm font-medium text-white transition hover:bg-hjg-dark-green-hover cursor-pointer'
+      );
       break;
     }
     case ButtonType.OUTLINE_DARK: {
       buttonClasses.push(
-        'flex items-center gap-4 px-4 py-2 border border-dark-gray hover:bg-dark-gray hover:text-white font-archivo cursor-pointer'
+        'text-center p-4 border border-dark-gray hover:bg-dark-gray hover:text-white font-archivo cursor-pointer'
       );
       break;
     }
     case ButtonType.OUTLINE_WHITE: {
       buttonClasses.push(
-        'flex items-center gap-4 px-4 py-2 border border-hjg-whitesmoke hover:bg-dark-gray hover:text-white font-archivo cursor-pointer text-hjg-whitesmoke'
+        'text-center p-4 border border-hjg-whitesmoke hover:bg-hjg-dark-green-hover hover:text-white font-archivo cursor-pointer text-hjg-whitesmoke'
       );
       break;
     }
     case ButtonType.OUTLINE_GREEN: {
       buttonClasses.push(
-        'flex items-center gap-4 px-4 py-2 border rounded-lg hover:bg-gray-100 text-gray-900 font-archivo'
+        'text-center p-4 border border-hjg-dark-green hover:bg-hjg-dark-green hover:text-white font-archivo cursor-pointer'
       );
       break;
     }
     case ButtonType.ICON_PRIMARY: {
       buttonClasses.push(
-        'flex items-center justify-center w-10 h-10 rounded-full bg-primary border hover:primary-hover text-white'
+        'text-center justify-center w-10 h-10 rounded-full bg-primary border hover:primary-hover text-white'
       );
       break;
     }
     case ButtonType.ICON: {
       buttonClasses.push(
-        'flex items-center justify-center w-10 h-10 rounded-full border hover:bg-gray-100 text-secondary border-secondary hover:bg-secondary hover:text-white'
+        'text-center justify-center w-10 h-10 rounded-full border hover:bg-gray-100 text-secondary border-secondary hover:bg-secondary hover:text-white'
       );
       break;
     }
@@ -78,7 +80,7 @@ export function Button({
       <ButtonElement
         className={classNames(...buttonClasses)}
         onClick={onClick}
-        {...(link ? { to: link } : {})}
+        {...(href ? { href } : {})}
         disabled={isLoading || disabled}
       >
         {Icon && <Icon className="w-4 h-4" />}
