@@ -24,14 +24,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Link href="/" className="">
             <img src={MainLogo} className="h-14" />
           </Link>
-          <Navigation className="flex justify-center grow" />
+          <Navigation className="justify-center grow hidden lg:flex" />
           <div className="flex items-center justify-between">
             <div className="flex justify-between gap-2 sm:ml-4 lg:ml-12">
-              <Button className="hidden lg:flex" link={`tel:${config.phoneNumber}`} type={ButtonType.OUTLINE_GREEN}>
+              <Button className="hidden lg:flex" href={`tel:${config.phoneNumber}`} type={ButtonType.OUTLINE_GREEN}>
                 <Trans>Termin Buchen</Trans>
               </Button>
               <Button type={ButtonType.ICON} className="flex lg:hidden" onClick={() => setShowSidePanel(true)}>
-                <Bars3Icon className="w-4 h-4" />
+                <Bars3Icon className="w-6 h-6" />
               </Button>
             </div>
           </div>

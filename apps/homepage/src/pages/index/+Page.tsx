@@ -15,7 +15,7 @@ export default function IndexPage() {
     <main className="min-h-screen flex flex-col">
       {/** section 1 */}
       <section
-        className="relative text-hjg-whitesmoke overflow-hidden bg-center flex items-center justify-center max-h-200 bg-cover mx-8 mb-8"
+        className="relative text-hjg-whitesmoke overflow-hidden bg-center flex items-center justify-center max-h-200 bg-cover lg:mx-8 mb-8"
         style={{ height: '80vh', backgroundImage: `url("${Section1Image}")` }}
       >
         {/* <img src={Section1Image} className="absolute z-0 opacity-50" /> */}
@@ -23,7 +23,7 @@ export default function IndexPage() {
           <p className="text-sm">
             <Trans>Naturheilpraxis für Hormonbalance & Psychosomatik</Trans>
           </p>
-          <h1 className="text-6xl">
+          <h1 className="text-3xl lg:text-6xl">
             <Trans>Zurück in Ihre innere Balance – ganzheitlich & individuell begleitet</Trans>
           </h1>
           <p className="text-base">
@@ -39,19 +39,21 @@ export default function IndexPage() {
         </div>
       </section>
       {/** section 2 */}
-      <section className="grid sm:grid-cols-2 grid-cols-1 text-hjg-dark-green  mb-8">
+      <section className="overflow-hidden lg:grid sm:grid-cols-2 grid-cols-1 text-hjg-dark-green mb-8">
         <img className="rounded-r-full" src={Section2Image} />
-        <div className="flex items-center justify-center">
+        <div className="lg:flex items-center justify-center mt-8 lg:mt-0 px-8">
           <div className="w-fit text-left">
             <p className="text-sm">
               <Trans>Ihr Körper spricht mit Ihnen. Ich helfe Ihnen, ihn zu verstehen.</Trans>
             </p>
-            <h2 className="text-5xl">
-              <Trans>Therapieformen &</Trans>
-            </h2>
-            <h2 className="text-5xl">
-              <Trans>Schwerpunkte</Trans>
-            </h2>
+            <div className="flex lg:block">
+              <h2 className="text-2xl lg:text-5xl">
+                <Trans>Therapieformen &</Trans>
+              </h2>
+              <h2 className="text-2xl lg:text-5xl">
+                <Trans>Schwerpunkte</Trans>
+              </h2>
+            </div>
 
             <p>
               <ul className="mt-4 ml-4 list-disc">
@@ -87,7 +89,7 @@ export default function IndexPage() {
         mb-8
         style={{ height: '50vh', backgroundImage: `url("${Section3Image}")` }}
       >
-        <h1 className="text-6xl lg:max-w-2/3 p-16 text-center">
+        <h1 className="text-3xl lg:text-6xl lg:max-w-2/3 p-16 text-center">
           <Trans>
             Keine zwei Menschen sind exakt gleich. Deshalb sind unsere Programme individuell gestaltet, um Sicherheit
             und Wirksamkeit zu gewährleisten.
@@ -96,9 +98,9 @@ export default function IndexPage() {
       </section>
 
       {/** section 4 */}
-      <section className="bg-white grid grid-cols-3 p:8 text-hjg-dark-green py-32 px-16">
-        <div className="gap-4 flex flex-col pl-16 pr-24 col-span-2 max-w-180">
-          <h2 className="text-5xl">
+      <section className="overflow-hidden bg-white lg:grid grid-cols-3 p:8 text-hjg-dark-green p-8 lg:py-32 lg:px-16">
+        <div className="gap-4 flex flex-col lg:px-8 lg:pl-16 lg:pr-24 col-span-2 max-w-180">
+          <h2 className="text-2xl lg:text-5xl">
             <Trans>Warum Therapie helfen kann</Trans>
           </h2>
           <p>
@@ -119,9 +121,9 @@ export default function IndexPage() {
           </p>
         </div>
 
-        <div className="flex items-center justify-center flex-col">
+        <div className="flex items-center justify-center flex-col mt-16 lg:mt-0">
           <div
-            className="w-full bg-center bg-cover rounded-t-full max-h-128 mb-8"
+            className="w-full bg-center bg-cover rounded-t-full max-h-164 max-w-128 lg:max-h-128 mb-8"
             style={{ height: '80vh', backgroundImage: `url("${Section4Image}")` }}
           />
           <div>
@@ -132,14 +134,14 @@ export default function IndexPage() {
         </div>
       </section>
       {/** section 5 */}
-      <section className="bg-hjg-dark-green pt-24 px-24 grid grid-cols-2 text-white">
+      <section className="overflow-hidden bg-hjg-dark-green p-8 lg:pt-24 lg:px-24 flex flex-col items-center justify-center lg:grid grid-cols-2 text-white">
         <div
-          className="w-full bg-center bg-cover rounded-t-full max-w-128 max-h-160"
+          className="w-full bg-center bg-cover rounded-t-full max-h-164 max-w-128"
           style={{ height: '80vh', backgroundImage: `url("${Section5Image}")` }}
         />
 
-        <div className="flex flex-col gap-8 pl-24">
-          <h2 className="text-5xl">
+        <div className="flex flex-col gap-8 lg:pl-24 mt-8 lg:mt-0">
+          <h2 className="text-2xl lg:text-5xl">
             <Trans>Über mich</Trans>
           </h2>
 
@@ -174,7 +176,7 @@ export default function IndexPage() {
       </section>
 
       {/** section 6 */}
-      <section className="grid grid-cols-2 p:8 text-hjg-dark-green py-32 px-16">
+      <section className="overflow-hidden lg:grid grid-cols-2 p:8 text-hjg-dark-green p-8 lg:py-32 lg:px-16">
         <div className="flex items-center justify-center flex-col">
           <div
             className="w-full bg-center bg-cover rounded-t-full max-h-164 mb-8 max-w-124"
@@ -187,8 +189,8 @@ export default function IndexPage() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 px-8">
-          <h2 className="text-5xl mb-4">
+        <div className="flex flex-col gap-4 lg:px-8 mt-8 lg:mt-0">
+          <h2 className="text-2xl lg:text-5xl mb-4">
             <Trans>Wofür meine Praxis steht</Trans>
           </h2>
           <div>
@@ -255,9 +257,9 @@ export default function IndexPage() {
       </section>
 
       {/** section 7 */}
-      <section className="grid grid-cols-2 gap-32 p-16">
+      <section className="overflow-hidden lg:grid grid-cols-2 p-8 mt-16 lg:mt-0 lg:gap-32 lg:p-16">
         <div>
-          <h2 className="text-5xl mb-4">
+          <h2 className="text-2xl lg:text-5xl mb-4">
             <Trans>Stimmen aus der Praxis</Trans>
           </h2>
           <div>
@@ -318,14 +320,14 @@ export default function IndexPage() {
       </section>
 
       {/** section 2 */}
-      <section className="grid grid-cols-2 p-16 gap-16">
+      <section className="overflow-hidden lg:grid grid-cols-2 p-8 lg:p-16 gap-16">
         <div>
           <ContactFormular />
         </div>
         <div className="flex items-center justify-center flex-col">
           {' '}
           <div
-            className="w-full bg-center bg-cover rounded-t-full max-w-128 max-h-160"
+            className="w-full bg-center bg-cover rounded-t-full max-h-164 max-w-128"
             style={{ height: '80vh', backgroundImage: `url("${Section8Image}")` }}
           />
         </div>

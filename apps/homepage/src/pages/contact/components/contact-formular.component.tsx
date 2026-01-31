@@ -36,7 +36,7 @@ export default function ContactFormular() {
 
   return (
     <>
-      <form onSubmit={(e) => void onSubmit(e)} className="w-full max-w-xl space-y-5 rounded-2xl p-6">
+      <form onSubmit={(e) => void onSubmit(e)} className="w-full space-y-5 rounded-2xl p-6">
         <h2 className="text-2xl font-semibold text-hjg-dark">
           <Trans>Kontaktformular</Trans>
         </h2>
@@ -58,7 +58,11 @@ export default function ContactFormular() {
               <Trans>Beim absenden dieses Formulars bestaetigen Sie die Datenschutzbestimmungen.</Trans>
             </p>
 
-            <Link href={links.dataSecurity.path} className="text-hjg-dark-green text-xs italic flex mt-2 items-center">
+            <Link
+              href={links.dataSecurity.path}
+              openInNewTab={true}
+              className="text-hjg-dark-green text-xs italic flex mt-2 items-center"
+            >
               <Trans>Mehr erfahren</Trans>
               <ArrowRightIcon className="ml-1 w-3" />
             </Link>

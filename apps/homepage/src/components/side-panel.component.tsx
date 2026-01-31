@@ -33,6 +33,7 @@ export function SidePanel({ className, isOpen, onClose }: SidePanelProps) {
                     isActive ? 'bg-primary text-white' : ''
                   )}
                   key={route.path}
+                  onClick={onClose}
                 >
                   <span className="text-center text-nowrap">
                     <Trans>{route.name}</Trans>
