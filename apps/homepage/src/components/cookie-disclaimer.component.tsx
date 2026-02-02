@@ -1,14 +1,21 @@
 import { Button, ButtonType } from '@//components/button.component';
+import { links } from '@/navigation-entries';
 import { useCookieStore } from '@/stores/cookie-disclamer.store';
 import { Trans } from '@lingui/react/macro';
+import { useEffect, useState } from 'react';
 
 export function CookieDisclaimer() {
   const accepted = useCookieStore((state) => state.accepted);
   const accept = useCookieStore((state) => state.accept);
 
+  // avoid cookie disclaimer on initial render, this waits for react to kick ->
+  // local storage available and we don't double render
+  const [show, setShow] = useState(false);
+  useEffect(() => setShow(true), []);
+
   return (
     <div>
-      {!accepted && (
+      {show && !accepted && (
         <div className="fixed z-20">
           <div className="fixed p-3 text-justify text-white shadow-xl left-0 right-0 md:left-[20%] md:right-[20%] z-50 bg-hjg-light-green bottom-4">
             <small className="text-xs">
@@ -24,7 +31,7 @@ export function CookieDisclaimer() {
             <div className="flex justify-end gap-4 px-8 pt-2 text-xs">
               <Button
                 className="text-white button primary hover:text-primary"
-                link={`/data-security`}
+                href={links.dataSecurity.path}
                 type={ButtonType.OUTLINE_DARK}
               >
                 <Trans>Mehr lesen</Trans>

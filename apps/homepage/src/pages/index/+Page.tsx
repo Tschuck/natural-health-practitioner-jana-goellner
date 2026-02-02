@@ -5,7 +5,7 @@ import Section3Image from './assets/section-3.jpg';
 import Section4Image from './assets/section-4.jpg';
 import Section5Image from './assets/section-5.jpg';
 import Section6Image from './assets/section-6.jpg';
-import Section8Image from './assets/section-8.jpg';
+import Section8Image from '../contact/assets/contact.jpg';
 import { Button, ButtonType } from '@/components/button.component';
 import { links } from '@/navigation-entries';
 import ContactFormular from '@/pages/contact/components/contact-formular.component';
@@ -15,7 +15,7 @@ export default function IndexPage() {
     <main className="min-h-screen flex flex-col">
       {/** section 1 */}
       <section
-        className="relative text-hjg-whitesmoke overflow-hidden bg-center flex items-center justify-center max-h-200 bg-cover lg:mx-8 mb-8"
+        className="relative text-hjg-whitesmoke bg-center flex items-center justify-center max-h-200 bg-cover lg:mx-8 mb-8"
         style={{ height: '80vh', backgroundImage: `url("${Section1Image}")` }}
       >
         {/* <img src={Section1Image} className="absolute z-0 opacity-50" /> */}
@@ -39,7 +39,7 @@ export default function IndexPage() {
         </div>
       </section>
       {/** section 2 */}
-      <section className="overflow-hidden lg:grid sm:grid-cols-2 grid-cols-1 text-hjg-dark-green mb-8">
+      <section className="lg:grid sm:grid-cols-2 grid-cols-1 text-hjg-dark-green mb-8">
         <img className="rounded-r-full" src={Section2Image} />
         <div className="lg:flex items-center justify-center mt-8 lg:mt-0 px-8">
           <div className="w-fit text-left">
@@ -98,9 +98,9 @@ export default function IndexPage() {
       </section>
 
       {/** section 4 */}
-      <section className="overflow-hidden bg-white lg:grid grid-cols-3 p:8 text-hjg-dark-green p-8 lg:py-32 lg:px-16">
+      <section className="bg-white lg:grid grid-cols-3 p:8 text-hjg-dark-green p-8 lg:py-32 lg:px-16">
         <div className="gap-4 flex flex-col lg:px-8 lg:pl-16 lg:pr-24 col-span-2 max-w-180">
-          <h2 className="text-2xl lg:text-5xl">
+          <h2 className="text<-2xl lg:text-5xl">
             <Trans>Warum Therapie helfen kann</Trans>
           </h2>
           <p>
@@ -134,7 +134,7 @@ export default function IndexPage() {
         </div>
       </section>
       {/** section 5 */}
-      <section className="overflow-hidden bg-hjg-dark-green p-8 lg:pt-24 lg:px-24 flex flex-col items-center justify-center lg:grid grid-cols-2 text-white">
+      <section className="bg-hjg-dark-green p-8 lg:pt-24 lg:px-24 flex flex-col items-center justify-center lg:grid grid-cols-2 text-white">
         <div
           className="w-full bg-center bg-cover rounded-t-full max-h-164 max-w-128"
           style={{ height: '80vh', backgroundImage: `url("${Section5Image}")` }}
@@ -176,7 +176,7 @@ export default function IndexPage() {
       </section>
 
       {/** section 6 */}
-      <section className="overflow-hidden lg:grid grid-cols-2 p:8 text-hjg-dark-green p-8 lg:py-32 lg:px-16">
+      <section className="lg:grid grid-cols-2 p:8 text-hjg-dark-green p-8 lg:py-32 lg:px-16">
         <div className="flex items-center justify-center flex-col">
           <div
             className="w-full bg-center bg-cover rounded-t-full max-h-164 mb-8 max-w-124"
@@ -257,7 +257,7 @@ export default function IndexPage() {
       </section>
 
       {/** section 7 */}
-      <section className="overflow-hidden lg:grid grid-cols-2 p-8 mt-16 lg:mt-0 lg:gap-32 lg:p-16">
+      <section className="lg:grid grid-cols-2 p-8 mt-16 lg:mt-0 lg:gap-32 lg:p-16">
         <div>
           <h2 className="text-2xl lg:text-5xl mb-4">
             <Trans>Stimmen aus der Praxis</Trans>
@@ -319,8 +319,8 @@ export default function IndexPage() {
         </div>
       </section>
 
-      {/** section 2 */}
-      <section className="overflow-hidden lg:grid grid-cols-2 p-8 lg:p-16 gap-16">
+      {/** section 9 */}
+      <section className="lg:grid grid-cols-2 p-8 lg:p-16 gap-16">
         <div>
           <ContactFormular />
         </div>
