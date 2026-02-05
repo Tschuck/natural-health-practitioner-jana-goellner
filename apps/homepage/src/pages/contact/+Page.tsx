@@ -1,6 +1,6 @@
 import ContactFormular from '@/pages/contact/components/contact-formular.component';
 
-import ContactImage from './assets/contact.jpg';
+import ContactImage from '@/assets/contact.jpg';
 import { PageWrapper } from '@/components/page-wrapper';
 
 export default function ContactView() {

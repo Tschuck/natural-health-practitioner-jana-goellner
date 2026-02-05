@@ -1,10 +1,10 @@
 import { Trans } from '@lingui/react/macro';
-import Section1Image from './assets/section-1.jpg';
-import Section2Image from './assets/section-2.jpg';
-import Section3Image from './assets/section-3.jpg';
-import Section4Image from './assets/section-4.jpg';
-import Section5Image from './assets/section-5.jpg';
-import Section6Image from './assets/section-6.jpg';
+import Section1Image from '@/assets/section-1.jpg';
+import Section2Image from '@/assets/section-2.jpg';
+import Section3Image from '@/assets/section-3.jpg';
+import Section4Image from '@/assets/section-4.jpg';
+import Section5Image from '@/assets/jana-green-background.jpg';
+import Section6Image from '@/assets/section-6.jpg';
 import Section8Image from '../contact/assets/contact.jpg';
 import { Button, ButtonType } from '@/components/button.component';
 import { links } from '@/navigation-entries';
