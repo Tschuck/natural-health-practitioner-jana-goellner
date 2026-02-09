@@ -6,6 +6,7 @@ export enum ButtonType {
   ACTION = 'ACTION',
   OUTLINE_DARK = 'OUTLINE_DARK',
   OUTLINE_WHITE = 'OUTLINE_WHITE',
+  FILLED_GREEN = 'FILLED_GREEN',
   OUTLINE_GREEN = 'OUTLINE_GREEN',
   ICON_PRIMARY = 'ICON_PRIMARY',
   ICON = 'ICON',
@@ -44,20 +45,24 @@ export function Button({
       break;
     }
     case ButtonType.OUTLINE_DARK: {
-      buttonClasses.push(
-        'text-center p-4 border border-dark-gray hover:bg-dark-gray hover:text-white font-archivo cursor-pointer'
-      );
+      buttonClasses.push('text-center p-4 border border-dark-gray hover:bg-dark-gray hover:text-white cursor-pointer');
       break;
     }
     case ButtonType.OUTLINE_WHITE: {
       buttonClasses.push(
-        'text-center p-4 border border-hjg-whitesmoke hover:bg-hjg-dark-green-hover hover:text-white font-archivo cursor-pointer text-hjg-whitesmoke'
+        'text-center p-4 border border-hjg-whitesmoke hover:bg-hjg-dark-green-hover hover:text-white cursor-pointer text-hjg-whitesmoke'
       );
       break;
     }
     case ButtonType.OUTLINE_GREEN: {
       buttonClasses.push(
-        'text-center p-4 border border-hjg-dark-green hover:bg-hjg-dark-green hover:text-white font-archivo cursor-pointer'
+        'text-center p-4 border border-hjg-dark-green hover:bg-hjg-dark-green hover:text-white cursor-pointer'
+      );
+      break;
+    }
+    case ButtonType.FILLED_GREEN: {
+      buttonClasses.push(
+        'text-center p-4 border border-hjg-dark-green bg-hjg-dark-green hover:bg-hjg-dark-green-hover text-white cursor-pointer'
       );
       break;
     }

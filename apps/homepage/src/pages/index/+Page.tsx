@@ -5,7 +5,7 @@ import Section3Image from '@/assets/section-3.jpg';
 import Section4Image from '@/assets/section-4.jpg';
 import Section5Image from '@/assets/jana-green-background.jpg';
 import Section6Image from '@/assets/section-6.jpg';
-import Section8Image from '../contact/assets/contact.jpg';
+import Section8Image from '@/assets/contact.jpg';
 import { Button, ButtonType } from '@/components/button.component';
 import { links } from '@/navigation-entries';
 import ContactFormular from '@/pages/contact/components/contact-formular.component';

@@ -10,7 +10,6 @@ export default function ContactView() {
         <ContactFormular />
       </div>
       <div className="flex items-center justify-center flex-col">
-        {' '}
         <div
           className="w-full bg-center bg-cover rounded-t-full max-h-164 max-w-128"
           style={{ height: '80vh', backgroundImage: `url("${ContactImage}")` }}
