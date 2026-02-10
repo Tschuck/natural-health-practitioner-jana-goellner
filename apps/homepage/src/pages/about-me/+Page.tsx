@@ -21,7 +21,7 @@ export default function AboutMeView() {
           </h1>
         </section>
 
-        <PageWrapper>
+        <PageWrapper space="wide">
           <section className="lg:grid grid-cols-2 gap-4 lg:gap-16 mt-8 lg:mt-16">
             <div className="">
               <div className="flex flex-col gap-8">

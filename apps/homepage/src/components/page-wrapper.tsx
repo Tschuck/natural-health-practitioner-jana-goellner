@@ -16,7 +16,7 @@ const spaceClassMap: Record<PageWrapperSpace, string> = {
   wide: 'p-8 lg:px-16 xl:px-32 text-hjg-dark-green mb-16',
 };
 
-export function PageWrapper({ space = PageWrapperSpace.narrow, className, children }: PageWrapperProps) {
+export function PageWrapper({ space = PageWrapperSpace.wide, className, children }: PageWrapperProps) {
   return (
     <div className="flex items-center justify-center">
       <div className={classNames(className, spaceClassMap[space])}>{children}</div>

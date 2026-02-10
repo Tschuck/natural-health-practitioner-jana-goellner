@@ -40,41 +40,43 @@ export function Button({
   switch (type) {
     case ButtonType.ACTION: {
       buttonClasses.push(
-        'w-full rounded-lg bg-hjg-dark-green px-4 py-2.5 text-sm font-medium text-white transition hover:bg-hjg-dark-green-hover cursor-pointer'
+        'inline-block w-full rounded-lg bg-hjg-dark-green px-4 py-2.5 text-sm font-medium text-hjg-whitesmoke transition hover:bg-hjg-dark-green-hover cursor-pointer'
       );
       break;
     }
     case ButtonType.OUTLINE_DARK: {
-      buttonClasses.push('text-center p-4 border border-dark-gray hover:bg-dark-gray hover:text-white cursor-pointer');
+      buttonClasses.push(
+        'inline-block text-center p-4 border border-dark-gray hover:bg-dark-gray hover:text-hjg-whitesmoke cursor-pointer'
+      );
       break;
     }
     case ButtonType.OUTLINE_WHITE: {
       buttonClasses.push(
-        'text-center p-4 border border-hjg-whitesmoke hover:bg-hjg-dark-green-hover hover:text-white cursor-pointer text-hjg-whitesmoke'
+        'inline-block text-center p-4 border border-hjg-whitesmoke hover:bg-hjg-dark-green-hover hover:text-hjg-whitesmoke cursor-pointer text-hjg-whitesmoke'
       );
       break;
     }
     case ButtonType.OUTLINE_GREEN: {
       buttonClasses.push(
-        'text-center p-4 border border-hjg-dark-green hover:bg-hjg-dark-green hover:text-white cursor-pointer'
+        'inline-block text-center p-4 border border-hjg-dark-green hover:bg-hjg-dark-green hover:text-hjg-whitesmoke cursor-pointer'
       );
       break;
     }
     case ButtonType.FILLED_GREEN: {
       buttonClasses.push(
-        'text-center p-4 border border-hjg-dark-green bg-hjg-dark-green hover:bg-hjg-dark-green-hover text-white cursor-pointer'
+        'text-center p-4 border border-hjg-dark-green bg-hjg-dark-green hover:bg-hjg-dark-green-hover text-hjg-whitesmoke cursor-pointer'
       );
       break;
     }
     case ButtonType.ICON_PRIMARY: {
       buttonClasses.push(
-        'text-center justify-center w-10 h-10 rounded-full bg-primary border hover:primary-hover text-white'
+        'inline-block text-center justify-center w-10 h-10 rounded-full bg-primary border hover:primary-hover text-hjg-whitesmoke'
       );
       break;
     }
     case ButtonType.ICON: {
       buttonClasses.push(
-        'text-center items-center justify-center w-10 h-10 rounded-full border hover:bg-gray-100 text-hjg-dark-green border-hjg-dark-green hover:bg-hjg-dark-green hover:text-white'
+        'inline-block text-center items-center justify-center w-10 h-10 rounded-full border hover:bg-gray-100 text-hjg-dark-green border-hjg-dark-green hover:bg-hjg-dark-green hover:text-hjg-whitesmoke'
       );
       break;
     }

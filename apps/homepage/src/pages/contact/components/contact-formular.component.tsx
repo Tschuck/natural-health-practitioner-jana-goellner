@@ -53,7 +53,7 @@ export default function ContactFormular() {
           <div className="p-2">
             <Input className="w-8" type="checkbox" name="consent" formRef={formRef} />
           </div>
-          <p className="text-hjg-dark-green text-xs italic">
+          <div className="text-hjg-dark-green text-xs italic">
             <p>
               <Trans>Beim absenden dieses Formulars bestaetigen Sie die Datenschutzbestimmungen.</Trans>
             </p>
@@ -66,7 +66,7 @@ export default function ContactFormular() {
               <Trans>Mehr erfahren</Trans>
               <ArrowRightIcon className="ml-1 w-3" />
             </Link>
-          </p>
+          </div>
         </div>
 
         <Button type={ButtonType.ACTION} disabled={isPending} isLoading={isPending}>

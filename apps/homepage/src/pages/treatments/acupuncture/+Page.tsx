@@ -4,7 +4,7 @@ import { TextContent } from '@/components/text.component';
 import AcupunctureImage from '@/assets/acupuncture.jpg';
 import { HeaderImage } from '@/components/HeaderImage';
 import { List } from '@/components/list.component';
-import { TwoColumnsText } from '@/components/two-columns-text.component';
+import { TwoColumns } from '@/components/two-columns.component';
 import { Button, ButtonType } from '@/components/button.component';
 import { Trans } from '@lingui/react/macro';
 import { links } from '@/navigation-entries';
@@ -14,7 +14,7 @@ export default function AcupunctureView() {
     <>
       <div className="relative text-hjg-dark-green mb-8">
         <HeaderImage className="mt-8 mx-8 opacity-70" height="30vh" image={AcupunctureImage} />
-        <div className="absolute right-0 top-0 left-0 bottom-0 p-16 flex justify-center flex-col text-center items-center w-full">
+        <div className="absolute inset-0 p-16 flex justify-center flex-col text-center items-center w-full">
           <Header className="max-w-1/2" type="h1">
             „Es gibt auch Krankheiten, die ›bestechlich‹ sind.“
           </Header>
@@ -22,9 +22,9 @@ export default function AcupunctureView() {
         </div>
       </div>
       <PageWrapper space="narrow">
-        <TwoColumnsText
+        <TwoColumns
           left={
-            <div className=" flex flex-col gap-4">
+            <div className="flex flex-col gap-4">
               <Header className="mb-4" type="h3">
                 Akupunktur & Traditionelle Chinesische Medizin
               </Header>

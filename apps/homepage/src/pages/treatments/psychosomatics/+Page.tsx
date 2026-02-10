@@ -4,7 +4,7 @@ import { TextContent } from '@/components/text.component';
 import PsychosomaticsImage from '@/assets/psychosomatics.jpg';
 import { HeaderImage } from '@/components/HeaderImage';
 import { List } from '@/components/list.component';
-import { TwoColumnsText } from '@/components/two-columns-text.component';
+import { TwoColumns } from '@/components/two-columns.component';
 import { Button, ButtonType } from '@/components/button.component';
 import { Trans } from '@lingui/react/macro';
 import { links } from '@/navigation-entries';
@@ -20,7 +20,7 @@ export default function PsychosomatcsView() {
         </div>
       </div>
       <PageWrapper space="narrow">
-        <TwoColumnsText
+        <TwoColumns
           left={
             <div className="flex flex-col gap-4">
               <Header className="mb-4" type="h3">

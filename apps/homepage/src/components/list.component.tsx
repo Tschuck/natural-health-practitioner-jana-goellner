@@ -8,7 +8,7 @@ export interface LisComponentProps extends BaseComponentProps {
 
 export function List({ className, entries }: LisComponentProps) {
   return (
-    <ul className={classNames(className, 'ml-4 list-disc')}>
+    <ul className={classNames(className, 'ml-6 list-disc')}>
       {entries.map((entry) => (
         <li key={entry}>
           <Trans>{entry}</Trans>

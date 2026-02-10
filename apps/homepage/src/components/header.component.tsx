@@ -16,9 +16,9 @@ export interface HeaderProps extends PropsWithChildren {
 }
 
 const typeClassMap: Record<HeaderType, string> = {
-  h1: 'text-4xl lg:text-6xl',
-  h2: 'text-2xl lg:text-5xl',
-  h3: 'text-2xl lg:text-4xl',
+  h1: 'text-4xl lg:text-6xl font-semibold',
+  h2: 'text-2xl lg:text-5xl font-semibold',
+  h3: 'text-2xl lg:text-4xl font-semibold',
   b: 'font-bold',
 };
 
