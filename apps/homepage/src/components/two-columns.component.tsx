@@ -14,11 +14,11 @@ export function TwoColumns({ className, leftClass, left, right, rightClass }: Tw
     <div
       className={classNames(className, 'lg:grid grid-cols-2 gap-4 lg:gap-8 flex items-center justify-center flex-col')}
     >
-      <div className="flex items-center justify-center relative h-full">
-        <div className={classNames(leftClass, 'flex flex-col gap-4 p-8')}>{left}</div>
+      <div className="flex items-center justify-center relative h-full w-full max-w-full overflow-hidden">
+        <div className={classNames(leftClass, 'flex flex-col gap-4')}>{left}</div>
       </div>
-      <div className="flex items-center justify-center relative h-full">
-        <div className={classNames(rightClass, 'flex flex-col gap-4 p-8')}>{right}</div>
+      <div className="flex items-center justify-center relative h-full w-full max-w-full overflow-hidden">
+        <div className={classNames(rightClass, 'flex flex-col gap-4')}>{right}</div>
       </div>
     </div>
   );

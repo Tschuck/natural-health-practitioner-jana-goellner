@@ -76,7 +76,7 @@ export function Button({
     }
     case ButtonType.ICON: {
       buttonClasses.push(
-        'inline-block text-center items-center justify-center w-10 h-10 rounded-full border hover:bg-gray-100 text-hjg-dark-green border-hjg-dark-green hover:bg-hjg-dark-green hover:text-hjg-whitesmoke'
+        'text-center items-center justify-center min-w-10 min-h-10 rounded-full border hover:bg-gray-100 text-hjg-dark-green border-hjg-dark-green hover:bg-hjg-dark-green hover:text-hjg-whitesmoke'
       );
       break;
     }

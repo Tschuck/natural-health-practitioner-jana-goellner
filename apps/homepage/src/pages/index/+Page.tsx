@@ -24,7 +24,7 @@ export default function IndexPage() {
     <main className="min-h-screen flex flex-col">
       {/** section 1 */}
       <Banner
-        className="lg:mx-8 h-[40vh] text-hjg-dark-green mb-8"
+        className="lg:mx-8 h-[40vh] text-hjg-dark-green lg:mb-8"
         image={FTK_0047}
         textPosition="left"
         glassEffect="true"
@@ -46,13 +46,14 @@ export default function IndexPage() {
       </Banner>
 
       {/** section 2 */}
-      <section className="text-hjg-dark-green lg:h-150 mb-8">
+      <section className="text-hjg-dark-green lg:h-150 lg:mb-8 shadow-md">
         <TwoColumns
+          leftClass="p-0"
           left={
-            <div className="relative h-150 w-150">
-              <ImageCard image={HerbalImage} size="small" className="absolute top-5 left-20 z-0" />
-              <ImageCard image={FTK_0050} size="small" className="absolute top-60 left-60 z-10" />
-              <ImageCard image={FTK_0010} size="small" className="absolute top-20 left-90 z-5" />
+            <div className="relative h-150 w-full lg:w-130">
+              <ImageCard image={HerbalImage} size="small" className="absolute lg:top-5 lg:left-0 z-0" />
+              <ImageCard image={FTK_0050} size="small" className="absolute lg:top-60 lg:left-40 z-10" />
+              <ImageCard image={FTK_0010} size="small" className="absolute lg:top-20 lg:left-70 z-5" />
             </div>
           }
           rightClass="lg:max-w-150"
@@ -102,7 +103,7 @@ export default function IndexPage() {
       </Banner>
 
       {/** section 4 */}
-      <section className="text-hjg-dark-green lg:h-190 mb-8 bg-white py-8 lg:py-0">
+      <section className="text-hjg-dark-green lg:h-190 mb-8 bg-white shadow-md">
         <TwoColumns
           leftClass="lg:max-w-150"
           left={
@@ -140,7 +141,7 @@ export default function IndexPage() {
       </section>
 
       {/** section 5 */}
-      <section className="text-hjg-dark-green">
+      <section className="text-hjg-dark-green shadow-md">
         <TwoColumns
           className="lg:h-190"
           leftClass="lg:max-w-150"
@@ -188,8 +189,7 @@ export default function IndexPage() {
       </section>
 
       {/** section 6 */}
-
-      <section className="text-hjg-dark-green lg:h-190 mb-8 py-8 lg:py-0">
+      <section className="text-hjg-dark-green lg:h-190 shadow-md">
         <TwoColumns
           left={
             <div className="flex items-center flex-col">
@@ -271,7 +271,7 @@ export default function IndexPage() {
       </section>
 
       {/** section 7 */}
-      <section className="text-hjg-dark-green">
+      <section className="text-hjg-dark-green shadow-md">
         <TwoColumns
           leftClass="lg:max-w-150"
           left={
@@ -342,7 +342,7 @@ export default function IndexPage() {
       </section>
 
       {/** section 9 */}
-      <section>
+      <section className="shadow-md">
         <TwoColumns
           left={<ContactFormular />}
           right={

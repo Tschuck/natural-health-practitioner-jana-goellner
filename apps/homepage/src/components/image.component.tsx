@@ -1,8 +1,8 @@
 import { classNames } from '@/utils/utils';
 
 export const ImageCardSizeClasses = {
-  small: 'h-80 w-60',
-  medium: 'h-100 w-80',
+  small: 'h-60 w-40 lg:h-80 lg:w-60',
+  medium: 'h-80 w-60 lg:h-100 lg:w-80',
   large: 'w-full h-full',
 };
 
