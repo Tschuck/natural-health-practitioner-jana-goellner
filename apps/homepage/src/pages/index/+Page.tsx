@@ -23,12 +23,7 @@ export default function IndexPage() {
   return (
     <main className="min-h-screen flex flex-col">
       {/** section 1 */}
-      <Banner
-        className="lg:mx-8 h-[40vh] text-hjg-dark-green lg:mb-8"
-        image={FTK_0047}
-        textPosition="left"
-        glassEffect="true"
-      >
+      <Banner className="lg:mx-8  text-hjg-dark-green" image={FTK_0047} textPosition="left" glassEffect="true">
         <TextContent className="text-sm">Naturheilpraxis für Hormonbalance & Psychosomatik</TextContent>
         <Header type="h2">Zurück in Ihre innere Balance – ganzheitlich & individuell begleitet</Header>
         <TextContent className="text-base">
@@ -38,7 +33,7 @@ export default function IndexPage() {
           </Trans>
         </TextContent>
 
-        <div>
+        <div className="mt-4">
           <Button type={ButtonType.FILLED_GREEN}>
             <Trans>Jetzt Erstgespräch vereinbaren</Trans>
           </Button>
@@ -46,17 +41,28 @@ export default function IndexPage() {
       </Banner>
 
       {/** section 2 */}
-      <section className="text-hjg-dark-green lg:h-150 lg:mb-8 shadow-md">
+      <section className="text-hjg-dark-green shadow-md">
         <TwoColumns
-          leftClass="p-0"
+          leftClass={'p-0 aspect-square max-w-[500px] lg:max-w-[650px] lg:max-h-none'}
           left={
-            <div className="relative h-150 w-full lg:w-130">
-              <ImageCard image={HerbalImage} size="small" className="absolute lg:top-5 lg:left-0 z-0" />
-              <ImageCard image={FTK_0050} size="small" className="absolute lg:top-60 lg:left-40 z-10" />
-              <ImageCard image={FTK_0010} size="small" className="absolute lg:top-20 lg:left-70 z-5" />
-            </div>
+            <>
+              {/**
+               * left and right 5% margin
+               * 3 images, but on is overlapping with 2/3 -> 2 1/3 images needed
+               * width = 90% / 2 1/3 = 39%
+               * left base = 5%
+               * image 1 -> 5% (left first image) + (39 * 0.7) = 32%
+               * image 2 -> 32% (left second image) + (39 * 0.66) = 62%
+               */}
+              <ImageCard
+                image={HerbalImage}
+                size="custom"
+                className="absolute z-0 w-[39%] h-[60%] left-[5%] top-[0%]"
+              />
+              <ImageCard image={FTK_0050} size="custom" className="absolute z-5 w-[39%] h-[60%] left-[32%] top-[40%]" />
+              <ImageCard image={FTK_0010} size="custom" className="absolute z-0 w-[39%] h-[60%] left-[57%] top-[10%]" />
+            </>
           }
-          rightClass="lg:max-w-150"
           right={
             <>
               <TextContent className="text-sm">
@@ -95,7 +101,7 @@ export default function IndexPage() {
         />
       </section>
       {/** section 3 */}
-      <Banner className="h-[40vh] text-hjg-whitesmoke" image={FTK_0056} textPosition="center" glassEffect="true">
+      <Banner className="text-hjg-whitesmoke" image={FTK_0056} textPosition="center" glassEffect="true">
         <Header type="h2" className="lg:max-w-3/4 text-center">
           Keine zwei Menschen sind exakt gleich. Deshalb gestalte ich meine Behandlungen individuell, um Sorgfalt und
           Sicherheit zu gewährleisten.
@@ -103,14 +109,13 @@ export default function IndexPage() {
       </Banner>
 
       {/** section 4 */}
-      <section className="text-hjg-dark-green lg:h-190 mb-8 bg-white shadow-md">
+      <section className="text-hjg-dark-green bg-white shadow-md">
         <TwoColumns
-          leftClass="lg:max-w-150"
           left={
             <>
               <Header type="h2">Warum Therapie helfen kann</Header>
               <TextContent>
-                Manche Beschwerden entstehen nicht „einfach so“. Sie sind oft Ausdruck eines Körpers, der aus dem
+                Manche Beschwerden entstehen nicht „einfach so". Sie sind oft Ausdruck eines Körpers, der aus dem
                 Gleichgewicht geraten ist – hormonell, nervlich oder emotional. Stress, Überforderung, unverarbeitete
                 Erfahrungen oder langanhaltende Belastungen können sich auf vielfältige Weise zeigen: in Erschöpfung,
                 Schlafstörungen, Zyklusproblemen, innerer Unruhe oder psychosomatischen Symptomen.
@@ -122,20 +127,27 @@ export default function IndexPage() {
                 Zusammenhänge zu verstehen, Selbstheilungskräfte zu aktivieren und neue Wege im Umgang mit sich selbst
                 zu entwickeln.
               </TextContent>
-            </>
-          }
-          right={
-            <div className="flex items-center flex-col">
-              <div className="relative h-160 w-150">
-                <ImageCard image={FTK_0060} size="small" className="absolute top-10 left-20 z-0" />
-                <ImageCard image={FTK_0026} size="small" className="absolute top-70 left-70 z-5" />
-              </div>
               <div>
                 <Button type={ButtonType.OUTLINE_GREEN} href={links.treatments.path}>
                   Behandlungen
                 </Button>
               </div>
-            </div>
+            </>
+          }
+          rightClass={'p-0 aspect-3/4 max-w-[500px] lg:max-w-[650px] lg:max-h-none'}
+          right={
+            <>
+              <ImageCard
+                image={FTK_0060}
+                size="custom"
+                className="absolute z-0 w-[50%] h-[50%] left-[0%] lg:left-[5%] top-[5%]"
+              />
+              <ImageCard
+                image={FTK_0026}
+                size="custom"
+                className="absolute z-5 w-[50%] h-[50%] left-[35%] lg:left-[45%] top-[45%]"
+              />
+            </>
           }
         />
       </section>
@@ -143,8 +155,6 @@ export default function IndexPage() {
       {/** section 5 */}
       <section className="text-hjg-dark-green shadow-md">
         <TwoColumns
-          className="lg:h-190"
-          leftClass="lg:max-w-150"
           left={
             <>
               <Header type="h2">Über mich</Header>
@@ -180,26 +190,33 @@ export default function IndexPage() {
               </div>
             </>
           }
+          rightClass={'p-0 aspect-3/4 max-w-[500px] lg:max-w-[650px] lg:max-h-none'}
           right={
-            <div className="h-160 w-130">
-              <ImageCard image={FTK_0008} size="large" />
-            </div>
+            <>
+              <ImageCard image={FTK_0008} size="custom" className="absolute z-0 w-[90%] h-[90%] left-[5%] top-[5%]" />
+            </>
           }
         />
       </section>
 
       {/** section 6 */}
-      <section className="text-hjg-dark-green lg:h-190 shadow-md">
+      <section className="text-hjg-dark-green shadow-md">
         <TwoColumns
+          leftClass={'p-0 aspect-3/4 max-w-[500px] lg:max-w-[650px] lg:max-h-none'}
           left={
-            <div className="flex items-center flex-col">
-              <div className="relative h-180 w-150">
-                <ImageCard image={FTK_0079} size="medium" className="absolute top-10 left-20 z-0" />
-                <ImageCard image={FTK_0081} size="medium" className="absolute top-70 left-70 z-5" />
-              </div>
-            </div>
+            <>
+              <ImageCard
+                image={FTK_0079}
+                size="custom"
+                className="absolute z-0 w-[60%] h-[60%] left-[0%] lg:left-[5%] top-[0%]"
+              />
+              <ImageCard
+                image={FTK_0081}
+                size="custom"
+                className="absolute z-5 w-[60%] h-[60%] left-[35%] lg:left-[45%] top-[40%]"
+              />
+            </>
           }
-          rightClass="lg:max-w-150"
           right={
             <>
               <Header type="h2" className="mb-4">
@@ -273,7 +290,6 @@ export default function IndexPage() {
       {/** section 7 */}
       <section className="text-hjg-dark-green shadow-md">
         <TwoColumns
-          leftClass="lg:max-w-150"
           left={
             <>
               <Header type="h2" className="mb-4">
@@ -296,7 +312,7 @@ export default function IndexPage() {
                     „Ich bin wegen chronischer Verspannungen und Kopfschmerzen gekommen. Die Akupunktur war sehr sanft
                     und gleichzeitig erstaunlich wirkungsvoll. Schon nach wenigen Sitzungen waren die Beschwerden
                     deutlich reduziert. Besonders schätze ich die ruhige, zugewandte Art und die Zeit, die sich hier
-                    wirklich genommen wird.“
+                    wirklich genommen wird."
                   </Trans>
                 </TextContent>
                 <TextContent className="italic">
@@ -305,7 +321,6 @@ export default function IndexPage() {
               </div>
             </>
           }
-          rightClass="lg:max-w-150"
           right={
             <>
               <div>
@@ -324,16 +339,17 @@ export default function IndexPage() {
                 </TextContent>
               </div>
               <div className="mt-8">
-                <TextContent className="font-bold">Ganzheitliche Begleitung</TextContent>
+                <TextContent className="font-bold">Blutdruck & Blutwerte</TextContent>
                 <TextContent>
                   <Trans>
-                    Was diese Praxis für mich besonders macht, ist die Verbindung aus Fachwissen, Herz und echter
-                    Aufmerksamkeit. Ich hatte nie das Gefühl, nur ein Symptom zu sein. Jede Sitzung war ein Schritt
-                    zurück zu mehr Stabilität, Klarheit und innerer Ruhe.“
+                    „Ich kam mit erhöhtem Blutdruck, Muskelverspannungen und auffälligen Blutwerten. Wir haben alle
+                    Ursachen abgetestet und mit Hilfe eines Bluttests, meine Schwachpunkte gefunden. Die Ernährungstipps
+                    und Empfehlungen zu Nahrungsergänzung waren sehr hilfreich. Mein Blutdruck hat sich stabilisiert und
+                    die Verspannungen sind dank Akupunktur besser geworden."
                   </Trans>
                 </TextContent>
                 <TextContent className="italic">
-                  <Trans>-- Patientin, 56 Jahre</Trans>
+                  <Trans>-- Patient, 32 Jahre</Trans>
                 </TextContent>
               </div>
             </>
@@ -345,10 +361,11 @@ export default function IndexPage() {
       <section className="shadow-md">
         <TwoColumns
           left={<ContactFormular />}
+          rightClass={'p-0 aspect-3/4 max-w-[500px] lg:max-w-[650px] lg:max-h-none'}
           right={
-            <div className="h-160 w-130">
-              <ImageCard image={FTK_0081} size="large" />
-            </div>
+            <>
+              <ImageCard image={FTK_0081} size="custom" className="absolute z-0 w-[90%] h-[90%] left-[5%] top-[5%]" />
+            </>
           }
         />
       </section>

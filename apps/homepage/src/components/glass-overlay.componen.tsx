@@ -1,10 +1,14 @@
-export function GlassOverlay() {
+import { BaseComponentProps } from '@/types/component-props.type';
+import { classNames } from '@/utils/utils';
+
+export function GlassOverlay({ className, style }: BaseComponentProps) {
   return (
     <div
-      className="absolute inset-0"
+      className={classNames(className, 'absolute inset-0')}
       style={{
-        background: 'rgba(255, 255, 255, 0.2)',
+        backgroundColor: 'rgba(255, 255, 255, 0.1)',
         backdropFilter: 'blur(10px)',
+        ...style,
       }}
     />
   );

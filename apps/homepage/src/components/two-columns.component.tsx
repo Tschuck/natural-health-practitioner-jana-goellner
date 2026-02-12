@@ -12,13 +12,16 @@ export interface TwoColumnsProps extends BaseComponentProps {
 export function TwoColumns({ className, leftClass, left, right, rightClass }: TwoColumnsProps) {
   return (
     <div
-      className={classNames(className, 'lg:grid grid-cols-2 gap-4 lg:gap-8 flex items-center justify-center flex-col')}
+      className={classNames(
+        className,
+        'lg:grid grid-cols-2 gap-4 lg:gap-8 flex items-center justify-center flex-col p-4 lg:p-8 lg:py-16'
+      )}
     >
-      <div className="flex items-center justify-center relative h-full w-full max-w-full overflow-hidden">
-        <div className={classNames(leftClass, 'flex flex-col gap-4')}>{left}</div>
+      <div className="flex items-center justify-center w-full max-w-full p-4 lg:p-0">
+        <div className={classNames(leftClass, 'flex flex-col gap-4 w-full lg:max-w-110 relative')}>{left}</div>
       </div>
-      <div className="flex items-center justify-center relative h-full w-full max-w-full overflow-hidden">
-        <div className={classNames(rightClass, 'flex flex-col gap-4')}>{right}</div>
+      <div className="flex items-center justify-center w-full max-w-full p-4 lg:p-0">
+        <div className={classNames(rightClass, 'flex flex-col gap-4 w-full lg:max-w-110 relative')}>{right}</div>
       </div>
     </div>
   );

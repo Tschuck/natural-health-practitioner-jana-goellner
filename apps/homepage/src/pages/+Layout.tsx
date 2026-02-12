@@ -43,7 +43,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <SidePanel isOpen={showSidePanel} onClose={() => setShowSidePanel(false)} />
 
         <CookieDisclaimer />
-        <div className="overflow-y-scroll -mr-4" id="jhg-content">
+        <div className="overflow-y-scroll lg:-mr-4" id="jhg-content">
           {children}
           <Footer />
         </div>
