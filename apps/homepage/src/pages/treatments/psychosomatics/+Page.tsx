@@ -1,26 +1,30 @@
+import { Banner } from '@/components/banner.component';
+import { Button, ButtonType } from '@/components/button.component';
 import { Header } from '@/components/header.component';
+import { List } from '@/components/list.component';
 import { PageWrapper } from '@/components/page-wrapper';
 import { TextContent } from '@/components/text.component';
-import PsychosomaticsImage from '@/assets/psychosomatics.jpg';
-import { HeaderImage } from '@/components/HeaderImage';
-import { List } from '@/components/list.component';
 import { TwoColumns } from '@/components/two-columns.component';
-import { Button, ButtonType } from '@/components/button.component';
-import { Trans } from '@lingui/react/macro';
+import FTK_0004 from '@/final-assets/FTK_0004.jpg';
 import { links } from '@/navigation-entries';
+import { Trans } from '@lingui/react/macro';
 
 export default function PsychosomatcsView() {
   return (
     <>
-      <div className="relative text-hjg-dark-green mb-8">
-        <HeaderImage className="mt-8 mx-8" height="30vh" image={PsychosomaticsImage} />
-        <div className="absolute right-0 top-0 bottom-0 p-16 max-w-1/2 flex items-center justify-center flex-col text-center">
-          <Header type="h1">„Der Körper meint es gut mit uns und will uns helfen, das Gute im Leben zu finden.“</Header>
-          <TextContent>(Hanne Seemann)</TextContent>
-        </div>
-      </div>
-      <PageWrapper space="narrow">
+      <Banner
+        className="lg:mx-8 lg:mb-16"
+        image={FTK_0004}
+        textPosition="left"
+        bgPosition="bg-top"
+        minHeight="min-h-[25vh]"
+      >
+        <Header type="h3">„Der Körper meint es gut mit uns und will uns helfen, das Gute im Leben zu finden.“</Header>
+        <TextContent>(Hanne Seemann)</TextContent>
+      </Banner>
+      <PageWrapper space="wide">
         <TwoColumns
+          leftAlign="start"
           left={
             <div className="flex flex-col gap-4">
               <Header className="mb-4" type="h3">
@@ -47,22 +51,9 @@ export default function PsychosomatcsView() {
                   ]}
                 />
               </div>
-
-              <div>
-                <TextContent>Meine hormonelle Arbeit kann u.a. beinhalten:</TextContent>
-                <List
-                  entries={[
-                    'Mykotherapie, Adaptogene, Phytotherapie homöopathische',
-                    'Komplexmittel und Vitalstoffe',
-                    'bioidentische, homöopathisch aufbereitete Hormone',
-                    'Ernährung, Schlafregulation, Stressmanagement, Bewegung',
-                    'Hormonmassage, Akupunktur, Ohrakupunktur, Akupressur',
-                    'Meridianübungen für zu Hause',
-                  ]}
-                />
-              </div>
             </div>
           }
+          rightAlign="start"
           right={
             <div className="flex flex-col gap-4 lg:mt-28">
               <div>

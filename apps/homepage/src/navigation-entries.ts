@@ -14,8 +14,8 @@ export const links = {
 
 export const navigationEntries = [
   links.startPage,
-  links.aboutMe,
   links.treatments,
+  links.aboutMe,
   links.downloads,
   links.faq,
   links.contact,

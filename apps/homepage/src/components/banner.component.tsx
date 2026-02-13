@@ -3,33 +3,46 @@ import { BaseComponentPropsWithChildren } from '@/types/component-props.type';
 import { classNames } from '@/utils/utils';
 
 export const BannerTextPositions = {
-  left: 'lg:left-16',
-  center: '',
-  right: 'lg:right-16',
+  left: 'lg:left-16 lg:justify-start',
+  center: 'lg:justify-center',
+  right: 'lg:right-16 lg:justify-end',
 };
 
 export interface BannerProps extends BaseComponentPropsWithChildren {
   image: string;
   textPosition?: keyof typeof BannerTextPositions;
   glassEffect?: 'true' | 'false';
+  bgPosition?: string;
+  minHeight?: string;
 }
 
-export function Banner({ children, className, image, textPosition = 'center', glassEffect }: BannerProps) {
+export function Banner({
+  bgPosition = 'bg-center',
+  children,
+  className,
+  image,
+  textPosition = 'center',
+  glassEffect,
+  minHeight = 'min-h-[40vh]',
+}: BannerProps) {
   return (
-    <section className={classNames(className, 'relative bg-center overflow-hidden')}>
-      <div className="absolute z-1 inset-0 bg-center bg-cover" style={{ backgroundImage: `url("${image}")` }} />
+    <section className={classNames(className, minHeight, 'relative overflow-hidden')}>
+      <div
+        className={classNames(bgPosition, 'absolute z-1 inset-0 bg-cover')}
+        style={{ backgroundImage: `url("${image}")` }}
+      />
       {glassEffect === 'true' && <GlassOverlay className="z-5" />}
       <div
         className={classNames(
           BannerTextPositions[textPosition],
           'absolute inset-0',
-          'flex items-center justify-center lg:justify-start z-10 text-center'
+          'flex items-center justify-center z-10 text-center'
         )}
       >
         <div
           className={classNames(
             'flex flex-col gap-4 justify-center items-center',
-            textPosition === 'center' ? 'my-10 lg:my-30 mx-10' : 'max-w-125'
+            textPosition === 'center' ? 'my-10 lg:my-30 mx-10 lg:max-w-2/3' : 'max-w-125'
           )}
         >
           {children}

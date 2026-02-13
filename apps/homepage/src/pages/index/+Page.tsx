@@ -7,12 +7,12 @@ import { TextContent } from '@/components/text.component';
 import { TwoColumns } from '@/components/two-columns.component';
 import FTK_0008 from '@/final-assets/FTK_0008.jpg';
 import FTK_0010 from '@/final-assets/FTK_0010.jpg';
-import FTK_0026 from '@/final-assets/FTK_0026.jpg';
 import FTK_0047 from '@/final-assets/FTK_0047.jpg';
 import FTK_0050 from '@/final-assets/FTK_0050.jpg';
 import FTK_0056 from '@/final-assets/FTK_0056.jpg';
 import FTK_0060 from '@/final-assets/FTK_0060.jpg';
 import FTK_0079 from '@/final-assets/FTK_0079.jpg';
+import FTK_0037 from '@/final-assets/FTK_0037.jpg';
 import FTK_0081 from '@/final-assets/FTK_0081.jpg';
 import HerbalImage from '@/final-assets/herbal.jpg';
 import { links } from '@/navigation-entries';
@@ -23,7 +23,13 @@ export default function IndexPage() {
   return (
     <main className="min-h-screen flex flex-col">
       {/** section 1 */}
-      <Banner className="lg:mx-8  text-hjg-dark-green" image={FTK_0047} textPosition="left" glassEffect="true">
+      <Banner
+        className="lg:mx-8 text-hjg-dark-green"
+        image={FTK_0047}
+        textPosition="left"
+        bgPosition="bg-top"
+        glassEffect="true"
+      >
         <TextContent className="text-sm">Naturheilpraxis für Hormonbalance & Psychosomatik</TextContent>
         <Header type="h2">Zurück in Ihre innere Balance – ganzheitlich & individuell begleitet</Header>
         <TextContent className="text-base">
@@ -41,9 +47,9 @@ export default function IndexPage() {
       </Banner>
 
       {/** section 2 */}
-      <section className="text-hjg-dark-green shadow-md">
+      <section className="text-hjg-dark-green shadow-md  lg:py-16">
         <TwoColumns
-          leftClass={'p-0 aspect-square max-w-[500px] lg:max-w-[650px] lg:max-h-none'}
+          leftClass={'p-0 aspect-square max-w-[500px] lg:max-w-[700px] lg:max-h-none'}
           left={
             <>
               {/**
@@ -109,11 +115,11 @@ export default function IndexPage() {
       </Banner>
 
       {/** section 4 */}
-      <section className="text-hjg-dark-green bg-white shadow-md">
+      <section className="text-hjg-dark-green bg-white shadow-md lg:py-16">
         <TwoColumns
           left={
             <>
-              <Header type="h2">Warum Therapie helfen kann</Header>
+              <Header type="h2">Wie Therapie helfen kann</Header>
               <TextContent>
                 Manche Beschwerden entstehen nicht „einfach so". Sie sind oft Ausdruck eines Körpers, der aus dem
                 Gleichgewicht geraten ist – hormonell, nervlich oder emotional. Stress, Überforderung, unverarbeitete
@@ -143,7 +149,7 @@ export default function IndexPage() {
                 className="absolute z-0 w-[50%] h-[50%] left-[0%] lg:left-[5%] top-[5%]"
               />
               <ImageCard
-                image={FTK_0026}
+                image={FTK_0037}
                 size="custom"
                 className="absolute z-5 w-[50%] h-[50%] left-[35%] lg:left-[45%] top-[45%]"
               />
@@ -153,7 +159,7 @@ export default function IndexPage() {
       </section>
 
       {/** section 5 */}
-      <section className="text-hjg-dark-green shadow-md">
+      <section className="text-hjg-dark-green shadow-md lg:py-16">
         <TwoColumns
           left={
             <>
@@ -200,7 +206,7 @@ export default function IndexPage() {
       </section>
 
       {/** section 6 */}
-      <section className="text-hjg-dark-green shadow-md">
+      <section className="text-hjg-dark-green shadow-md lg:py-16">
         <TwoColumns
           leftClass={'p-0 aspect-3/4 max-w-[500px] lg:max-w-[650px] lg:max-h-none'}
           left={
@@ -240,10 +246,7 @@ export default function IndexPage() {
                 </TextContent>
                 <div className="border-t border-hjg-dark-green w-full my-2" />
                 <TextContent>
-                  <Trans>
-                    Jeder Mensch ist einzigartig. Ihre Geschichte, Ihre Symptome und Ihre Ressourcen bestimmen den
-                    Therapieansatz – nicht ein Standardkonzept.
-                  </Trans>
+                  <Trans>Zeit für Ihre Anliegen, Wünsche und Ziele- in Ihrem Tempo.</Trans>
                 </TextContent>
               </div>
               <div>
@@ -265,8 +268,8 @@ export default function IndexPage() {
                 <div className="border-t border-hjg-dark-green w-full my-2" />
                 <TextContent>
                   <Trans>
-                    Ich betrachte Körper, Geist und Seele als Einheit. Nachhaltige Veränderung entsteht, wenn alle
-                    Ebenen einbezogen werden.
+                    Ich möchte nicht "einfach nur Symptome lindern", sondern den Ursprüngen der Beschwerden auf den
+                    Grund gehen um eine nachhaltige Änderung zu bewirken.
                   </Trans>
                 </TextContent>
               </div>
@@ -288,7 +291,7 @@ export default function IndexPage() {
       </section>
 
       {/** section 7 */}
-      <section className="text-hjg-dark-green shadow-md">
+      <section className="text-hjg-dark-green shadow-md  lg:py-16">
         <TwoColumns
           left={
             <>
@@ -358,7 +361,7 @@ export default function IndexPage() {
       </section>
 
       {/** section 9 */}
-      <section className="shadow-md">
+      <section className="shadow-md lg:py-16">
         <TwoColumns
           left={<ContactFormular />}
           rightClass={'p-0 aspect-3/4 max-w-[500px] lg:max-w-[650px] lg:max-h-none'}
