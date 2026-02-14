@@ -5,7 +5,7 @@ import { TwoColumns } from '@/components/two-columns.component';
 import { Button, ButtonType } from '@/components/button.component';
 import { Trans } from '@lingui/react/macro';
 import { links } from '@/navigation-entries';
-import FTK_0016 from '@/assets/FTK_0016.jpg';
+import FTK_0016 from '@/assets/optimized/FTK_0016.webp';
 import { Banner } from '@/components/banner.component';
 
 export default function HormonBalanceView() {

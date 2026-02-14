@@ -35,3 +35,9 @@ Generated with [vike.dev/new](https://vike.dev/new) ([version 566](https://www.n
    ```bash
    pnpm run build
    ```
+
+## Optimize images
+
+```
+sharp -i '*.jpg' -o ./optimized/ -f webp -q 80
+```

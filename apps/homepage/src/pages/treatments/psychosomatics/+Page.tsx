@@ -5,7 +5,7 @@ import { List } from '@/components/list.component';
 import { PageWrapper } from '@/components/page-wrapper';
 import { TextContent } from '@/components/text.component';
 import { TwoColumns } from '@/components/two-columns.component';
-import Herbal from '@/assets/herbal.jpg';
+import Herbal from '@/assets/optimized/herbal.webp';
 import { links } from '@/navigation-entries';
 import { Trans } from '@lingui/react/macro';
 
