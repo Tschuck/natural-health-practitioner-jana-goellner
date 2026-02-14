@@ -5,6 +5,12 @@ on:
     branches:
       - main
 
+env:
+  VITE_PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
+  VITE_EMAIL: ${{ secrets.E_MAIL }}
+  VITE_PUBLIC_URL: https://heilpraktikerin-jana-goellner.de
+  VITE_BACKEND_URL: https://heilpraktikerin-jana-goellner.de
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -23,10 +29,10 @@ jobs:
       - name: copy file via ssh key
         uses: appleboy/scp-action@v0.1.7
         with:
-          host: ${{ secrets.SCP_HOST }}
-          username: ${{ secrets.SCP_USERNAME }}
+          host: ${{ vars.SCP_HOST }}
+          username: ${{ vars.SCP_USERNAME }}
           key: ${{ secrets.SCP_KEY }}
-          port: ${{ secrets.SCP_PORT }}
+          port: ${{ vars.SCP_PORT }}
           source: .deploy
           strip_components: 1
           overwrite: true

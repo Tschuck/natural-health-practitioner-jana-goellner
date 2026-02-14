@@ -21,16 +21,20 @@ export interface ButtonProps extends PropsWithChildren {
   buttonElement?: ElementType;
   isLoading?: boolean;
   disabled?: boolean;
+  download?: string;
+  target?: string;
 }
 
 export function Button({
   buttonElement,
   children,
+  download,
   isLoading,
   disabled,
   className,
   Icon,
   href,
+  target,
   onClick,
   type,
 }: ButtonProps) {
@@ -88,6 +92,8 @@ export function Button({
         className={classNames(...buttonClasses)}
         onClick={onClick}
         {...(href ? { href } : {})}
+        {...(download ? { download } : {})}
+        {...(target ? { target } : {})}
         disabled={isLoading || disabled}
       >
         {Icon && <Icon className="w-4 h-4" />}

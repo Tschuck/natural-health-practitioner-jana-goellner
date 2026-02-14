@@ -5,7 +5,7 @@ import { classNames } from '@/utils/utils';
 
 export function Navigation({ className }: BaseComponentProps) {
   return (
-    <div className={classNames(className, 'flex gap-x-8 flex-wrap')}>
+    <div className={classNames(className, 'flex gap-x-8 flex-nowrap')}>
       {navigationEntries.map((route) => {
         return (
           <Link

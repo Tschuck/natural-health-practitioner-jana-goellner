@@ -1,3 +1,13 @@
+import FTK_0008 from '@/assets/FTK_0008.jpg';
+import FTK_0010 from '@/assets/FTK_0010.jpg';
+import FTK_0037 from '@/assets/FTK_0037.jpg';
+import FTK_0047 from '@/assets/FTK_0047.jpg';
+import FTK_0050 from '@/assets/FTK_0050.jpg';
+import FTK_0056 from '@/assets/FTK_0056.jpg';
+import FTK_0060 from '@/assets/FTK_0060.jpg';
+import FTK_0079 from '@/assets/FTK_0079.jpg';
+import FTK_0081 from '@/assets/FTK_0081.jpg';
+import HerbalImage from '@/assets/herbal.jpg';
 import { Banner } from '@/components/banner.component';
 import { Button, ButtonType } from '@/components/button.component';
 import { Header } from '@/components/header.component';
@@ -5,31 +15,15 @@ import { ImageCard } from '@/components/image.component';
 import { List } from '@/components/list.component';
 import { TextContent } from '@/components/text.component';
 import { TwoColumns } from '@/components/two-columns.component';
-import FTK_0008 from '@/final-assets/FTK_0008.jpg';
-import FTK_0010 from '@/final-assets/FTK_0010.jpg';
-import FTK_0047 from '@/final-assets/FTK_0047.jpg';
-import FTK_0050 from '@/final-assets/FTK_0050.jpg';
-import FTK_0056 from '@/final-assets/FTK_0056.jpg';
-import FTK_0060 from '@/final-assets/FTK_0060.jpg';
-import FTK_0079 from '@/final-assets/FTK_0079.jpg';
-import FTK_0037 from '@/final-assets/FTK_0037.jpg';
-import FTK_0081 from '@/final-assets/FTK_0081.jpg';
-import HerbalImage from '@/final-assets/herbal.jpg';
 import { links } from '@/navigation-entries';
-import ContactFormular from '@/pages/contact/components/contact-formular.component';
+import ContactView from '@/pages/contact/+Page';
 import { Trans } from '@lingui/react/macro';
 
 export default function IndexPage() {
   return (
     <main className="min-h-screen flex flex-col">
       {/** section 1 */}
-      <Banner
-        className="lg:mx-8 text-hjg-dark-green"
-        image={FTK_0047}
-        textPosition="left"
-        bgPosition="bg-top"
-        glassEffect="true"
-      >
+      <Banner className="lg:mx-8 " image={FTK_0047} textPosition="left" bgPosition="bg-top" glassEffect="true">
         <TextContent className="text-sm">Naturheilpraxis für Hormonbalance & Psychosomatik</TextContent>
         <Header type="h2">Zurück in Ihre innere Balance – ganzheitlich & individuell begleitet</Header>
         <TextContent className="text-base">
@@ -47,7 +41,7 @@ export default function IndexPage() {
       </Banner>
 
       {/** section 2 */}
-      <section className="text-hjg-dark-green shadow-md  lg:py-16">
+      <section className=" shadow-md  lg:py-16">
         <TwoColumns
           leftClass={'p-0 aspect-square max-w-[500px] lg:max-w-[700px] lg:max-h-none'}
           left={
@@ -115,7 +109,7 @@ export default function IndexPage() {
       </Banner>
 
       {/** section 4 */}
-      <section className="text-hjg-dark-green bg-white shadow-md lg:py-16">
+      <section className=" bg-white shadow-md lg:py-16">
         <TwoColumns
           left={
             <>
@@ -159,7 +153,7 @@ export default function IndexPage() {
       </section>
 
       {/** section 5 */}
-      <section className="text-hjg-dark-green shadow-md lg:py-16">
+      <section className=" shadow-md lg:py-16">
         <TwoColumns
           left={
             <>
@@ -206,7 +200,7 @@ export default function IndexPage() {
       </section>
 
       {/** section 6 */}
-      <section className="text-hjg-dark-green shadow-md lg:py-16">
+      <section className=" shadow-md lg:py-16">
         <TwoColumns
           leftClass={'p-0 aspect-3/4 max-w-[500px] lg:max-w-[650px] lg:max-h-none'}
           left={
@@ -291,7 +285,7 @@ export default function IndexPage() {
       </section>
 
       {/** section 7 */}
-      <section className="text-hjg-dark-green shadow-md  lg:py-16">
+      <section className=" shadow-md  lg:py-16">
         <TwoColumns
           left={
             <>
@@ -362,7 +356,7 @@ export default function IndexPage() {
 
       {/** section 9 */}
       <section className="shadow-md lg:py-16">
-        <TwoColumns
+        {/* <TwoColumns
           left={<ContactFormular />}
           rightClass={'p-0 aspect-3/4 max-w-[500px] lg:max-w-[650px] lg:max-h-none'}
           right={
@@ -370,7 +364,8 @@ export default function IndexPage() {
               <ImageCard image={FTK_0081} size="custom" className="absolute z-0 w-[90%] h-[90%] left-[5%] top-[5%]" />
             </>
           }
-        />
+        /> */}
+        <ContactView />
       </section>
     </main>
   );

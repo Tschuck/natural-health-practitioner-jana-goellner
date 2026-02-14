@@ -1,10 +1,10 @@
-import { PageWrapper } from '@/components/page-wrapper';
+import { Header } from '@/components/header.component';
 import { Trans } from '@lingui/react/macro';
 
 export default function DataSecurityView() {
   return (
-    <PageWrapper className="flex flex-col gap-4">
-      <h1 className="text-3xl lg:text-5xl">Datenschutzerklärung</h1>
+    <div className="flex flex-col gap-4 p-4 lg:px-16 lg:max-w-300">
+      <Header type="h2">Datenschutzerklärung</Header>
       <div>
         <b>
           <Trans>1. Verantwortlicher</Trans>
@@ -137,6 +137,6 @@ export default function DataSecurityView() {
           </Trans>
         </p>
       </div>
-    </PageWrapper>
+    </div>
   );
 }

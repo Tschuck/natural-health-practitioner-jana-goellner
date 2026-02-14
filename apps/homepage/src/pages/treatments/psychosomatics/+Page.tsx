@@ -5,7 +5,7 @@ import { List } from '@/components/list.component';
 import { PageWrapper } from '@/components/page-wrapper';
 import { TextContent } from '@/components/text.component';
 import { TwoColumns } from '@/components/two-columns.component';
-import FTK_0004 from '@/final-assets/FTK_0004.jpg';
+import Herbal from '@/assets/herbal.jpg';
 import { links } from '@/navigation-entries';
 import { Trans } from '@lingui/react/macro';
 
@@ -13,8 +13,8 @@ export default function PsychosomatcsView() {
   return (
     <>
       <Banner
-        className="lg:mx-8 lg:mb-16"
-        image={FTK_0004}
+        className="lg:mx-8 lg:mb-16 text-black"
+        image={Herbal}
         textPosition="left"
         bgPosition="bg-top"
         minHeight="min-h-[25vh]"

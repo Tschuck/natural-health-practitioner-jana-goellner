@@ -4,9 +4,11 @@ import { Header } from '@/components/header.component';
 import { List } from '@/components/list.component';
 import { TextContent } from '@/components/text.component';
 import { TwoColumns } from '@/components/two-columns.component';
-import FTK_0043 from '@/final-assets/FTK_0043.jpg';
+import FTK_0043 from '@/assets/FTK_0043.jpg';
+import FTK_0037 from '@/assets/FTK_0037.jpg';
 import { links } from '@/navigation-entries';
 import { Trans } from '@lingui/react/macro';
+import { ImageCard } from '@/components/image.component';
 
 export default function AcupunctureView() {
   return (
@@ -15,7 +17,7 @@ export default function AcupunctureView() {
         className="lg:mx-8 lg:mb-16 text-hjg-whitesmoke"
         image={FTK_0043}
         textPosition="left"
-        bgPosition="bg-top"
+        bgPosition="bg-right"
         glassEffect="false"
         minHeight="min-h-[25vh]"
       >
@@ -49,13 +51,17 @@ export default function AcupunctureView() {
             <div>
               <TextContent>
                 Ich arbeite unter anderem mit sanfter japanischer Akupunktur, die ich bei HP Jens-Peter Salzmann sowie
-                in Seminaren bei Dr. Sakae Yoneyama erlernt habe
+                bei Dr. Sakae Yoneyama erlernt habe
               </TextContent>
               <List
                 entries={[
                   'Akupunktur ist eine Regulationstherapie. Sie zielt nicht primär auf das einzelne Symptom, sondern darauf, den Menschen als Ganzes wieder in ein inneres Gleichgewicht zu führen.',
                 ]}
               />
+            </div>
+
+            <div className="flex justify-center mt-4">
+              <ImageCard image={FTK_0037} size="small" />
             </div>
           </div>
         }

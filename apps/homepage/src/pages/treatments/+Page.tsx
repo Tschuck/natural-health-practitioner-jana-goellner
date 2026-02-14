@@ -4,10 +4,10 @@ import { Link } from '@/components/link';
 import { PageWrapper } from '@/components/page-wrapper';
 import { TextContent } from '@/components/text.component';
 import { TwoColumns } from '@/components/two-columns.component';
-import FTK_0015 from '@/final-assets/FTK_0015.jpg';
-import FTK_0019 from '@/final-assets/FTK_0019.jpg';
-import FTK_0020 from '@/final-assets/FTK_0020.jpg';
-import FTK_0043 from '@/final-assets/FTK_0043.jpg';
+import FTK_0019 from '@/assets/FTK_0019.jpg';
+import FTK_0020 from '@/assets/FTK_0020.jpg';
+import Herbal from '@/assets/herbal.jpg';
+import FTK_0043 from '@/assets/FTK_0043.jpg';
 import { links } from '@/navigation-entries';
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
 import { Trans } from '@lingui/react/macro';
@@ -24,7 +24,7 @@ export default function TreamentsView() {
     {
       name: 'Psychosomatik',
       description: `Manche Beschwerden lassen sich organisch nicht ausreichend erklären. In der psychosomatischen Arbeit betrachten wir Symptome als sinnvolle Signale des Körpers – als Ausdruck innerer Prozesse. Ziel ist es, diese Botschaften zu verstehen, einzuordnen und neue Wege im Umgang mit ihnen zu finden.`,
-      image: FTK_0015,
+      image: Herbal,
       link: links.psychosomatics.path,
     },
     {
@@ -37,7 +37,7 @@ export default function TreamentsView() {
 
   return (
     <>
-      <section className="text-hjg-dark-green mt-4 lg:mt-16">
+      <section className=" mt-4 lg:mt-16">
         <TwoColumns
           leftAlign="start"
           left={
@@ -63,7 +63,7 @@ export default function TreamentsView() {
       </section>
 
       <PageWrapper>
-        <Header className="mb-8 lg:mb-0 text-hjg-dark-green" type="h2">
+        <Header className="mb-8 lg:mb-0 " type="h2">
           Behandlungen
         </Header>
 

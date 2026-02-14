@@ -5,22 +5,21 @@ import { TwoColumns } from '@/components/two-columns.component';
 import { Button, ButtonType } from '@/components/button.component';
 import { Trans } from '@lingui/react/macro';
 import { links } from '@/navigation-entries';
-import FTK_0015 from '@/final-assets/FTK_0015.jpg';
+import FTK_0016 from '@/assets/FTK_0016.jpg';
 import { Banner } from '@/components/banner.component';
 
 export default function HormonBalanceView() {
   return (
     <>
       <Banner
-        className="lg:mx-8 lg:mb-16 text-hjg-dark-green"
-        image={FTK_0015}
+        className="lg:mx-8 lg:mb-16 "
+        image={FTK_0016}
         textPosition="left"
         bgPosition="bg-top"
         glassEffect="false"
         minHeight="min-h-[25vh]"
       >
-        <Header type="h2">bli bla blub, was kommt hier hin?“</Header>
-        <TextContent>(someone)</TextContent>
+        <Header type="h2">Hormonbalance als Schlüssel zur Gesundheit</Header>
       </Banner>
 
       <TwoColumns
@@ -105,6 +104,17 @@ export default function HormonBalanceView() {
                   'Testosteronmangel',
                 ]}
               />
+            </div>
+
+            <div>
+              <Header type="b">Schilddrüsenultraschall</Header>
+
+              <TextContent>
+                Der Schilddrüsenultraschall ist eine sichere und wertvolle Diagnosemethode in meiner Praxis. Er hilft,
+                Struktur, Größe und Funktion der Schilddrüse zu beurteilen. Dies ist ein Schlüsselelement bei der
+                Therapiewahl und der Einschätzung des Krankheitsverlaufs. Er kann uns die entscheidenden Hinweise geben,
+                wie gut Ihre Schilddrüse arbeiten kann.
+              </TextContent>
             </div>
 
             <div className="mt-8">

@@ -9,6 +9,8 @@ export interface LinkParams extends BaseComponentPropsWithChildren {
   activeClassName?: string;
   openInNewTab?: boolean;
   onClick?: () => void;
+  download?: string;
+  target?: string;
 }
 
 export function Link({
@@ -19,6 +21,8 @@ export function Link({
   locale: providedLocale,
   className,
   onClick,
+  download,
+  target,
 }: LinkParams) {
   const pageContext = usePageContext();
   const { urlPathname } = pageContext;
@@ -35,6 +39,8 @@ export function Link({
       href={href}
       className={classNames(className, isActive ? activeClassName : undefined)}
       {...(openInNewTab ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+      {...(download ? { download } : {})}
+      {...(target && !openInNewTab ? { target } : {})}
       onClick={onClick}
     >
       {children}

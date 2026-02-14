@@ -11,6 +11,7 @@ import { Button, ButtonType } from '@/components/button.component';
 import { Link } from '@/components/link';
 import { links } from '@/navigation-entries';
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
+import { TextContent } from '@/components/text.component';
 
 const contactResolver = classValidatorResolver(ContactSchema);
 
@@ -37,9 +38,14 @@ export default function ContactFormular() {
   return (
     <>
       <form onSubmit={(e) => void onSubmit(e)} className="w-full space-y-5">
-        <h2 className="text-2xl font-semibold text-hjg-dark">
+        <h2 className="text-2xl font-semibold">
           <Trans>Kontaktformular</Trans>
         </h2>
+
+        <TextContent className="text-xs">
+          Nutzen Sie gerne das Kontaktformular, um mir eine persoenliche Nachricht zukommen zu lassen. Gerne koennen Sie
+          mich aber auch anrufen oder mir direkt eine E-Mail schreiben.
+        </TextContent>
 
         <InputWithLabel formRef={formRef} name="name" label="Name *" />
 
@@ -53,16 +59,12 @@ export default function ContactFormular() {
           <div className="p-2">
             <Input className="w-8" type="checkbox" name="consent" formRef={formRef} />
           </div>
-          <div className="text-hjg-dark-green text-xs italic">
+          <div className="text-xs italic">
             <p>
               <Trans>Beim absenden dieses Formulars bestaetigen Sie die Datenschutzbestimmungen.</Trans>
             </p>
 
-            <Link
-              href={links.dataSecurity.path}
-              openInNewTab={true}
-              className="text-hjg-dark-green text-xs italic flex mt-2 items-center"
-            >
+            <Link href={links.dataSecurity.path} openInNewTab={true} className=" text-xs italic flex mt-2 items-center">
               <Trans>Mehr erfahren</Trans>
               <ArrowRightIcon className="ml-1 w-3" />
             </Link>

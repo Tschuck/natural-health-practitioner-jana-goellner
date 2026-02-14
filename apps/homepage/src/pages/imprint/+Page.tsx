@@ -1,13 +1,11 @@
-import { PageWrapper } from '@/components/page-wrapper';
+import { Header } from '@/components/header.component';
 import config from '@/config/config';
 import { Trans } from '@lingui/react/macro';
 
 export default function ImprintView() {
   return (
-    <PageWrapper className="flex flex-col gap-4">
-      <h1 className="text-3xl lg:text-5xl">
-        <Trans>Impressum</Trans>
-      </h1>
+    <div className="flex flex-col gap-4 p-4 lg:px-16 lg:max-w-300">
+      <Header type="h2">Impressum</Header>
       <p>
         <Trans>Angaben gemäß §§ 5 und 6 DDG</Trans>
       </p>
@@ -122,6 +120,6 @@ export default function ImprintView() {
           <Trans>Geltungsraum der Versicherung: Deutschland</Trans>
         </p>
       </div>
-    </PageWrapper>
+    </div>
   );
 }
