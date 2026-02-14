@@ -13,23 +13,35 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/index/+Page.tsx:303
+#: src/pages/index/+Page.tsx:349
+msgid "-- Patient, 32 Jahre"
+msgstr ""
+
+#: src/pages/index/+Page.tsx:335
 msgid "-- Patient, 38 Jahre"
 msgstr ""
 
-#: src/pages/index/+Page.tsx:286
+#: src/pages/index/+Page.tsx:316
 msgid "-- Patientin, 34 Jahre"
 msgstr ""
 
 #: src/pages/index/+Page.tsx:316
-msgid "-- Patientin, 56 Jahre"
+#~ msgid "-- Patientin, 56 Jahre"
+#~ msgstr ""
+
+#: src/pages/index/+Page.tsx:308
+msgid "„Ich bin wegen chronischer Verspannungen und Kopfschmerzen gekommen. Die Akupunktur war sehr sanft und gleichzeitig erstaunlich wirkungsvoll. Schon nach wenigen Sitzungen waren die Beschwerden deutlich reduziert. Besonders schätze ich die ruhige, zugewandte Art und die Zeit, die sich hier wirklich genommen wird.\""
 msgstr ""
 
 #: src/pages/index/+Page.tsx:278
-msgid "„Ich bin wegen chronischer Verspannungen und Kopfschmerzen gekommen. Die Akupunktur war sehr sanft und gleichzeitig erstaunlich wirkungsvoll. Schon nach wenigen Sitzungen waren die Beschwerden deutlich reduziert. Besonders schätze ich die ruhige, zugewandte Art und die Zeit, die sich hier wirklich genommen wird.“"
+#~ msgid "„Ich bin wegen chronischer Verspannungen und Kopfschmerzen gekommen. Die Akupunktur war sehr sanft und gleichzeitig erstaunlich wirkungsvoll. Schon nach wenigen Sitzungen waren die Beschwerden deutlich reduziert. Besonders schätze ich die ruhige, zugewandte Art und die Zeit, die sich hier wirklich genommen wird.“"
+#~ msgstr ""
+
+#: src/pages/index/+Page.tsx:341
+msgid "„Ich kam mit erhöhtem Blutdruck, Muskelverspannungen und auffälligen Blutwerten. Wir haben alle Ursachen abgetestet und mit Hilfe eines Bluttests, meine Schwachpunkte gefunden. Die Ernährungstipps und Empfehlungen zu Nahrungsergänzung waren sehr hilfreich. Mein Blutdruck hat sich stabilisiert und die Verspannungen sind dank Akupunktur besser geworden.\""
 msgstr ""
 
-#: src/pages/index/+Page.tsx:294
+#: src/pages/index/+Page.tsx:326
 msgid "„Ich kam mit starker Erschöpfung, Zyklusproblemen und dem Gefühl, dass mein Körper nicht mehr ‚richtig funktioniert‘. Schon nach den ersten Terminen hatte ich das erste Mal das Gefühl, wirklich gesehen zu werden. Die ganzheitliche Herangehensweise, die ausführlichen Erklärungen und der individuell abgestimmte Therapieplan haben mir sehr geholfen. Heute fühle ich mich wieder deutlich stabiler, energiegeladener und verbundener mit meinem Körper.“"
 msgstr ""
 
@@ -41,14 +53,75 @@ msgstr ""
 #: src/components/footer.component.tsx:24
 #: src/components/footer.component.tsx:27
 #: src/components/side-panel.component.tsx:39
+#: src/pages/faq/+Page.tsx:106
 msgid "{0}"
 msgstr ""
 
-#: src/pages/index/+Page.tsx:72
-msgid "{item}"
+#: src/components/header.component.tsx:29
+#: src/components/text.component.tsx:12
+msgid "{children}"
 msgstr ""
 
-#: src/pages/index/+Page.tsx:222
+#: src/components/list.component.tsx:14
+msgid "{entry}"
+msgstr ""
+
+#: src/pages/index/+Page.tsx:72
+#~ msgid "{item}"
+#~ msgstr ""
+
+#: src/pages/imprint/+Page.tsx:78
+msgid "03695 617401"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:10
+msgid "1. Verantwortlicher"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:35
+msgid "2. Hosting und Zugriffsdaten"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:50
+msgid "3. Cookies und Tracking"
+msgstr ""
+
+#: src/pages/imprint/+Page.tsx:61
+#: src/pages/imprint/+Page.tsx:75
+msgid "36433 Bad Salzungen"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:62
+msgid "4. Kontaktformular"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:86
+msgid "5. E-Mail-Kommunikation"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:98
+msgid "6. Ihre Rechte"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:110
+msgid "7. Beschwerderecht"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:119
+msgid "8. Sicherheit"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:131
+msgid "9. Änderungen"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:23
+#: src/pages/imprint/+Page.tsx:24
+#: src/pages/imprint/+Page.tsx:72
+msgid "99817 Eisenach"
+msgstr ""
+
+#: src/pages/index/+Page.tsx:248
 msgid "Achtsamkeit & Wertschätzung"
 msgstr ""
 
@@ -60,9 +133,17 @@ msgstr ""
 #~ msgid "Akupunktur"
 #~ msgstr ""
 
+#: src/pages/imprint/+Page.tsx:10
+msgid "Angaben gemäß §§ 5 und 6 DDG"
+msgstr ""
+
 #: src/pages/+Layout.tsx:38
 #~ msgid "Anrufen"
 #~ msgstr ""
+
+#: src/pages/about-me/+Page.tsx:109
+msgid "Auch persönlich wichtig"
+msgstr ""
 
 #: src/pages/index/+Page.tsx:80
 #~ msgid "Auf dieser Basis und Ihren persönlichen Ressourcen entscheiden wir gemeinsam, wie ich Sie bestmöglich unterstützen kann."
@@ -73,20 +154,36 @@ msgstr ""
 #~ msgstr ""
 
 #: src/pages/index/+Page.tsx:131
-msgid "Behandlungen"
-msgstr ""
+#~ msgid "Behandlungen"
+#~ msgstr ""
 
 #: src/pages/index/+Page.tsx:187
-msgid "Behandlungsräume entdecken"
-msgstr ""
+#~ msgid "Behandlungsräume entdecken"
+#~ msgstr ""
 
-#: src/pages/contact/components/contact-formular.component.tsx:58
+#: src/pages/contact/components/contact-formular.component.tsx:64
 msgid "Beim absenden dieses Formulars bestaetigen Sie die Datenschutzbestimmungen."
 msgstr ""
 
 #: src/pages/index/+Page.tsx:122
 #~ msgid "Bereit für mehr Balance?"
 #~ msgstr ""
+
+#: src/pages/imprint/+Page.tsx:36
+msgid "Berufsbezeichnung: Heilpraktikerin"
+msgstr ""
+
+#: src/pages/imprint/+Page.tsx:104
+msgid "Berufsordnung: Berufsordnung für Heilpraktiker"
+msgstr ""
+
+#: src/pages/imprint/+Page.tsx:88
+msgid "Berufsrechtliche Regelungen:"
+msgstr ""
+
+#: src/pages/imprint/+Page.tsx:114
+msgid "Berufsverband: Mitglied im VDH- Verband deutscher Heilpraktiker"
+msgstr ""
 
 #: src/pages/contact/schemas/contact.dto.ts:18
 msgid "Bitte bestätigen Sie die Datenschutzbestimmungen."
@@ -109,31 +206,63 @@ msgid "Bitte geben sie eine valide E-Mail-Adresse ein."
 msgstr ""
 
 #: src/pages/data-security/+Page.tsx:6
-msgid "Datenschutz"
-msgstr ""
+#~ msgid "Datenschutz"
+#~ msgstr ""
 
 #: src/pages/contact-and-imprint/routes.ts:10
 #~ msgid "Datensicherheit"
 #~ msgstr ""
 
+#: src/pages/data-security/+Page.tsx:89
+msgid "Die Kontaktanfragen werden per E-Mail über ProtonMail (Ende-zu-Ende-verschlüsselt) versendet. Die E-Mails werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben."
+msgstr ""
+
 #: src/pages/contact/schemas/contact.dto.ts:15
 msgid "Die persoenliche Nachricht muss mindestens 10 Zeichen und maximal 500."
 msgstr ""
 
+#: src/pages/data-security/+Page.tsx:122
+msgid "Die Übertragung Ihrer Daten erfolgt verschlüsselt. Wir treffen technische und organisatorische Maßnahmen, um Ihre Daten vor unbefugtem Zugriff zu schützen."
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:75
+msgid "Diese Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet. Die Übermittlung erfolgt verschlüsselt (TLS/SSL). Die Daten werden nicht gespeichert oder protokolliert, sondern direkt an unseren Server übertragen und per E-Mail (ProtonMail) an uns weitergeleitet. Eine Weitergabe an Dritte erfolgt nicht."
+msgstr ""
+
 #. js-lingui-explicit-id
-#: src/components/cookie-disclaimer.component.tsx:15
+#: src/components/cookie-disclaimer.component.tsx:22
 msgid "data-security.cookie-disclaimer"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:38
+msgid "Diese Website wird auf Servern der Amazon Web Services (AWS) in der EU gehostet. Der gesamte Datenverkehr wird über Cloudflare (Cloudflare Inc., USA/EU) als Content Delivery Network und Sicherheitsdienstleister geleitet. Cloudflare speichert und verarbeitet Daten ausschließlich zur Absicherung und Optimierung der Verbindung (z. B. Schutz vor DDoS-Angriffen). Es werden keine personenbezogenen Daten zu Analyse- oder Werbezwecken verarbeitet."
 msgstr ""
 
 #: src/pages/contact/schemas/contact.dto.ts:5
 msgid "Dieses Feld muss mindestens 2 und maximal 50 Zeichen enthalten."
 msgstr ""
 
+#: src/pages/contact/+Page.tsx:19
+msgid "Direkt kontaktieren"
+msgstr ""
+
+#: src/pages/downloads/+Page.tsx:72
+msgid "Download"
+msgstr ""
+
 #: src/pages/downloads/routes.ts:6
 #~ msgid "Downloads"
 #~ msgstr ""
 
-#: src/pages/index/+Page.tsx:267
+#: src/pages/contact/+Page.tsx:44
+msgid "E-Mail schreiben"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:26
+msgid "E-Mail: [Ihre E-Mail-Adresse]"
+msgstr ""
+
+#: src/pages/index/+Page.tsx:297
 msgid "Ein Stück Weg gemeinsam gegangen Jeder Mensch bringt seine eigene Geschichte mit. Umso dankbarer bin ich für das Vertrauen, das mir in meiner Praxis entgegengebracht wird. Die folgenden Rückmeldungen geben einen kleinen Einblick in die Erfahrungen von Menschen, die ich ein Stück auf ihrem Weg begleiten durfte."
 msgstr ""
 
@@ -145,8 +274,24 @@ msgstr ""
 #~ msgid "Ernährungsberatung"
 #~ msgstr ""
 
+#: src/pages/imprint/+Page.tsx:69
+msgid "Ernst-Thälmann-Straße 74"
+msgstr ""
+
+#: src/pages/imprint/+Page.tsx:97
+msgid "Erste Durchführungsverordnung zum Gesetz über die berufsmäßige Ausübung der Heilkunde ohne Bestallung (Heilpraktikergesetz)"
+msgstr ""
+
+#: src/pages/imprint/+Page.tsx:58
+msgid "Erzberger Allee 14"
+msgstr ""
+
 #: src/pages/contact/queries/post-contact.query.ts:26
 msgid "Es gab einen Fehler beim absenden des Formulars. Bitte versuchen Sie es erneut, oder wenden Sie sich direkt per E-Mail an mich: "
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:53
+msgid "Es werden keine Cookies gesetzt, die der Wiedererkennung von Besuchern dienen. Es findet kein Tracking oder Profiling der Besucher statt."
 msgstr ""
 
 #: src/pages/index/+Page.tsx:30
@@ -154,16 +299,40 @@ msgid "Fühlen Sie sich aus dem Gleichgewicht geraten? Ich unterstütze Sie bei 
 msgstr ""
 
 #: src/pages/index/+Page.tsx:115
-msgid "Ganzheitliche Therapie setzt genau hier an. Sie betrachtet nicht nur einzelne Symptome, sondern den Menschen als Ganzes. Ziel ist es, Ursachen zu erkennen, Regulationsprozesse zu unterstützen und dem Körper wieder Raum zu geben, in seine natürliche Balance zurückzufinden. Therapie kann helfen, Zusammenhänge zu verstehen, Selbstheilungskräfte zu aktivieren und neue Wege im Umgang mit sich selbst zu entwickeln."
+#~ msgid "Ganzheitliche Therapie setzt genau hier an. Sie betrachtet nicht nur einzelne Symptome, sondern den Menschen als Ganzes. Ziel ist es, Ursachen zu erkennen, Regulationsprozesse zu unterstützen und dem Körper wieder Raum zu geben, in seine natürliche Balance zurückzufinden. Therapie kann helfen, Zusammenhänge zu verstehen, Selbstheilungskräfte zu aktivieren und neue Wege im Umgang mit sich selbst zu entwickeln."
+#~ msgstr ""
+
+#: src/pages/index/+Page.tsx:227
+msgid "Ganzheitlichkeit"
 msgstr ""
 
-#: src/pages/index/+Page.tsx:198
-msgid "Ganzheitlichkeit"
+#: src/pages/imprint/+Page.tsx:120
+msgid "Geltungsraum der Versicherung: Deutschland"
 msgstr ""
 
 #: src/pages/index/+Page.tsx:20
 #~ msgid "Gerne begleite ich Sie auf Ihrem Weg zu mehr Gesundheit, Wohlbefinden und innerer Balance."
 #~ msgstr ""
+
+#: src/pages/imprint/+Page.tsx:91
+msgid "Gesetz über die berufsmäßige Ausübung der Heilkunde ohne Bestallung (Heilpraktikergesetz) https://www.gesetze-im-internet.de/heilprg/BJNR002510939.html"
+msgstr ""
+
+#: src/pages/imprint/+Page.tsx:55
+msgid "Gesundheitsamt Bad Salzungen"
+msgstr ""
+
+#: src/pages/imprint/+Page.tsx:66
+msgid "Gesundheitsamt Eisenach"
+msgstr ""
+
+#: src/pages/imprint/+Page.tsx:111
+msgid "Haftpflichtversicherung"
+msgstr ""
+
+#: src/pages/imprint/+Page.tsx:18
+msgid "Heilpraktikerin"
+msgstr ""
 
 #: src/pages/+Layout.tsx:29
 #~ msgid "Heilpraktikerin Jana Goellner"
@@ -177,7 +346,7 @@ msgstr ""
 #~ msgid "Herzlich Willkommen in meiner Naturheilpraxis für Hormonbalance und Psychosomatik. Ich freue mich, dass Sie den Weg zu mir gefunden haben und mehr darüber erfahren möchten, wie ich arbeite."
 #~ msgstr ""
 
-#: src/pages/index/+Page.tsx:246
+#: src/pages/index/+Page.tsx:272
 msgid "Hilfe zur Selbsthilfe"
 msgstr ""
 
@@ -193,13 +362,20 @@ msgstr ""
 #~ msgid "Hormonmassagen"
 #~ msgstr ""
 
-#: src/pages/index/+Page.tsx:202
-#: src/pages/index/+Page.tsx:238
+#: src/pages/imprint/+Page.tsx:81
+msgid "https://www.wartburgkreis.de/landratsamt/aemter-einrichtungen/gesundheitsamt"
+msgstr ""
+
+#: src/pages/index/+Page.tsx:231
 msgid "Ich betrachte Körper, Geist und Seele als Einheit. Nachhaltige Veränderung entsteht, wenn alle Ebenen einbezogen werden."
 msgstr ""
 
-#: src/pages/index/+Page.tsx:149
+#: src/pages/index/+Page.tsx:163
 msgid "Ich bin staatlich geprüfte Hebamme, Heilpraktikerin und Hormonpraktikerin mit langjähriger Erfahrung in der Begleitung von Frauen, Familien und Menschen in sensiblen Lebensphasen."
+msgstr ""
+
+#: src/pages/index/+Page.tsx:264
+msgid "Ich möchte nicht \"einfach nur Symptome lindern\", sondern den Ursprüngen der Beschwerden auf den Grund gehen um eine nachhaltige Änderung zu bewirken."
 msgstr ""
 
 #: src/pages/index/+Page.tsx:57
@@ -207,14 +383,14 @@ msgstr ""
 #~ msgstr ""
 
 #: src/pages/index/+Page.tsx:47
-msgid "Ihr Körper spricht mit Ihnen. Ich helfe Ihnen, ihn zu verstehen."
-msgstr ""
+#~ msgid "Ihr Körper spricht mit Ihnen. Ich helfe Ihnen, ihn zu verstehen."
+#~ msgstr ""
 
 #: src/pages/imprint/+Page.tsx:6
-msgid "Imprint"
-msgstr ""
+#~ msgid "Imprint"
+#~ msgstr ""
 
-#: src/pages/index/+Page.tsx:210
+#: src/pages/index/+Page.tsx:239
 msgid "Individualität"
 msgstr ""
 
@@ -222,9 +398,30 @@ msgstr ""
 #~ msgid "Individuelle Begleitung"
 #~ msgstr ""
 
-#: src/pages/index/+Page.tsx:214
-#: src/pages/index/+Page.tsx:226
+#: src/pages/data-security/+Page.tsx:17
+#: src/pages/imprint/+Page.tsx:15
+msgid "Jana Göllner"
+msgstr ""
+
+#: src/pages/treatments/+Page.tsx:48
+msgid "Jeder Mensch bringt seine eigene Geschichte, seine eigenen Symptome und seine eigenen Ressourcen mit – ich begegne Ihnen dort, wo Sie gerade stehen, und begleite Sie ein Stück auf Ihrem Weg zurück zu mehr Balance, Vertrauen und innerer Gesundheit."
+msgstr ""
+
+#: src/pages/index/+Page.tsx:252
 msgid "Jeder Mensch ist einzigartig. Ihre Geschichte, Ihre Symptome und Ihre Ressourcen bestimmen den Therapieansatz – nicht ein Standardkonzept."
+msgstr ""
+
+#: src/pages/contact/+Page.tsx:50
+msgid "Jetzt anrufen"
+msgstr ""
+
+#: src/pages/index/+Page.tsx:38
+msgid "Jetzt Erstgespräch vereinbaren"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:20
+#: src/pages/imprint/+Page.tsx:21
+msgid "Kasseler Straße 31"
 msgstr ""
 
 #: src/components/footer.component.tsx:13
@@ -232,8 +429,8 @@ msgid "Kasseler Straße 31, 99817 Eisenach"
 msgstr ""
 
 #: src/pages/index/+Page.tsx:93
-msgid "Keine zwei Menschen sind exakt gleich. Deshalb sind unsere Programme individuell gestaltet, um Sicherheit und Wirksamkeit zu gewährleisten."
-msgstr ""
+#~ msgid "Keine zwei Menschen sind exakt gleich. Deshalb sind unsere Programme individuell gestaltet, um Sicherheit und Wirksamkeit zu gewährleisten."
+#~ msgstr ""
 
 #: src/pages/contact-and-imprint/routes.ts:6
 #~ msgid "Kontakt"
@@ -243,40 +440,61 @@ msgstr ""
 #~ msgid "Kontakt aufnehmen"
 #~ msgstr ""
 
-#: src/pages/contact/components/contact-formular.component.tsx:41
+#: src/pages/contact/components/contact-formular.component.tsx:42
 msgid "Kontaktformular"
 msgstr ""
 
-#: src/pages/contact/components/contact-formular.component.tsx:34
+#: src/pages/contact/components/contact-formular.component.tsx:35
 msgid "Kontaktinformationen wurden erfolgreich abgeschickt."
+msgstr ""
+
+#: src/pages/imprint/+Page.tsx:52
+msgid "Landratsamt Wartburgkreis"
 msgstr ""
 
 #: src/pages/index/+Page.tsx:126
 #~ msgid "Lassen Sie uns gemeinsam Ihren Weg zu mehr Gesundheit und Wohlbefinden beginnen."
 #~ msgstr ""
 
-#: src/pages/index/+Page.tsx:107
-msgid "Manche Beschwerden entstehen nicht „einfach so“. Sie sind oft Ausdruck eines Körpers, der aus dem Gleichgewicht geraten ist – hormonell, nervlich oder emotional. Stress, Überforderung, unverarbeitete Erfahrungen oder langanhaltende Belastungen können sich auf vielfältige Weise zeigen: in Erschöpfung, Schlafstörungen, Zyklusproblemen, innerer Unruhe oder psychosomatischen Symptomen."
+#. placeholder {0}: config.email
+#: src/pages/imprint/+Page.tsx:28
+msgid "Mail: {0}"
 msgstr ""
 
-#: src/pages/contact/components/contact-formular.component.tsx:66
-#: src/pages/index/+Page.tsx:172
+#: src/pages/index/+Page.tsx:107
+#~ msgid "Manche Beschwerden entstehen nicht „einfach so“. Sie sind oft Ausdruck eines Körpers, der aus dem Gleichgewicht geraten ist – hormonell, nervlich oder emotional. Stress, Überforderung, unverarbeitete Erfahrungen oder langanhaltende Belastungen können sich auf vielfältige Weise zeigen: in Erschöpfung, Schlafstörungen, Zyklusproblemen, innerer Unruhe oder psychosomatischen Symptomen."
+#~ msgstr ""
+
+#: src/pages/contact/components/contact-formular.component.tsx:68
+#: src/pages/index/+Page.tsx:187
 msgid "Mehr erfahren"
 msgstr ""
 
-#: src/components/cookie-disclaimer.component.tsx:30
+#: src/pages/treatments/+Page.tsx:80
+msgid "MEHR ERFAHREN"
+msgstr ""
+
+#: src/components/cookie-disclaimer.component.tsx:37
 msgid "Mehr lesen"
 msgstr ""
 
-#: src/pages/index/+Page.tsx:156
+#: src/pages/about-me/+Page.tsx:90
+msgid "Mein Ansatz"
+msgstr ""
+
+#: src/pages/about-me/+Page.tsx:58
+msgid "Mein beruflicher Weg"
+msgstr ""
+
+#: src/pages/index/+Page.tsx:170
 msgid "Mein therapeutischer Ansatz verbindet Naturheilkunde, Hormonbalance, Traditionelle Chinesische Medizin (TCM), Akupunktur und psychosomatische Verfahren. Dabei betrachte ich den Menschen immer ganzheitlich – mit Körper, Geist und Seele."
 msgstr ""
 
-#: src/pages/index/+Page.tsx:164
+#: src/pages/index/+Page.tsx:178
 msgid "Mein Ziel ist es, nicht nur Symptome zu behandeln, sondern Ursachen zu erkennen, Selbstheilungskräfte zu aktivieren und nachhaltige Gesundheit zu fördern."
 msgstr ""
 
-#: src/pages/index/+Page.tsx:250
+#: src/pages/index/+Page.tsx:276
 msgid "Mein Ziel ist es, Sie nicht abhängig von Therapie zu machen, sondern Sie in Ihre eigene Körperkompetenz und Selbstregulation zurückzuführen."
 msgstr ""
 
@@ -297,14 +515,14 @@ msgstr ""
 #~ msgstr ""
 
 #: src/pages/index/+Page.tsx:24
-msgid "Naturheilpraxis für Hormonbalance & Psychosomatik"
-msgstr ""
+#~ msgid "Naturheilpraxis für Hormonbalance & Psychosomatik"
+#~ msgstr ""
 
 #: src/pages/index/+Page.tsx:101
 #~ msgid "Ohrakupunktur"
 #~ msgstr ""
 
-#: src/components/cookie-disclaimer.component.tsx:34
+#: src/components/cookie-disclaimer.component.tsx:41
 msgid "Ok"
 msgstr ""
 
@@ -324,40 +542,71 @@ msgstr ""
 msgid "Schließen"
 msgstr ""
 
-#: src/pages/index/+Page.tsx:54
+#: src/pages/index/+Page.tsx:76
 msgid "Schwerpunkte"
 msgstr ""
 
-#: src/pages/contact/components/contact-formular.component.tsx:73
+#: src/pages/contact/components/contact-formular.component.tsx:75
 msgid "Senden"
 msgstr ""
 
-#: src/pages/index/+Page.tsx:263
+#: src/pages/data-security/+Page.tsx:101
+msgid "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch gegen die Verarbeitung sowie das Recht auf Datenübertragbarkeit Ihrer personenbezogenen Daten. Sie können eine erteilte Einwilligung jederzeit widerrufen. Bitte wenden Sie sich dazu an die oben genannte Kontaktadresse."
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:113
+msgid "Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren."
+msgstr ""
+
+#: src/pages/index/+Page.tsx:293
 msgid "Stimmen aus der Praxis"
 msgstr ""
 
-#: src/pages/+Layout.tsx:31
+#. placeholder {0}: config.phoneNumber
+#: src/pages/imprint/+Page.tsx:31
+msgid "Tel: {0}"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:29
+msgid "Telefon: [Ihre Telefonnummer]"
+msgstr ""
+
+#: src/pages/+Layout.tsx:32
 msgid "Termin Buchen"
 msgstr ""
 
-#: src/pages/index/+Page.tsx:24
-#~ msgid "Termin vereinbaren"
-#~ msgstr ""
+#: src/pages/treatments/acupuncture/+Page.tsx:97
+#: src/pages/treatments/hormone-balance/+Page.tsx:125
+#: src/pages/treatments/psychosomatics/+Page.tsx:92
+msgid "Termin vereinbaren"
+msgstr ""
 
-#: src/pages/index/+Page.tsx:51
+#: src/pages/index/+Page.tsx:73
 msgid "Therapieformen &"
 msgstr ""
 
-#: src/pages/index/+Page.tsx:145
-msgid "Über mich"
+#: src/pages/imprint/+Page.tsx:117
+msgid "Todo: Name der Versicherung, Adresse"
 msgstr ""
+
+#: src/pages/index/+Page.tsx:145
+#~ msgid "Über mich"
+#~ msgstr ""
 
 #: src/pages/index/+Page.tsx:49
 #~ msgid "Unsere heutige Zeit ist geprägt von vielseitigen Herausforderungen – ständige Erreichbarkeit, Stress, hastiges Essen, wenig oder unruhiger Schlaf, zu wenig Zeit für sich selbst und noch so vieles mehr. Dabei geht das Gefühl für die eigenen Bedürfnisse und die Wahrnehmung des Körpers schnell verloren."
 #~ msgstr ""
 
-#: src/pages/index/+Page.tsx:234
+#: src/pages/imprint/+Page.tsx:40
+msgid "Urkunde: Erlaubnis zur berufsmäßigen Ausübung der Heilkunde ohne Bestallung (Deutschland) Ausgestellt am 24.05.2018"
+msgstr ""
+
+#: src/pages/index/+Page.tsx:260
 msgid "Ursachenorientiertes Arbeiten"
+msgstr ""
+
+#: src/pages/data-security/+Page.tsx:13
+msgid "Verantwortlich für die Datenverarbeitung auf dieser Website ist:"
 msgstr ""
 
 #: src/pages/index/+Page.tsx:104
@@ -365,25 +614,47 @@ msgstr ""
 #~ msgstr ""
 
 #: src/pages/index/+Page.tsx:104
-msgid "Warum Therapie helfen kann"
-msgstr ""
+#~ msgid "Warum Therapie helfen kann"
+#~ msgstr ""
 
 #: src/pages/index/+Page.tsx:309
-msgid "Was diese Praxis für mich besonders macht, ist die Verbindung aus Fachwissen, Herz und echter Aufmerksamkeit. Ich hatte nie das Gefühl, nur ein Symptom zu sein. Jede Sitzung war ein Schritt zurück zu mehr Stabilität, Klarheit und innerer Ruhe.“"
+#~ msgid "Was diese Praxis für mich besonders macht, ist die Verbindung aus Fachwissen, Herz und echter Aufmerksamkeit. Ich hatte nie das Gefühl, nur ein Symptom zu sein. Jede Sitzung war ein Schritt zurück zu mehr Stabilität, Klarheit und innerer Ruhe.“"
+#~ msgstr ""
+
+#: src/pages/data-security/+Page.tsx:65
+msgid "Wenn Sie das Kontaktformular nutzen, werden folgende Daten erhoben:"
 msgstr ""
 
 #: src/pages/index/routes.ts:6
 #~ msgid "Willkommen"
 #~ msgstr ""
 
+#: src/pages/data-security/+Page.tsx:134
+msgid "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder bei Änderungen des Dienstes sowie der Datenverarbeitung anzupassen."
+msgstr ""
+
 #: src/pages/index/+Page.tsx:106
 #~ msgid "Wirbelsäulentherapie (Dorn & Breuß)"
 #~ msgstr ""
 
-#: src/pages/index/+Page.tsx:194
+#: src/pages/index/+Page.tsx:223
 msgid "Wofür meine Praxis steht"
 msgstr ""
 
+#: src/pages/index/+Page.tsx:243
+msgid "Zeit für Ihre Anliegen, Wünsche und Ziele- in Ihrem Tempo."
+msgstr ""
+
 #: src/pages/index/+Page.tsx:27
-msgid "Zurück in Ihre innere Balance – ganzheitlich & individuell begleitet"
+#~ msgid "Zurück in Ihre innere Balance – ganzheitlich & individuell begleitet"
+#~ msgstr ""
+
+#: src/pages/treatments/acupuncture/+Page.tsx:94
+#: src/pages/treatments/hormone-balance/+Page.tsx:122
+#: src/pages/treatments/psychosomatics/+Page.tsx:89
+msgid "Zurück zu allen Behandlungen"
+msgstr ""
+
+#: src/pages/imprint/+Page.tsx:47
+msgid "Zuständige Aufsichtsbehörde:"
 msgstr ""

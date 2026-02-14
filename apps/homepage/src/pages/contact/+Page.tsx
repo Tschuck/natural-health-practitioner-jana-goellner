@@ -20,22 +20,24 @@ export default function ContactView() {
             </h2>
 
             <table className="mt-2">
-              <tr>
-                <td>
-                  <Header type="b">E-Mail:</Header>
-                </td>
-                <td className="pl-4">
-                  <TextContent className="col-span-3">{config.email}</TextContent>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <Header type="b">Telefonnummer:</Header>
-                </td>
-                <td className="pl-4">
-                  <TextContent className="col-span-3">{config.phoneNumber}</TextContent>
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td>
+                    <Header type="b">E-Mail:</Header>
+                  </td>
+                  <td className="pl-4">
+                    <TextContent className="col-span-3">{config.email}</TextContent>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <Header type="b">Telefonnummer:</Header>
+                  </td>
+                  <td className="pl-4">
+                    <TextContent className="col-span-3">{config.phoneNumber}</TextContent>
+                  </td>
+                </tr>
+              </tbody>
             </table>
             <div className="flex items-center flex-col lg:flex-row gap-8 mt-4">
               <div>

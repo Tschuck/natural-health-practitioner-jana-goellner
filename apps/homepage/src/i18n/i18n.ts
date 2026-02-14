@@ -2,7 +2,7 @@ import { i18n } from '@lingui/core';
 import { usePageContext } from 'vike-react/usePageContext';
 
 export const defaultLocale = 'de';
-export const supportedLocales = ['de', 'en'];
+export const supportedLocales = ['de'];
 
 export async function loadCatalog(locale: string) {
   const { messages } = (await import(`./locales/${locale}/messages.po`)) as {
