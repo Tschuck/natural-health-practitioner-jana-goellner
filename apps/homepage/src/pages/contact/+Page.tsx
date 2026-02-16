@@ -10,8 +10,12 @@ import { ArrowUpRightIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/s
 import { Trans } from '@lingui/react/macro';
 
 function getNavigationUrl(address: string, coordinates?: { lat: string; lng: string }) {
-  const isIOS = navigator && /iPad|iPhone|iPod/.test(navigator.userAgent);
-  const isAndroid = navigator && /Android/.test(navigator.userAgent);
+  if (!navigator) {
+    return `https://maps.apple.com/?address=${encodeURIComponent(address)}`;
+  }
+
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const isAndroid = /Android/.test(navigator.userAgent);
 
   if (coordinates) {
     if (isIOS) {
