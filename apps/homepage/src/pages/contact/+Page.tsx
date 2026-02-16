@@ -10,22 +10,27 @@ import { ArrowUpRightIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/s
 import { Trans } from '@lingui/react/macro';
 
 function getNavigationUrl(address: string, coordinates?: { lat: string; lng: string }) {
-  if (!navigator) {
-    return `https://maps.apple.com/?address=${encodeURIComponent(address)}`;
-  }
-
-  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-  const isAndroid = /Android/.test(navigator.userAgent);
-
-  if (coordinates) {
-    if (isIOS) {
-      return `maps://maps.apple.com/?ll=${coordinates.lat},${coordinates.lng}&q=${encodeURIComponent(address)}`;
+  try {
+    if (!navigator) {
+      return `https://maps.apple.com/?address=${encodeURIComponent(address)}`;
     }
-    if (isAndroid) {
-      return `geo:${coordinates.lat},${coordinates.lng}?q=${encodeURIComponent(address)}`;
+
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isAndroid = /Android/.test(navigator.userAgent);
+
+    if (coordinates) {
+      if (isIOS) {
+        return `maps://maps.apple.com/?ll=${coordinates.lat},${coordinates.lng}&q=${encodeURIComponent(address)}`;
+      }
+      if (isAndroid) {
+        return `geo:${coordinates.lat},${coordinates.lng}?q=${encodeURIComponent(address)}`;
+      }
+      // Fallback for desktop
+      return `https://maps.apple.com/?ll=${coordinates.lat},${coordinates.lng}&q=${encodeURIComponent(address)}`;
     }
-    // Fallback for desktop
-    return `https://maps.apple.com/?ll=${coordinates.lat},${coordinates.lng}&q=${encodeURIComponent(address)}`;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  } catch (ex) {
+    // navigator missing
   }
 
   // Address-based navigation
