@@ -38,5 +38,4 @@ jobs:
           source: .deploy
           strip_components: 1
           overwrite: true
-          rm: true
           target: /home/bitnami/projects/natural-health-practitioner-jana-goellner
