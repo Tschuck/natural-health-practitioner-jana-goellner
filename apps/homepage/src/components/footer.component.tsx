@@ -6,7 +6,7 @@ import { Trans } from '@lingui/react/macro';
 
 export function Footer() {
   return (
-    <div className="py-14 flex flex-col justify-center items-center gap-4 text-hjg-dark-green shadow-2xl">
+    <div className="pt-12 pb-20 lg:pb-14 flex flex-col justify-center items-center gap-4 text-hjg-dark-green shadow-2xl">
       <img src={MainLogo} className="h-14" />
 
       <p className="text-xs">

@@ -11,7 +11,8 @@ export function Navigation({ className }: BaseComponentProps) {
           <Link
             href={route.path}
             className={classNames(
-              'flex relative cursor-pointer items-center justify-center font-inter text-gray-800 text-md'
+              'flex relative cursor-pointer items-center justify-center font-inter text-gray-800 text-md',
+              route.hiddenInNav ? 'hidden' : ''
             )}
             activeClassName="font-bold text-primary"
             key={route.path}

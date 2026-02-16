@@ -8,15 +8,17 @@ export const links = {
   downloads: { path: '/downloads', name: 'Downloads' },
   faq: { path: '/faq', name: 'FAQ' },
   contact: { path: '/contact', name: 'Kontakt' },
-  imprint: { path: '/imprint', name: 'Impressum' },
-  dataSecurity: { path: '/data-security', name: 'Datenschutz' },
+  imprint: { path: '/imprint', name: 'Impressum', hiddenInNav: true },
+  dataSecurity: { path: '/data-security', name: 'Datenschutz', hiddenInNav: true },
 };
 
-export const navigationEntries = [
+export const navigationEntries: { path: string; name: string; hiddenInNav?: boolean }[] = [
   links.startPage,
   links.treatments,
   links.aboutMe,
   links.downloads,
   links.faq,
   links.contact,
+  links.imprint,
+  links.dataSecurity,
 ];
