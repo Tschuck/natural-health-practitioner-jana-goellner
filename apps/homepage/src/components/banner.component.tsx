@@ -14,24 +14,28 @@ export interface BannerProps extends BaseComponentPropsWithChildren {
   glassEffect?: 'true' | 'false';
   bgPosition?: string;
   minHeight?: string;
+  glassBlur?: string;
+  imageClass?: string;
 }
 
 export function Banner({
   bgPosition = 'bg-center',
   children,
   className,
-  image,
-  textPosition = 'center',
+  glassBlur,
   glassEffect,
+  image,
+  imageClass,
   minHeight = 'min-h-[40vh]',
+  textPosition = 'center',
 }: BannerProps) {
   return (
     <section className={classNames(className, minHeight, 'relative overflow-hidden')}>
       <div
-        className={classNames(bgPosition, 'absolute z-1 inset-0 bg-cover')}
+        className={classNames(bgPosition, imageClass, 'absolute z-1 inset-0 bg-cover')}
         style={{ backgroundImage: `url("${image}")` }}
       />
-      {glassEffect === 'true' && <GlassOverlay className="z-5" />}
+      {glassEffect === 'true' && <GlassOverlay className="z-5" blur={glassBlur} />}
       <div
         className={classNames(
           BannerTextPositions[textPosition],
@@ -52,7 +56,7 @@ export function Banner({
       {/** render text twice to keep correct height, but this text here is behind the image */}
       <div
         className={classNames(
-          'flex flex-col gap-4 justify-center items-center my-8',
+          'flex flex-col gap-4 justify-center items-center my-8 opacity-0',
           textPosition === 'center' ? 'my-10 lg:my-30 mx-10' : 'max-w-125'
         )}
       >

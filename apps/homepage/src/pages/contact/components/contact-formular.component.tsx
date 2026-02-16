@@ -12,6 +12,7 @@ import { Link } from '@/components/link';
 import { links } from '@/navigation-entries';
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
 import { TextContent } from '@/components/text.component';
+import { Header } from '@/components/header.component';
 
 const contactResolver = classValidatorResolver(ContactSchema);
 
@@ -38,12 +39,10 @@ export default function ContactFormular() {
   return (
     <>
       <form onSubmit={(e) => void onSubmit(e)} className="w-full space-y-5">
-        <h2 className="text-2xl font-semibold">
-          <Trans>Kontaktformular</Trans>
-        </h2>
+        <Header type="h4">Kontaktformular</Header>
 
         <TextContent className="text-xs">
-          Nutzen Sie gerne das Kontaktformular, um mir eine persoenliche Nachricht zukommen zu lassen. Gerne koennen Sie
+          Nutzen Sie gerne das Kontaktformular, um mir eine persönliche Nachricht zukommen zu lassen. Gerne können Sie
           mich aber auch anrufen oder mir direkt eine E-Mail schreiben.
         </TextContent>
 
@@ -61,7 +60,7 @@ export default function ContactFormular() {
           </div>
           <div className="text-xs italic">
             <p>
-              <Trans>Beim absenden dieses Formulars bestaetigen Sie die Datenschutzbestimmungen.</Trans>
+              <Trans>Beim absenden dieses Formulars bestätigen Sie die Datenschutzbestimmungen.</Trans>
             </p>
 
             <Link href={links.dataSecurity.path} openInNewTab={true} className=" text-xs italic flex mt-2 items-center">

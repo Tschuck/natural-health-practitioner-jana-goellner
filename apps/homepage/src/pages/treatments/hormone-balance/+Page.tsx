@@ -12,12 +12,12 @@ export default function HormonBalanceView() {
   return (
     <>
       <Banner
-        className="lg:mx-8 lg:mb-16 "
+        className="lg:mx-8 lg:mb-8"
         image={FTK_0016}
         textPosition="left"
         bgPosition="bg-top"
         glassEffect="false"
-        minHeight="min-h-[25vh]"
+        minHeight="min-h-[35vh]"
       >
         <Header type="h2">Hormonbalance als Schlüssel zur Gesundheit</Header>
       </Banner>

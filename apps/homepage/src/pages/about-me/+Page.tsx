@@ -3,7 +3,7 @@ import { Header } from '@/components/header.component';
 import { ImageCard } from '@/components/image.component';
 import { TextContent } from '@/components/text.component';
 import { TwoColumns } from '@/components/two-columns.component';
-import FTK_0028 from '@/assets/optimized/FTK_0028.webp';
+import FTK_0029 from '@/assets/optimized/FTK_0029_cut.webp';
 import FTK_0071 from '@/assets/optimized/FTK_0071.webp';
 import { Trans } from '@lingui/react/macro';
 
@@ -13,11 +13,12 @@ export default function AboutMeView() {
       <div className="">
         <Banner
           className="lg:mx-8 lg:mb-16 "
-          image={FTK_0028}
+          image={FTK_0029}
           textPosition="left"
           bgPosition="bg-top"
-          glassEffect="false"
+          glassEffect="true"
           minHeight="min-h-[25vh]"
+          glassBlur="5px"
         >
           <Header type="h2">"Glück ist, wen das Herz tanzt und die Seele singt."</Header>
         </Banner>
@@ -72,7 +73,8 @@ export default function AboutMeView() {
               <TextContent>
                 Über die Jahre folgten zahlreiche Fort- und Weiterbildungen in Akupunktur, Psychosomatik,
                 Hormontherapie, Ernährungsmedizin, Körpertherapie und Gesprächsführung, unter anderem bei renommierten
-                Dozenten wie Anna Blaack, Jens-Peter Salzmann, Dr. Sakae Yoneyama und Franz Thews.
+                Dozenten wie Dr. med. Berndt Rieger, Anna Blaack, Jens-Peter Salzmann, Dr. Sakae Yoneyama und Franz
+                Thews.
               </TextContent>
 
               <TextContent>

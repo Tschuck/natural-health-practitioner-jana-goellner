@@ -11,6 +11,7 @@ import FTK_0043 from '@/assets/optimized/FTK_0043.webp';
 import { links } from '@/navigation-entries';
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
 import { Trans } from '@lingui/react/macro';
+import { Button, ButtonType } from '@/components/button.component';
 
 export default function TreamentsView() {
   const treatments = [
@@ -76,10 +77,16 @@ export default function TreamentsView() {
                 <Header type="b">{treatment.name}</Header>
                 <TextContent>{treatment.description}</TextContent>
 
-                <Link href={treatment.link} className="text-gray-600 mt-8 flex items-center">
+                <Link href={treatment.link} className="text-gray-600 mt-8 items-center hidden lg:flex">
                   <Trans>MEHR ERFAHREN</Trans>
                   <ArrowRightIcon className="size-4 ml-2" />
                 </Link>
+
+                <div className="mt-8 lg:hidden">
+                  <Button type={ButtonType.OUTLINE_GREEN} href={treatment.link}>
+                    <Trans>MEHR ERFAHREN</Trans>
+                  </Button>
+                </div>
               </div>
             </div>
           ))}

@@ -6,8 +6,8 @@ on:
       - main
 
 env:
-  VITE_PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
-  VITE_EMAIL: ${{ secrets.E_MAIL }}
+  VITE_PHONE_NUMBER: ${{ secrets.VITE_PHONE_NUMBER }}
+  VITE_EMAIL: ${{ secrets.VITE_EMAIL }}
   VITE_PUBLIC_URL: https://heilpraktikerin-jana-goellner.de
   VITE_BACKEND_URL: https://heilpraktikerin-jana-goellner.de
 

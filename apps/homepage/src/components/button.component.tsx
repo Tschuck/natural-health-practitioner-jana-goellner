@@ -23,6 +23,7 @@ export interface ButtonProps extends PropsWithChildren {
   disabled?: boolean;
   download?: string;
   target?: string;
+  display?: string;
 }
 
 export function Button({
@@ -37,6 +38,7 @@ export function Button({
   target,
   onClick,
   type,
+  display = 'inline-block',
 }: ButtonProps) {
   const buttonClasses = [className];
   const ButtonElement: ElementType = buttonElement || href ? Link : 'button';
@@ -44,25 +46,25 @@ export function Button({
   switch (type) {
     case ButtonType.ACTION: {
       buttonClasses.push(
-        'inline-block w-full rounded-lg bg-hjg-dark-green px-4 py-2.5 text-sm font-medium text-hjg-whitesmoke transition hover:bg-hjg-dark-green-hover cursor-pointer'
+        'w-full rounded-lg bg-hjg-dark-green px-4 py-2.5 text-sm font-medium text-hjg-whitesmoke transition hover:bg-hjg-dark-green-hover cursor-pointer'
       );
       break;
     }
     case ButtonType.OUTLINE_DARK: {
       buttonClasses.push(
-        'inline-block text-center p-4 border border-dark-gray hover:bg-dark-gray hover:text-hjg-whitesmoke cursor-pointer'
+        'text-center p-4 border border-dark-gray hover:bg-dark-gray hover:text-hjg-whitesmoke cursor-pointer'
       );
       break;
     }
     case ButtonType.OUTLINE_WHITE: {
       buttonClasses.push(
-        'inline-block text-center p-4 border border-hjg-whitesmoke hover:bg-hjg-dark-green-hover hover:text-hjg-whitesmoke cursor-pointer text-hjg-whitesmoke'
+        'text-center p-4 border border-hjg-whitesmoke hover:bg-hjg-dark-green-hover hover:text-hjg-whitesmoke cursor-pointer text-hjg-whitesmoke'
       );
       break;
     }
     case ButtonType.OUTLINE_GREEN: {
       buttonClasses.push(
-        'inline-block text-center p-4 border border-hjg-dark-green hover:bg-hjg-dark-green hover:text-hjg-whitesmoke cursor-pointer'
+        'text-center p-4 border border-hjg-dark-green hover:bg-hjg-dark-green hover:text-hjg-whitesmoke cursor-pointer'
       );
       break;
     }
@@ -74,7 +76,7 @@ export function Button({
     }
     case ButtonType.ICON_PRIMARY: {
       buttonClasses.push(
-        'inline-block text-center justify-center w-10 h-10 rounded-full bg-primary border hover:primary-hover text-hjg-whitesmoke'
+        'text-center justify-center w-10 h-10 rounded-full bg-primary border hover:primary-hover text-hjg-whitesmoke'
       );
       break;
     }
@@ -82,9 +84,12 @@ export function Button({
       buttonClasses.push(
         'text-center items-center justify-center min-w-10 min-h-10 rounded-full border hover:bg-gray-100 text-hjg-dark-green border-hjg-dark-green hover:bg-hjg-dark-green hover:text-hjg-whitesmoke'
       );
+      display = 'flex';
       break;
     }
   }
+
+  buttonClasses.push(display);
 
   return (
     <>

@@ -5,6 +5,7 @@
     "dev": "vike dev",
     "lingui:extract": "lingui extract",
     "lint": "eslint .",
+    "optimize-images": "sharp -i './src/assets/*.jpg' -o ./src/assets/optimized/ -f webp -q 80",
     "pre:build": "pnpm lingui:extract",
     "pre:dev": "pnpm lingui:extract",
     "preview": "vike build && vike preview"

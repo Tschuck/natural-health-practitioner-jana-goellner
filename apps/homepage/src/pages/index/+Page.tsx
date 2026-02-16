@@ -1,6 +1,6 @@
 import FTK_0008 from '@/assets/optimized/FTK_0008.webp';
 import FTK_0010 from '@/assets/optimized/FTK_0010.webp';
-import FTK_0037 from '@/assets/optimized/FTK_0037.webp';
+import FTK_0043 from '@/assets/optimized/FTK_0043.webp';
 import FTK_0047 from '@/assets/optimized/FTK_0047.webp';
 import FTK_0050 from '@/assets/optimized/FTK_0050.webp';
 import FTK_0056 from '@/assets/optimized/FTK_0056.webp';
@@ -23,7 +23,14 @@ export default function IndexPage() {
   return (
     <main className="min-h-screen flex flex-col">
       {/** section 1 */}
-      <Banner className="lg:mx-8 " image={FTK_0047} textPosition="left" bgPosition="bg-top" glassEffect="true">
+      <Banner
+        className="lg:mx-8 text-hjg-dark-green"
+        image={FTK_0047}
+        textPosition="left"
+        bgPosition="bg-top"
+        imageClass="opacity-70"
+        glassEffect="true"
+      >
         <TextContent className="text-sm">Naturheilpraxis für Hormonbalance & Psychosomatik</TextContent>
         <Header type="h2">Zurück in Ihre innere Balance – ganzheitlich & individuell begleitet</Header>
         <TextContent className="text-base">
@@ -70,10 +77,7 @@ export default function IndexPage() {
               </TextContent>
               <div className="flex lg:block">
                 <Header type="h2">
-                  <Trans>Therapieformen &</Trans>
-                </Header>
-                <Header type="h2">
-                  <Trans>Schwerpunkte</Trans>
+                  <Trans>Therapieformen & Schwerpunkte</Trans>
                 </Header>
               </div>
 
@@ -143,7 +147,7 @@ export default function IndexPage() {
                 className="absolute z-0 w-[50%] h-[50%] left-[0%] lg:left-[5%] top-[5%]"
               />
               <ImageCard
-                image={FTK_0037}
+                image={FTK_0043}
                 size="custom"
                 className="absolute z-5 w-[50%] h-[50%] left-[35%] lg:left-[45%] top-[45%]"
               />
@@ -181,7 +185,7 @@ export default function IndexPage() {
                 </Trans>
               </TextContent>
 
-              <div className="flex items-center justify-center mt-8 lg:mt-0">
+              <div className="flex items-start justify-start mt-8 lg:mt-0">
                 <div>
                   <Button type={ButtonType.OUTLINE_GREEN} href={links.aboutMe.path}>
                     <Trans>Mehr erfahren</Trans>
@@ -313,7 +317,7 @@ export default function IndexPage() {
                   </Trans>
                 </TextContent>
                 <TextContent className="italic">
-                  <Trans>-- Patientin, 34 Jahre</Trans>
+                  <Trans>-- Lisa, 34 Jahre</Trans>
                 </TextContent>
               </div>
             </>
@@ -332,7 +336,7 @@ export default function IndexPage() {
                   </Trans>
                 </TextContent>
                 <TextContent className="italic">
-                  <Trans>-- Patient, 38 Jahre</Trans>
+                  <Trans>-- Julia, 38 Jahre</Trans>
                 </TextContent>
               </div>
               <div className="mt-8">
@@ -346,7 +350,7 @@ export default function IndexPage() {
                   </Trans>
                 </TextContent>
                 <TextContent className="italic">
-                  <Trans>-- Patient, 32 Jahre</Trans>
+                  <Trans>-- Tobias, 32 Jahre</Trans>
                 </TextContent>
               </div>
             </>
@@ -355,8 +359,8 @@ export default function IndexPage() {
       </section>
 
       {/** section 9 */}
-      <section className="shadow-md lg:py-16">
-        {/* <TwoColumns
+      {/* <section className="shadow-md lg:py-16"> */}
+      {/* <TwoColumns
           left={<ContactFormular />}
           rightClass={'p-0 aspect-3/4 max-w-[500px] lg:max-w-[650px] lg:max-h-none'}
           right={
@@ -365,8 +369,8 @@ export default function IndexPage() {
             </>
           }
         /> */}
-        <ContactView />
-      </section>
+      <ContactView />
+      {/* </section> */}
     </main>
   );
 }

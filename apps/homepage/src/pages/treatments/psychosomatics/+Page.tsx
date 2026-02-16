@@ -13,7 +13,7 @@ export default function PsychosomatcsView() {
   return (
     <>
       <Banner
-        className="lg:mx-8 lg:mb-16 text-black"
+        className="lg:mx-8 lg:mb-8 text-hjg-whitesmoke"
         image={Herbal}
         textPosition="left"
         bgPosition="bg-top"

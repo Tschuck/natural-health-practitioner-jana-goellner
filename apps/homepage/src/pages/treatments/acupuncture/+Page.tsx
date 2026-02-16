@@ -14,7 +14,7 @@ export default function AcupunctureView() {
   return (
     <>
       <Banner
-        className="lg:mx-8 lg:mb-16 text-hjg-whitesmoke"
+        className="lg:mx-8 lg:mb-8 text-hjg-whitesmoke"
         image={FTK_0043}
         textPosition="left"
         bgPosition="bg-right"
@@ -89,13 +89,17 @@ export default function AcupunctureView() {
               Anamnese sorgfältig abgeklärt.
             </TextContent>
 
-            <div className="mt-8">
-              <Button className="mr-4" type={ButtonType.OUTLINE_GREEN} href={links.treatments.path}>
-                <Trans>Zurück zu allen Behandlungen</Trans>
-              </Button>
-              <Button type={ButtonType.FILLED_GREEN} href={links.contact.path}>
-                <Trans>Termin vereinbaren</Trans>
-              </Button>
+            <div className="flex flex-col lg:flex-row gap-4 mt-8">
+              <div>
+                <Button className="mr-4" type={ButtonType.OUTLINE_GREEN} href={links.treatments.path}>
+                  <Trans>Zurück zu allen Behandlungen</Trans>
+                </Button>
+              </div>
+              <div>
+                <Button type={ButtonType.FILLED_GREEN} href={links.contact.path}>
+                  <Trans>Termin vereinbaren</Trans>
+                </Button>
+              </div>
             </div>
           </div>
         }

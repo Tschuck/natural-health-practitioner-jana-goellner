@@ -16,31 +16,24 @@ export function CookieDisclaimer() {
   return (
     <div>
       {show && !accepted && (
-        <div className="fixed z-20">
-          <div className="fixed p-3 text-justify text-white shadow-xl left-0 right-0 md:left-[20%] md:right-[20%] z-50 bg-hjg-light-green bottom-4">
-            <small className="text-xs">
-              <Trans id="data-security.cookie-disclaimer">
-                <Trans>
-                  Diese Website verwendet Cookies. Es werden nur technisch notwendige Cookies in Ihrem Browser
-                  gespeichert, da sie für das Funktionieren grundlegender Funktionalitäten der Website unerlässlich
-                  sind.
-                </Trans>
+        <div className="fixed p-3 text-justify shadow-2xl left-0 right-0 md:left-[20%] md:right-[20%] z-50 bg-hjg-dark-green bottom-4 text-hjg-whitesmoke">
+          <small className="text-xs">
+            <Trans id="data-security.cookie-disclaimer">
+              <Trans>
+                Diese Website verwendet Cookies. Es werden nur technisch notwendige Cookies in Ihrem Browser
+                gespeichert, da sie für das Funktionieren grundlegender Funktionalitäten der Website unerlässlich sind.
               </Trans>
-            </small>
+            </Trans>
+          </small>
 
-            <div className="flex justify-end gap-4 px-8 pt-2 text-xs">
-              <Button
-                className="text-white button primary hover:text-primary"
-                href={links.dataSecurity.path}
-                type={ButtonType.OUTLINE_DARK}
-              >
-                <Trans>Mehr lesen</Trans>
-              </Button>
+          <div className="flex justify-end gap-4 px-8 pt-2 text-xs">
+            <Button href={links.dataSecurity.path} type={ButtonType.OUTLINE_GREEN}>
+              <Trans>Mehr lesen</Trans>
+            </Button>
 
-              <Button onClick={accept} type={ButtonType.OUTLINE_DARK}>
-                <Trans>Ok</Trans>
-              </Button>
-            </div>
+            <Button onClick={accept} type={ButtonType.OUTLINE_GREEN}>
+              <Trans>Ok</Trans>
+            </Button>
           </div>
         </div>
       )}

@@ -1,13 +1,17 @@
 import { BaseComponentProps } from '@/types/component-props.type';
 import { classNames } from '@/utils/utils';
 
-export function GlassOverlay({ className, style }: BaseComponentProps) {
+interface GlassOverlayProps extends BaseComponentProps {
+  blur?: string;
+}
+
+export function GlassOverlay({ blur = '10px', className, style }: GlassOverlayProps) {
   return (
     <div
       className={classNames(className, 'absolute inset-0')}
       style={{
         backgroundColor: 'rgba(255, 255, 255, 0.1)',
-        backdropFilter: 'blur(10px)',
+        backdropFilter: `blur(${blur})`,
         ...style,
       }}
     />

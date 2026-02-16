@@ -10,7 +10,7 @@ export function useContactMutation() {
     mutationKey: ['todos'],
     mutationFn: async (contact: ContactSchema) => {
       try {
-        const result = await axios.post(`${config.backendUrl}/contact`, contact, {
+        const result = await axios.post(`${config.backendUrl}/api/contact`, contact, {
           headers: { 'Content-Type': 'application/json' },
           timeout: 5000, // optional
         });
