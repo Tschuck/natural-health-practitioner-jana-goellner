@@ -35,8 +35,8 @@ jobs:
           username: ${{ vars.SCP_USERNAME }}
           key: ${{ secrets.SCP_KEY }}
           port: ${{ vars.SCP_PORT }}
-          source: .deploy/dist/homepage
+          source: .deploy
           strip_components: 1
           overwrite: true
           rm: true
-          target: /home/bitnami/projects/natural-health-practitioner-jana-goellner/dist/homepage
+          target: /home/bitnami/projects/natural-health-practitioner-jana-goellner
