@@ -26,6 +26,8 @@ jobs:
       - run: pnpm run build
       - run: pnpm run prepare:deploy
 
+      # we just copy frontend files for now, backend needs manual restart
+      # (currently not so often deployed)
       - name: copy file via ssh key
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -33,7 +35,8 @@ jobs:
           username: ${{ vars.SCP_USERNAME }}
           key: ${{ secrets.SCP_KEY }}
           port: ${{ vars.SCP_PORT }}
-          source: .deploy
+          source: .deploy/dist/homepage
           strip_components: 1
           overwrite: true
-          target: /home/bitnami/projects/natural-health-practitioner-jana-goellner
+          rm: true
+          target: /home/bitnami/projects/natural-health-practitioner-jana-goellner/dist/homepage
