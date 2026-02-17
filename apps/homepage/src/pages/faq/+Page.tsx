@@ -4,7 +4,6 @@ import { TextContent } from '@/components/text.component';
 import { TwoColumns } from '@/components/two-columns.component';
 import { links } from '@/navigation-entries';
 import { Trans } from '@lingui/react/macro';
-import PreperationSheet from '@/assets/pdfs/Vorbereitungsbogen.pdf';
 
 export default function FaqView() {
   return (
@@ -97,12 +96,7 @@ export default function FaqView() {
                 bereits vor dem ersten Termin ein ganzheitliches Bild zu machen.
               </TextContent>
               <div>
-                <Button
-                  type={ButtonType.OUTLINE_GREEN}
-                  href={PreperationSheet}
-                  download="Vorbereitungsbogen"
-                  target="_blank"
-                >
+                <Button type={ButtonType.OUTLINE_GREEN} href={links.downloads.path}>
                   <Trans>{links.downloads.name}</Trans>
                 </Button>
               </div>

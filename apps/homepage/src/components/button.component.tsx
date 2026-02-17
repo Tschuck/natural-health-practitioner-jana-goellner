@@ -46,31 +46,29 @@ export function Button({
   switch (type) {
     case ButtonType.ACTION: {
       buttonClasses.push(
-        'w-full rounded-lg bg-hjg-dark-green px-4 py-2.5 text-sm font-medium text-hjg-whitesmoke transition hover:bg-hjg-dark-green-hover cursor-pointer'
+        'w-full rounded-lg bg-hjg-dark-green px-4 py-2.5 text-sm font-medium text-hjg-whitesmoke transition hover:bg-hjg-dark-green-hover'
       );
       break;
     }
     case ButtonType.OUTLINE_DARK: {
-      buttonClasses.push(
-        'text-center p-4 border border-dark-gray hover:bg-dark-gray hover:text-hjg-whitesmoke cursor-pointer'
-      );
+      buttonClasses.push('text-center p-4 border border-dark-gray hover:bg-dark-gray hover:text-hjg-whitesmoke');
       break;
     }
     case ButtonType.OUTLINE_WHITE: {
       buttonClasses.push(
-        'text-center p-4 border border-hjg-whitesmoke hover:bg-hjg-dark-green-hover hover:text-hjg-whitesmoke cursor-pointer text-hjg-whitesmoke'
+        'text-center p-4 border border-hjg-whitesmoke hover:bg-hjg-dark-green-hover hover:text-hjg-whitesmoke text-hjg-whitesmoke'
       );
       break;
     }
     case ButtonType.OUTLINE_GREEN: {
       buttonClasses.push(
-        'text-center p-4 border border-hjg-dark-green hover:bg-hjg-dark-green hover:text-hjg-whitesmoke cursor-pointer'
+        'text-center p-4 border border-hjg-dark-green hover:bg-hjg-dark-green hover:text-hjg-whitesmoke'
       );
       break;
     }
     case ButtonType.FILLED_GREEN: {
       buttonClasses.push(
-        'text-center p-4 border border-hjg-dark-green bg-hjg-dark-green hover:bg-hjg-dark-green-hover text-hjg-whitesmoke cursor-pointer'
+        'text-center p-4 border border-hjg-dark-green bg-hjg-dark-green hover:bg-hjg-dark-green-hover text-hjg-whitesmoke'
       );
       break;
     }
@@ -90,6 +88,12 @@ export function Button({
   }
 
   buttonClasses.push(display);
+
+  if (disabled) {
+    buttonClasses.push('opacity-50');
+  } else {
+    buttonClasses.push('cursor-pointer');
+  }
 
   return (
     <>

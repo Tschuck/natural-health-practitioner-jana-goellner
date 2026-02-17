@@ -5,6 +5,7 @@ import { FastifyAdapter, NestFastifyApplication } from '@nestjs/platform-fastify
 import { AppModule } from '@/app.module';
 import { HttpConfig } from '@/config/http.config';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import { AppConfig, BackendEnv } from '@/config/app.config';
 
 async function bootstrap() {
   const packagePath = resolve(process.cwd(), 'package.json');
@@ -22,13 +23,12 @@ async function bootstrap() {
   });
 
   // Enable CORS
+  const appConfig = app.get(AppConfig);
+  const { host, port, publicUrl = `http://${host}:${port}` } = app.get(HttpConfig);
   app.enableCors({
-    origin: '*',
+    origin: appConfig.env === BackendEnv.development.toString() ? '*' : process.env.HTTP_PUBLIC_URL,
     methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS', 'PATCH'],
   });
-
-  // Load the configuration
-  const { host, port, publicUrl = `http://${host}:${port}` } = app.get(HttpConfig);
 
   // Configure the OpenAPI documentation
   const openApiConfigBuilder = new DocumentBuilder();

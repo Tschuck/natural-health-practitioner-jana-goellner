@@ -11,7 +11,7 @@ export enum BackendEnv {
 class AppConfigDefinition {
   @IsEnum(BackendEnv)
   @IsOptional()
-  public env = process.env.NODE_ENV ?? BackendEnv.development;
+  public env = process.env.NODE_ENV ?? BackendEnv.production;
 }
 
 @Injectable()

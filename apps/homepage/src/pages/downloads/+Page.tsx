@@ -4,9 +4,8 @@ import { ImageCard } from '@/components/image.component';
 import { TextContent } from '@/components/text.component';
 import { TwoColumns } from '@/components/two-columns.component';
 import FTK_0020 from '@/assets/optimized/FTK_0020.webp';
-import FTK_0043 from '@/assets/optimized/FTK_0043.webp';
-import InfoAcupuncture from '@/assets/pdfs/Info-Akupunkturbehandlung.pdf';
-import PreperationSheet from '@/assets/pdfs/Vorbereitungsbogen.pdf';
+import PreperationSheetDownload from '@/assets/pdfs/Vorbereitungsbogen HP Hormone.pdf';
+import MonthlyCicleDownload from '@/assets/pdfs/Monatszyklus.pdf';
 import { Trans } from '@lingui/react/macro';
 
 export default function DownloadsView() {
@@ -16,16 +15,10 @@ export default function DownloadsView() {
       description: `Dieser Bogen dient als Grundlage für unsere gemeinsame Arbeit. Er hilft Ihnen, Ihre Beschwerden, bisherigen Erfahrungen, Vorerkrankungen, Medikamente und Wünsche in Ruhe zu erfassen.
 Ihre Angaben ermöglichen mir eine umfassende und ganzheitliche Einschätzung und schaffen eine wertvolle Basis für eine individuelle und zielführende Behandlung.`,
       image: FTK_0020,
-      link: PreperationSheet,
-      downloadName: 'Vorbereitungsbogen.pdf',
-    },
-    {
-      name: 'Informationen zur Akupunkturbehandlung',
-      description: `In diesem Dokument finden Sie wichtige Hinweise rund um die Akupunktur: Ablauf der Behandlung, mögliche Reaktionen, Verhalten vor und nach der Sitzung sowie Kontraindikationen.
-      Der Bogen unterstützt Sie dabei, gut informiert in die Behandlung zu gehen und Ihren Körper bestmöglich auf die Akupunktur vorzubereiten.`,
-      image: FTK_0043,
-      link: InfoAcupuncture,
-      downloadName: 'Info-Akupunkturbehandlung.pdf',
+      downloads: [
+        { link: PreperationSheetDownload, downloadName: 'Vorbereitungsbogen HP Hormone.pdf' },
+        { link: MonthlyCicleDownload, downloadName: 'Monatszyklus.pdf' },
+      ],
     },
   ];
 
@@ -67,10 +60,19 @@ Ihre Angaben ermöglichen mir eine umfassende und ganzheitliche Einschätzung un
               <>
                 <Header type="b">{card.name}</Header>
                 <TextContent>{card.description}</TextContent>
-                <div>
-                  <Button type={ButtonType.OUTLINE_GREEN} href={card.link} download={card.downloadName} target="_blank">
-                    <Trans>Download</Trans>
-                  </Button>
+                <div className="flex flex-col gap-4">
+                  {card.downloads.map((download) => (
+                    <div key={download.downloadName}>
+                      <Button
+                        type={ButtonType.OUTLINE_GREEN}
+                        href={download.link}
+                        download={download.downloadName}
+                        target="_blank"
+                      >
+                        <Trans>Download</Trans> - {download.downloadName}
+                      </Button>
+                    </div>
+                  ))}
                 </div>
               </>
             }

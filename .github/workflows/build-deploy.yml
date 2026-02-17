@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 env:
   VITE_PHONE_NUMBER: ${{ secrets.VITE_PHONE_NUMBER }}
@@ -12,7 +13,22 @@ env:
   VITE_BACKEND_URL: https://heilpraktikerin-jana-goellner.de
 
 jobs:
-  build-deploy:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: 'package.json'
+          cache: 'pnpm'
+
+      - run: pnpm install
+      - run: pnpm run build
+
+  deploy:
+    if: github.event_name == 'workflow_dispatch'
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

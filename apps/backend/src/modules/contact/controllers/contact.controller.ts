@@ -33,13 +33,15 @@ export class ContactController {
     },
   })
   public async contact(@Body() contact: ContactDto) {
+    console.log(`Sending contact request: ${new Date().toString()}`);
+
     await this.nodemailerTransport.sendMail({
       from: `"Homepage backend" <from: <${this.protonConfig.backendEmail}>`,
       to: this.protonConfig.infoEmail,
       subject: `Kontaktanfrage: ${contact.name}`,
       replyTo: contact.email,
       text: `
-Du hast eine neue Kontaktanfrage ueber die Homepage erhalten.
+Du hast eine neue Kontaktanfrage über die Homepage erhalten.
 
 ---
 

@@ -41,7 +41,7 @@ export default function IndexPage() {
         </TextContent>
 
         <div className="mt-4">
-          <Button type={ButtonType.FILLED_GREEN}>
+          <Button type={ButtonType.FILLED_GREEN} href={links.contact.path}>
             <Trans>Jetzt Erstgespräch vereinbaren</Trans>
           </Button>
         </div>

@@ -161,6 +161,16 @@ export default function ImprintView() {
         <Header type="b">Bilder</Header>
         <TextContent> Flashlight tk, Fotograf Tobias Kromke, Sophienstrasse 41, 99817 Eisenach</TextContent>
       </div>
+      <div className="mt-8">
+        <Header type="b">Homepage Design</Header>
+        <TextContent>Julia Celiker</TextContent>
+      </div>
+
+      <div className="mt-8">
+        <Header type="b">Homepage Implementierung</Header>
+        <a href="">Tobias Winkler</a>
+        <a href="https://github.com/Tschuck/natural-health-practitioner-jana-goellner">Github</a>
+      </div>
     </div>
   );
 }

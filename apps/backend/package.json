@@ -15,18 +15,16 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@fastify/static": "^9.0.0",
     "@nestjs/common": "^11.0.1",
     "@nestjs/core": "^11.0.1",
-    "@nestjs/platform-express": "^11.0.1",
     "@nestjs/platform-fastify": "^11.1.12",
-    "@nestjs/serve-static": "^5.0.4",
     "@nestjs/swagger": "^11.2.5",
     "@nestjs/terminus": "^11.0.0",
     "@nestjs/throttler": "^6.5.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.3",
     "dotenv": "^17.2.3",
+    "fastify": "^5.7.4",
     "nodemailer": "^7.0.13",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"

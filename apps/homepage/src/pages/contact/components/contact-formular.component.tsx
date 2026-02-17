@@ -4,7 +4,6 @@ import { useForm } from 'react-hook-form';
 import { useContactMutation } from '@/pages/contact/queries/post-contact.query';
 import { ContactSchema } from '@/pages/contact/schemas/contact.dto';
 import { classValidatorResolver } from '@hookform/resolvers/class-validator';
-import { msg } from '@lingui/core/macro';
 import { Trans } from '@lingui/react/macro';
 import { toast } from 'sonner';
 import { Button, ButtonType } from '@/components/button.component';
@@ -33,7 +32,8 @@ export default function ContactFormular() {
   const onSubmit = formRef.handleSubmit(async (data) => {
     await requestContact(data);
 
-    toast.success(msg`Kontaktinformationen wurden erfolgreich abgeschickt.`.message, {});
+    toast.success('Kontaktinformationen wurden erfolgreich abgeschickt.', {});
+    formRef.reset();
   });
 
   return (

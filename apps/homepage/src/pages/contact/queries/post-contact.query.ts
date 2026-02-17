@@ -1,6 +1,5 @@
 import config from '@/config/config';
 import { ContactSchema } from '@/pages/contact/schemas/contact.dto';
-import { msg } from '@lingui/core/macro';
 import { useMutation } from '@tanstack/react-query';
 import axios, { HttpStatusCode } from 'axios';
 import { toast } from 'sonner';
@@ -23,8 +22,8 @@ export function useContactMutation() {
       } catch (ex) {
         console.log(config.email);
         toast.error(
-          msg`Es gab einen Fehler beim absenden des Formulars. Bitte versuchen Sie es erneut, oder wenden Sie sich direkt per E-Mail an mich: `
-            .message + config.email
+          'Es gab einen Fehler beim absenden des Formulars. Bitte versuchen Sie es erneut in 5 Minuten, oder wenden Sie sich direkt per E-Mail an mich: ' +
+            config.email
         );
 
         console.error(ex);
