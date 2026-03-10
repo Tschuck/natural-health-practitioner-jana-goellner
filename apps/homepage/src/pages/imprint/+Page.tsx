@@ -4,10 +4,11 @@ import config from '@/config/config';
 import { EnvelopeIcon, GlobeAltIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/solid';
 import { Trans } from '@lingui/react/macro';
 import HealthPractitionerIcon from '@/assets/verband-heilpraktiker.svg';
+import { Button, ButtonType } from '@/components/button.component';
 
 export default function ImprintView() {
   return (
-    <div className="flex flex-col gap-4 p-4 lg:px-16 lg:max-w-300">
+    <div className="flex flex-col gap-4 p-4 max-w-100 lg:px-16 lg:max-w-300 wrap-break-word">
       <Header type="h2">Impressum</Header>
       <p>
         <Trans>Angaben gemäß §§ 5 und 6 DDG</Trans>
@@ -161,15 +162,19 @@ export default function ImprintView() {
         <Header type="b">Bilder</Header>
         <TextContent> Flashlight tk, Fotograf Tobias Kromke, Sophienstrasse 41, 99817 Eisenach</TextContent>
       </div>
-      <div className="mt-8">
-        <Header type="b">Homepage Design</Header>
-        <TextContent>Julia Celiker</TextContent>
-      </div>
 
-      <div className="mt-8">
+      <div className="mt-8 flex flex-col gap-2">
         <Header type="b">Homepage Implementierung</Header>
-        <a href="">Tobias Winkler</a>
-        <a href="https://github.com/Tschuck/natural-health-practitioner-jana-goellner">Github</a>
+        <a href="https://www.linkedin.com/in/tobias-winkler-a4ab89151">Tobias Winkler</a>
+        <div>
+          <Button
+            type={ButtonType.OUTLINE_GREEN}
+            href="https://github.com/Tschuck/natural-health-practitioner-jana-goellner"
+            target="_blank"
+          >
+            <Trans>In Github ansehen</Trans>
+          </Button>
+        </div>
       </div>
     </div>
   );

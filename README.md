@@ -13,7 +13,7 @@ This project is a full-stack web application for a German natural health practic
 - Psychosomatic care
 - And various other holistic treatments
 
-## 🏗️ Project Structure
+## Project Structure
 
 This is a monorepo containing:
 
@@ -56,12 +56,12 @@ natural-health-practitioner-jana-goellner/
 - **Git Hooks**: Husky with lint-staged
 - **Commit Convention**: Conventional Commits with Commitizen
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js (v18 or higher)
 - pnpm (v10.12.4 or higher)
 
-## 🛠️ Installation
+## Installation
 
 ```bash
 # Install dependencies
@@ -71,7 +71,7 @@ pnpm install
 pnpm prepare
 ```
 
-## 💻 Development
+## Development
 
 ```bash
 # Run both frontend and backend in development mode
@@ -89,7 +89,7 @@ The development servers will start:
 - Frontend: typically on `http://localhost:5173`
 - Backend API: check backend configuration
 
-## 🏗️ Building for Production
+## Building for Production
 
 ```bash
 # Build both applications
@@ -158,7 +158,7 @@ Commit types:
 - `test`: Test changes
 - `chore`: Build process or auxiliary tool changes
 
-## 📦 Project Scripts
+## Project Scripts
 
 ### Root Level
 
@@ -184,17 +184,17 @@ Commit types:
 
 ## Features
 
-- ✅ Server-Side Rendering (SSR) with Vike
-- ✅ Fully responsive design (mobile-first)
-- ✅ Multi-language support (German)
-- ✅ Contact form with email integration
-- ✅ Treatment information pages
-- ✅ Patient testimonials
-- ✅ About page with practice philosophy
-- ✅ Modern component-based architecture
-- ✅ SEO optimized
-- ✅ Performance optimized with React 19
-- ✅ Type-safe with TypeScript
+- Server-Side Rendering (SSR) with Vike
+- Fully responsive design (mobile-first)
+- Multi-language support (German)
+- Contact form with email integration
+- Treatment information pages
+- Patient testimonials
+- About page with practice philosophy
+- Modern component-based architecture
+- SEO optimized
+- Performance optimized with React 19
+- Type-safe with TypeScript
 
 ## License
 

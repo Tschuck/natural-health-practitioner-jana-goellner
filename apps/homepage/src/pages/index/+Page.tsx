@@ -77,7 +77,25 @@ export default function IndexPage() {
               </TextContent>
               <div className="flex lg:block">
                 <Header type="h2">
-                  <Trans>Therapieformen & Schwerpunkte</Trans>
+                  <Trans>Schwerpunkte</Trans>
+                </Header>
+              </div>
+
+              <List
+                entries={[
+                  'Schilddrüsengesundheit',
+                  'Erschöpfung',
+                  'Kinderwunsch',
+                  'Zyklusbeschwerden',
+                  'Wechseljahresbeschwerden',
+                  'Testosteronmangel',
+                  'Pschosomatische Beschwerden (Schlafprobleme, Verdauungsbeschwerden, Magenprobleme u.a.)',
+                ]}
+              />
+
+              <div className="flex lg:block mt-4">
+                <Header type="h2">
+                  <Trans>Therapieformen</Trans>
                 </Header>
               </div>
 
@@ -119,7 +137,7 @@ export default function IndexPage() {
             <>
               <Header type="h2">Wie Therapie helfen kann</Header>
               <TextContent>
-                Manche Beschwerden entstehen nicht „einfach so". Sie sind oft Ausdruck eines Körpers, der aus dem
+                Viele Beschwerden entstehen nicht „einfach so". Sie sind oft Ausdruck eines Körpers, der aus dem
                 Gleichgewicht geraten ist – hormonell, nervlich oder emotional. Stress, Überforderung, unverarbeitete
                 Erfahrungen oder langanhaltende Belastungen können sich auf vielfältige Weise zeigen: in Erschöpfung,
                 Schlafstörungen, Zyklusproblemen, innerer Unruhe oder psychosomatischen Symptomen.
@@ -317,7 +335,7 @@ export default function IndexPage() {
                   </Trans>
                 </TextContent>
                 <TextContent className="italic">
-                  <Trans>-- Lisa, 34 Jahre</Trans>
+                  <Trans>— Lisa, 34 Jahre</Trans>
                 </TextContent>
               </div>
             </>
@@ -336,7 +354,7 @@ export default function IndexPage() {
                   </Trans>
                 </TextContent>
                 <TextContent className="italic">
-                  <Trans>-- Julia, 38 Jahre</Trans>
+                  <Trans>— Julia, 38 Jahre</Trans>
                 </TextContent>
               </div>
               <div className="mt-8">
@@ -350,7 +368,7 @@ export default function IndexPage() {
                   </Trans>
                 </TextContent>
                 <TextContent className="italic">
-                  <Trans>-- Tobias, 32 Jahre</Trans>
+                  <Trans>— Tobias, 32 Jahre</Trans>
                 </TextContent>
               </div>
             </>
@@ -358,19 +376,7 @@ export default function IndexPage() {
         />
       </section>
 
-      {/** section 9 */}
-      {/* <section className="shadow-md lg:py-16"> */}
-      {/* <TwoColumns
-          left={<ContactFormular />}
-          rightClass={'p-0 aspect-3/4 max-w-[500px] lg:max-w-[650px] lg:max-h-none'}
-          right={
-            <>
-              <ImageCard image={FTK_0081} size="custom" className="absolute z-0 w-[90%] h-[90%] left-[5%] top-[5%]" />
-            </>
-          }
-        /> */}
       <ContactView />
-      {/* </section> */}
     </main>
   );
 }

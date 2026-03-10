@@ -1,4 +1,4 @@
-# Homepage - Heilpraktikrein Jana Goellner
+# Homepage - Heilpraktikrein Jana Göllner
 
 Homepage for a midwife and Alternative practitioner from germany, thuringia. Visit the deployed homepage here:
 

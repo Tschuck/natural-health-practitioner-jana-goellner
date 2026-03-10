@@ -1,4 +1,4 @@
-# Natural health practitioner Jana Goellner - Backend
+# Natural health practitioner Jana Göllner - Backend
 
 ## Description
 

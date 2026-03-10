@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2026-02-16 19:58+0100\n"
+"POT-Creation-Date: 2026-02-18 13:41+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,27 +13,27 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/index/+Page.tsx:339
-msgid "-- Julia, 38 Jahre"
-msgstr "-- Julia, 38 Jahre"
+#: src/pages/index/+Page.tsx:357
+msgid "— Julia, 38 Jahre"
+msgstr "— Julia, 38 Jahre"
 
-#: src/pages/index/+Page.tsx:320
-msgid "-- Lisa, 34 Jahre"
-msgstr "-- Lisa, 34 Jahre"
+#: src/pages/index/+Page.tsx:338
+msgid "— Lisa, 34 Jahre"
+msgstr "— Lisa, 34 Jahre"
 
-#: src/pages/index/+Page.tsx:353
-msgid "-- Tobias, 32 Jahre"
-msgstr "-- Tobias, 32 Jahre"
+#: src/pages/index/+Page.tsx:371
+msgid "— Tobias, 32 Jahre"
+msgstr "— Tobias, 32 Jahre"
 
-#: src/pages/index/+Page.tsx:312
+#: src/pages/index/+Page.tsx:330
 msgid "„Ich bin wegen chronischer Verspannungen und Kopfschmerzen gekommen. Die Akupunktur war sehr sanft und gleichzeitig erstaunlich wirkungsvoll. Schon nach wenigen Sitzungen waren die Beschwerden deutlich reduziert. Besonders schätze ich die ruhige, zugewandte Art und die Zeit, die sich hier wirklich genommen wird.\""
 msgstr "„Ich bin wegen chronischer Verspannungen und Kopfschmerzen gekommen. Die Akupunktur war sehr sanft und gleichzeitig erstaunlich wirkungsvoll. Schon nach wenigen Sitzungen waren die Beschwerden deutlich reduziert. Besonders schätze ich die ruhige, zugewandte Art und die Zeit, die sich hier wirklich genommen wird.\""
 
-#: src/pages/index/+Page.tsx:345
+#: src/pages/index/+Page.tsx:363
 msgid "„Ich kam mit erhöhtem Blutdruck, Muskelverspannungen und auffälligen Blutwerten. Wir haben alle Ursachen abgetestet und mit Hilfe eines Bluttests, meine Schwachpunkte gefunden. Die Ernährungstipps und Empfehlungen zu Nahrungsergänzung waren sehr hilfreich. Mein Blutdruck hat sich stabilisiert und die Verspannungen sind dank Akupunktur besser geworden.\""
 msgstr "„Ich kam mit erhöhtem Blutdruck, Muskelverspannungen und auffälligen Blutwerten. Wir haben alle Ursachen abgetestet und mit Hilfe eines Bluttests, meine Schwachpunkte gefunden. Die Ernährungstipps und Empfehlungen zu Nahrungsergänzung waren sehr hilfreich. Mein Blutdruck hat sich stabilisiert und die Verspannungen sind dank Akupunktur besser geworden.\""
 
-#: src/pages/index/+Page.tsx:330
+#: src/pages/index/+Page.tsx:348
 msgid "„Ich kam mit starker Erschöpfung, Zyklusproblemen und dem Gefühl, dass mein Körper nicht mehr ‚richtig funktioniert‘. Schon nach den ersten Terminen hatte ich das erste Mal das Gefühl, wirklich gesehen zu werden. Die ganzheitliche Herangehensweise, die ausführlichen Erklärungen und der individuell abgestimmte Therapieplan haben mir sehr geholfen. Heute fühle ich mich wieder deutlich stabiler, energiegeladener und verbundener mit meinem Körper.“"
 msgstr "„Ich kam mit starker Erschöpfung, Zyklusproblemen und dem Gefühl, dass mein Körper nicht mehr ‚richtig funktioniert‘. Schon nach den ersten Terminen hatte ich das erste Mal das Gefühl, wirklich gesehen zu werden. Die ganzheitliche Herangehensweise, die ausführlichen Erklärungen und der individuell abgestimmte Therapieplan haben mir sehr geholfen. Heute fühle ich mich wieder deutlich stabiler, energiegeladener und verbundener mit meinem Körper.“"
 
@@ -45,8 +45,8 @@ msgstr "„Ich kam mit starker Erschöpfung, Zyklusproblemen und dem Gefühl, da
 #: src/components/footer.component.tsx:24
 #: src/components/footer.component.tsx:27
 #: src/components/side-panel.component.tsx:39
-#: src/pages/faq/+Page.tsx:106
-#: src/pages/imprint/+Page.tsx:42
+#: src/pages/faq/+Page.tsx:100
+#: src/pages/imprint/+Page.tsx:43
 msgid "{0}"
 msgstr "{0}"
 
@@ -59,17 +59,13 @@ msgstr "{children}"
 msgid "{entry}"
 msgstr "{entry}"
 
-#: src/pages/imprint/+Page.tsx:116
+#: src/pages/imprint/+Page.tsx:117
 msgid "03695 617401"
 msgstr "03695 617401"
 
 #: src/pages/data-security/+Page.tsx:13
 msgid "1. Verantwortliche Stelle"
 msgstr "1. Verantwortliche Stelle"
-
-#: src/pages/data-security/+Page.tsx:10
-#~ msgid "1. Verantwortlicher"
-#~ msgstr "1. Verantwortlicher"
 
 #: src/pages/data-security/+Page.tsx:240
 msgid "10. Widerruf Ihrer Einwilligung"
@@ -87,33 +83,17 @@ msgstr "12. Aktualität und Änderung dieser Datenschutzerklärung"
 msgid "2. Allgemeine Hinweise zur Datenverarbeitung"
 msgstr "2. Allgemeine Hinweise zur Datenverarbeitung"
 
-#: src/pages/data-security/+Page.tsx:35
-#~ msgid "2. Hosting und Zugriffsdaten"
-#~ msgstr "2. Hosting und Zugriffsdaten"
-
-#: src/pages/data-security/+Page.tsx:50
-#~ msgid "3. Cookies und Tracking"
-#~ msgstr "3. Cookies und Tracking"
-
 #: src/pages/data-security/+Page.tsx:58
 msgid "3. Erhebung und Speicherung personenbezogener Daten beim Besuch der Website"
 msgstr "3. Erhebung und Speicherung personenbezogener Daten beim Besuch der Website"
 
-#: src/pages/imprint/+Page.tsx:96
+#: src/pages/imprint/+Page.tsx:97
 msgid "36433 Bad Salzungen"
 msgstr "36433 Bad Salzungen"
 
 #: src/pages/data-security/+Page.tsx:78
 msgid "4. Hosting und technische Dienstleister"
 msgstr "4. Hosting und technische Dienstleister"
-
-#: src/pages/data-security/+Page.tsx:62
-#~ msgid "4. Kontaktformular"
-#~ msgstr "4. Kontaktformular"
-
-#: src/pages/data-security/+Page.tsx:86
-#~ msgid "5. E-Mail-Kommunikation"
-#~ msgstr "5. E-Mail-Kommunikation"
 
 #: src/pages/data-security/+Page.tsx:94
 msgid "5. Kontaktaufnahme"
@@ -123,45 +103,29 @@ msgstr "5. Kontaktaufnahme"
 msgid "6. Gesundheitsbezogene Daten"
 msgstr "6. Gesundheitsbezogene Daten"
 
-#: src/pages/data-security/+Page.tsx:98
-#~ msgid "6. Ihre Rechte"
-#~ msgstr "6. Ihre Rechte"
-
-#: src/pages/data-security/+Page.tsx:110
-#~ msgid "7. Beschwerderecht"
-#~ msgstr "7. Beschwerderecht"
-
 #: src/pages/data-security/+Page.tsx:161
 msgid "7. Cookies"
 msgstr "7. Cookies"
 
-#: src/pages/data-security/+Page.tsx:119
-#~ msgid "8. Sicherheit"
-#~ msgstr "8. Sicherheit"
-
 #: src/pages/data-security/+Page.tsx:191
 msgid "8. Speicherdauer"
 msgstr "8. Speicherdauer"
-
-#: src/pages/data-security/+Page.tsx:131
-#~ msgid "9. Änderungen"
-#~ msgstr "9. Änderungen"
 
 #: src/pages/data-security/+Page.tsx:204
 msgid "9. Ihre Rechte"
 msgstr "9. Ihre Rechte"
 
 #: src/pages/data-security/+Page.tsx:25
-#: src/pages/imprint/+Page.tsx:31
-#: src/pages/imprint/+Page.tsx:108
+#: src/pages/imprint/+Page.tsx:32
+#: src/pages/imprint/+Page.tsx:109
 msgid "99817 Eisenach"
 msgstr "99817 Eisenach"
 
-#: src/pages/index/+Page.tsx:252
+#: src/pages/index/+Page.tsx:270
 msgid "Achtsamkeit & Wertschätzung"
 msgstr "Achtsamkeit & Wertschätzung"
 
-#: src/pages/imprint/+Page.tsx:13
+#: src/pages/imprint/+Page.tsx:14
 msgid "Angaben gemäß §§ 5 und 6 DDG"
 msgstr "Angaben gemäß §§ 5 und 6 DDG"
 
@@ -191,8 +155,8 @@ msgid "Außerdem haben Sie das Recht, sich bei einer Datenschutzaufsichtsbehörd
 msgstr "Außerdem haben Sie das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren."
 
 #: src/pages/contact/components/contact-formular.component.tsx:63
-msgid "Beim absenden dieses Formulars bestätigen Sie die Datenschutzbestimmungen."
-msgstr "Beim absenden dieses Formulars bestätigen Sie die Datenschutzbestimmungen."
+msgid "Beim Absenden dieses Formulars bestätigen Sie die Datenschutzbestimmungen."
+msgstr "Beim Absenden dieses Formulars bestätigen Sie die Datenschutzbestimmungen."
 
 #: src/pages/data-security/+Page.tsx:61
 msgid "Beim Aufrufen dieser Website werden automatisch Informationen durch den Browser Ihres Endgeräts an den Server der Website gesendet. Diese Informationen werden jedoch nicht gespeichert oder protokolliert. Zu Informationen zum Kontaktformular, lesen Sie bitte Punkt \"5. Kontaktaufnahme\"."
@@ -202,15 +166,11 @@ msgstr "Beim Aufrufen dieser Website werden automatisch Informationen durch den 
 msgid "Berichtigung unrichtiger Daten zu verlangen (Art. 16 DSGVO)"
 msgstr "Berichtigung unrichtiger Daten zu verlangen (Art. 16 DSGVO)"
 
-#: src/pages/imprint/+Page.tsx:37
-#~ msgid "Berufsbezeichnung: Heilpraktikerin"
-#~ msgstr "Berufsbezeichnung: Heilpraktikerin"
-
-#: src/pages/imprint/+Page.tsx:141
+#: src/pages/imprint/+Page.tsx:142
 msgid "Berufsordnung: Berufsordnung für Heilpraktiker"
 msgstr "Berufsordnung: Berufsordnung für Heilpraktiker"
 
-#: src/pages/imprint/+Page.tsx:125
+#: src/pages/imprint/+Page.tsx:126
 msgid "Berufsrechtliche Regelungen:"
 msgstr "Berufsrechtliche Regelungen:"
 
@@ -246,10 +206,6 @@ msgstr "Der Schutz Ihrer personenbezogenen Daten ist mir ein wichtiges Anliegen.
 msgid "der Verarbeitung zu widersprechen (Art. 21 DSGVO)"
 msgstr "der Verarbeitung zu widersprechen (Art. 21 DSGVO)"
 
-#: src/pages/data-security/+Page.tsx:89
-#~ msgid "Die Kontaktanfragen werden per E-Mail über ProtonMail (Ende-zu-Ende-verschlüsselt) versendet. Die E-Mails werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben."
-#~ msgstr "Die Kontaktanfragen werden per E-Mail über ProtonMail (Ende-zu-Ende-verschlüsselt) versendet. Die E-Mails werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben."
-
 #: src/pages/data-security/+Page.tsx:123
 msgid "Die Kontaktanfragen werden per E-Mail über ProtonMail (Ende-zu-Ende-verschlüsselt) versendet. Diese Daten gebe ich nicht ohne Ihre Einwilligung weiter."
 msgstr "Die Kontaktanfragen werden per E-Mail über ProtonMail (Ende-zu-Ende-verschlüsselt) versendet. Diese Daten gebe ich nicht ohne Ihre Einwilligung weiter."
@@ -261,10 +217,6 @@ msgstr "Die persönliche Nachricht muss mindestens 10 Zeichen und maximal 500."
 #: src/pages/data-security/+Page.tsx:262
 msgid "Die Übertragung Ihrer Daten erfolgt verschlüsselt. Wir treffen technische und organisatorische Maßnahmen, um Ihre Daten vor unbefugtem Zugriff zu schützen."
 msgstr "Die Übertragung Ihrer Daten erfolgt verschlüsselt. Wir treffen technische und organisatorische Maßnahmen, um Ihre Daten vor unbefugtem Zugriff zu schützen."
-
-#: src/pages/data-security/+Page.tsx:75
-#~ msgid "Diese Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet. Die Übermittlung erfolgt verschlüsselt (TLS/SSL). Die Daten werden nicht gespeichert oder protokolliert, sondern direkt an unseren Server übertragen und per E-Mail (ProtonMail) an uns weitergeleitet. Eine Weitergabe an Dritte erfolgt nicht."
-#~ msgstr "Diese Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet. Die Übermittlung erfolgt verschlüsselt (TLS/SSL). Die Daten werden nicht gespeichert oder protokolliert, sondern direkt an unseren Server übertragen und per E-Mail (ProtonMail) an uns weitergeleitet. Eine Weitergabe an Dritte erfolgt nicht."
 
 #: src/pages/data-security/+Page.tsx:275
 msgid "Diese Datenschutzerklärung ist aktuell gültig. Durch Weiterentwicklung der Website oder gesetzliche Änderungen kann eine Anpassung erforderlich werden."
@@ -291,15 +243,11 @@ msgstr "Diese Website wird auf Servern der Amazon Web Services (AWS) in der EU g
 msgid "Dieses Feld muss mindestens 2 und maximal 50 Zeichen enthalten."
 msgstr "Dieses Feld muss mindestens 2 und maximal 50 Zeichen enthalten."
 
-#: src/pages/contact/+Page.tsx:19
-#~ msgid "Direkt kontaktieren"
-#~ msgstr "Direkt kontaktieren"
-
 #: src/pages/downloads/+Page.tsx:72
 msgid "Download"
 msgstr "Download"
 
-#: src/pages/contact/+Page.tsx:76
+#: src/pages/contact/+Page.tsx:86
 msgid "E-Mail schreiben"
 msgstr "E-Mail schreiben"
 
@@ -307,16 +255,12 @@ msgstr "E-Mail schreiben"
 msgid "E-Mail-Adresse"
 msgstr "E-Mail-Adresse"
 
-#: src/pages/data-security/+Page.tsx:26
-#~ msgid "E-Mail: [Ihre E-Mail-Adresse]"
-#~ msgstr "E-Mail: [Ihre E-Mail-Adresse]"
-
 #. placeholder {0}: config.email
 #: src/pages/data-security/+Page.tsx:31
 msgid "E-Mail: {0}"
 msgstr "E-Mail: {0}"
 
-#: src/pages/index/+Page.tsx:301
+#: src/pages/index/+Page.tsx:319
 msgid "Ein Stück Weg gemeinsam gegangen Jeder Mensch bringt seine eigene Geschichte mit. Umso dankbarer bin ich für das Vertrauen, das mir in meiner Praxis entgegengebracht wird. Die folgenden Rückmeldungen geben einen kleinen Einblick in die Erfahrungen von Menschen, die ich ein Stück auf ihrem Weg begleiten durfte."
 msgstr "Ein Stück Weg gemeinsam gegangen Jeder Mensch bringt seine eigene Geschichte mit. Umso dankbarer bin ich für das Vertrauen, das mir in meiner Praxis entgegengebracht wird. Die folgenden Rückmeldungen geben einen kleinen Einblick in die Erfahrungen von Menschen, die ich ein Stück auf ihrem Weg begleiten durfte."
 
@@ -328,15 +272,15 @@ msgstr "Eine bereits erteilte Einwilligung zur Datenverarbeitung können Sie jed
 msgid "Einschränkung der Verarbeitung zu verlangen (Art. 18 DSGVO)"
 msgstr "Einschränkung der Verarbeitung zu verlangen (Art. 18 DSGVO)"
 
-#: src/pages/imprint/+Page.tsx:105
+#: src/pages/imprint/+Page.tsx:106
 msgid "Ernst-Thälmann-Straße 74"
 msgstr "Ernst-Thälmann-Straße 74"
 
-#: src/pages/imprint/+Page.tsx:134
+#: src/pages/imprint/+Page.tsx:135
 msgid "Erste Durchführungsverordnung zum Gesetz über die berufsmäßige Ausübung der Heilkunde ohne Bestallung (Heilpraktikergesetz)"
 msgstr "Erste Durchführungsverordnung zum Gesetz über die berufsmäßige Ausübung der Heilkunde ohne Bestallung (Heilpraktikergesetz)"
 
-#: src/pages/imprint/+Page.tsx:93
+#: src/pages/imprint/+Page.tsx:94
 msgid "Erzberger Allee 14"
 msgstr "Erzberger Allee 14"
 
@@ -344,64 +288,56 @@ msgstr "Erzberger Allee 14"
 msgid "Es erfolgt keine Speicherung von Logfiles oder anderen personenbezogenen Daten beim Besuch der Website. Die Datenübertragung dient ausschließlich der technischen Bereitstellung der Website."
 msgstr "Es erfolgt keine Speicherung von Logfiles oder anderen personenbezogenen Daten beim Besuch der Website. Die Datenübertragung dient ausschließlich der technischen Bereitstellung der Website."
 
-#: src/pages/contact/queries/post-contact.query.ts:26
-msgid "Es gab einen Fehler beim absenden des Formulars. Bitte versuchen Sie es erneut, oder wenden Sie sich direkt per E-Mail an mich: "
-msgstr "Es gab einen Fehler beim absenden des Formulars. Bitte versuchen Sie es erneut, oder wenden Sie sich direkt per E-Mail an mich: "
-
-#: src/pages/data-security/+Page.tsx:53
-#~ msgid "Es werden keine Cookies gesetzt, die der Wiedererkennung von Besuchern dienen. Es findet kein Tracking oder Profiling der Besucher statt."
-#~ msgstr "Es werden keine Cookies gesetzt, die der Wiedererkennung von Besuchern dienen. Es findet kein Tracking oder Profiling der Besucher statt."
-
 #: src/pages/index/+Page.tsx:37
 msgid "Fühlen Sie sich aus dem Gleichgewicht geraten? Ich unterstütze Sie bei hormonellen Beschwerden, Stressfolgen und psychosomatischen Symptomen – für mehr Wohlbefinden, Klarheit und Lebensqualität."
 msgstr "Fühlen Sie sich aus dem Gleichgewicht geraten? Ich unterstütze Sie bei hormonellen Beschwerden, Stressfolgen und psychosomatischen Symptomen – für mehr Wohlbefinden, Klarheit und Lebensqualität."
 
-#: src/pages/index/+Page.tsx:231
+#: src/pages/index/+Page.tsx:249
 msgid "Ganzheitlichkeit"
 msgstr "Ganzheitlichkeit"
 
-#: src/pages/imprint/+Page.tsx:128
+#: src/pages/imprint/+Page.tsx:129
 msgid "Gesetz über die berufsmäßige Ausübung der Heilkunde ohne Bestallung (Heilpraktikergesetz) https://www.gesetze-im-internet.de/heilprg/BJNR002510939.html"
 msgstr "Gesetz über die berufsmäßige Ausübung der Heilkunde ohne Bestallung (Heilpraktikergesetz) https://www.gesetze-im-internet.de/heilprg/BJNR002510939.html"
 
-#: src/pages/imprint/+Page.tsx:90
+#: src/pages/imprint/+Page.tsx:91
 msgid "Gesundheitsamt Bad Salzungen"
 msgstr "Gesundheitsamt Bad Salzungen"
 
-#: src/pages/imprint/+Page.tsx:102
+#: src/pages/imprint/+Page.tsx:103
 msgid "Gesundheitsamt Eisenach"
 msgstr "Gesundheitsamt Eisenach"
 
-#: src/pages/imprint/+Page.tsx:148
+#: src/pages/imprint/+Page.tsx:149
 msgid "Haftpflichtversicherung"
 msgstr "Haftpflichtversicherung"
 
 #: src/pages/data-security/+Page.tsx:19
-#: src/pages/imprint/+Page.tsx:25
+#: src/pages/imprint/+Page.tsx:26
 msgid "Heilpraktikerin"
 msgstr "Heilpraktikerin"
 
-#: src/pages/imprint/+Page.tsx:53
+#: src/pages/imprint/+Page.tsx:54
 msgid "heilpraktikerin-jana-goellner.de"
 msgstr "heilpraktikerin-jana-goellner.de"
 
-#: src/pages/index/+Page.tsx:276
+#: src/pages/index/+Page.tsx:294
 msgid "Hilfe zur Selbsthilfe"
 msgstr "Hilfe zur Selbsthilfe"
 
-#: src/pages/imprint/+Page.tsx:119
+#: src/pages/imprint/+Page.tsx:120
 msgid "https://www.wartburgkreis.de/landratsamt/aemter-einrichtungen/gesundheitsamt"
 msgstr "https://www.wartburgkreis.de/landratsamt/aemter-einrichtungen/gesundheitsamt"
 
-#: src/pages/index/+Page.tsx:235
+#: src/pages/index/+Page.tsx:253
 msgid "Ich betrachte Körper, Geist und Seele als Einheit. Nachhaltige Veränderung entsteht, wenn alle Ebenen einbezogen werden."
 msgstr "Ich betrachte Körper, Geist und Seele als Einheit. Nachhaltige Veränderung entsteht, wenn alle Ebenen einbezogen werden."
 
-#: src/pages/index/+Page.tsx:167
+#: src/pages/index/+Page.tsx:185
 msgid "Ich bin staatlich geprüfte Hebamme, Heilpraktikerin und Hormonpraktikerin mit langjähriger Erfahrung in der Begleitung von Frauen, Familien und Menschen in sensiblen Lebensphasen."
 msgstr "Ich bin staatlich geprüfte Hebamme, Heilpraktikerin und Hormonpraktikerin mit langjähriger Erfahrung in der Begleitung von Frauen, Familien und Menschen in sensiblen Lebensphasen."
 
-#: src/pages/index/+Page.tsx:268
+#: src/pages/index/+Page.tsx:286
 msgid "Ich möchte nicht \"einfach nur Symptome lindern\", sondern den Ursprüngen der Beschwerden auf den Grund gehen um eine nachhaltige Änderung zu bewirken."
 msgstr "Ich möchte nicht \"einfach nur Symptome lindern\", sondern den Ursprüngen der Beschwerden auf den Grund gehen um eine nachhaltige Änderung zu bewirken."
 
@@ -413,12 +349,16 @@ msgstr "Ihre Einwilligung zur Datenverarbeitung"
 msgid "Ihre Nachricht"
 msgstr "Ihre Nachricht"
 
-#: src/pages/index/+Page.tsx:243
+#: src/pages/imprint/+Page.tsx:175
+msgid "In Github ansehen"
+msgstr "In Github ansehen"
+
+#: src/pages/index/+Page.tsx:261
 msgid "Individualität"
 msgstr "Individualität"
 
 #: src/pages/data-security/+Page.tsx:16
-#: src/pages/imprint/+Page.tsx:22
+#: src/pages/imprint/+Page.tsx:23
 msgid "Jana Göllner"
 msgstr "Jana Göllner"
 
@@ -426,11 +366,11 @@ msgstr "Jana Göllner"
 msgid "Jeder Mensch bringt seine eigene Geschichte, seine eigenen Symptome und seine eigenen Ressourcen mit – ich begegne Ihnen dort, wo Sie gerade stehen, und begleite Sie ein Stück auf Ihrem Weg zurück zu mehr Balance, Vertrauen und innerer Gesundheit."
 msgstr "Jeder Mensch bringt seine eigene Geschichte, seine eigenen Symptome und seine eigenen Ressourcen mit – ich begegne Ihnen dort, wo Sie gerade stehen, und begleite Sie ein Stück auf Ihrem Weg zurück zu mehr Balance, Vertrauen und innerer Gesundheit."
 
-#: src/pages/index/+Page.tsx:256
+#: src/pages/index/+Page.tsx:274
 msgid "Jeder Mensch ist einzigartig. Ihre Geschichte, Ihre Symptome und Ihre Ressourcen bestimmen den Therapieansatz – nicht ein Standardkonzept."
 msgstr "Jeder Mensch ist einzigartig. Ihre Geschichte, Ihre Symptome und Ihre Ressourcen bestimmen den Therapieansatz – nicht ein Standardkonzept."
 
-#: src/pages/contact/+Page.tsx:87
+#: src/pages/contact/+Page.tsx:97
 msgid "Jetzt anrufen"
 msgstr "Jetzt anrufen"
 
@@ -439,7 +379,7 @@ msgid "Jetzt Erstgespräch vereinbaren"
 msgstr "Jetzt Erstgespräch vereinbaren"
 
 #: src/pages/data-security/+Page.tsx:22
-#: src/pages/imprint/+Page.tsx:28
+#: src/pages/imprint/+Page.tsx:29
 msgid "Kasseler Straße 31"
 msgstr "Kasseler Straße 31"
 
@@ -447,15 +387,7 @@ msgstr "Kasseler Straße 31"
 msgid "Kasseler Straße 31, 99817 Eisenach"
 msgstr "Kasseler Straße 31, 99817 Eisenach"
 
-#: src/pages/contact/components/contact-formular.component.tsx:42
-#~ msgid "Kontaktformular"
-#~ msgstr "Kontaktformular"
-
-#: src/pages/contact/components/contact-formular.component.tsx:36
-msgid "Kontaktinformationen wurden erfolgreich abgeschickt."
-msgstr "Kontaktinformationen wurden erfolgreich abgeschickt."
-
-#: src/pages/imprint/+Page.tsx:87
+#: src/pages/imprint/+Page.tsx:88
 msgid "Landratsamt Wartburgkreis"
 msgstr "Landratsamt Wartburgkreis"
 
@@ -464,12 +396,12 @@ msgid "Löschung Ihrer Daten zu verlangen (Art. 17 DSGVO)"
 msgstr "Löschung Ihrer Daten zu verlangen (Art. 17 DSGVO)"
 
 #. placeholder {0}: config.email
-#: src/pages/imprint/+Page.tsx:64
+#: src/pages/imprint/+Page.tsx:65
 msgid "Mail: {0}"
 msgstr "Mail: {0}"
 
 #: src/pages/contact/components/contact-formular.component.tsx:67
-#: src/pages/index/+Page.tsx:191
+#: src/pages/index/+Page.tsx:209
 msgid "Mehr erfahren"
 msgstr "Mehr erfahren"
 
@@ -490,15 +422,15 @@ msgstr "Mein Ansatz"
 msgid "Mein beruflicher Weg"
 msgstr "Mein beruflicher Weg"
 
-#: src/pages/index/+Page.tsx:174
+#: src/pages/index/+Page.tsx:192
 msgid "Mein therapeutischer Ansatz verbindet Naturheilkunde, Hormonbalance, Traditionelle Chinesische Medizin (TCM), Akupunktur und psychosomatische Verfahren. Dabei betrachte ich den Menschen immer ganzheitlich – mit Körper, Geist und Seele."
 msgstr "Mein therapeutischer Ansatz verbindet Naturheilkunde, Hormonbalance, Traditionelle Chinesische Medizin (TCM), Akupunktur und psychosomatische Verfahren. Dabei betrachte ich den Menschen immer ganzheitlich – mit Körper, Geist und Seele."
 
-#: src/pages/index/+Page.tsx:182
+#: src/pages/index/+Page.tsx:200
 msgid "Mein Ziel ist es, nicht nur Symptome zu behandeln, sondern Ursachen zu erkennen, Selbstheilungskräfte zu aktivieren und nachhaltige Gesundheit zu fördern."
 msgstr "Mein Ziel ist es, nicht nur Symptome zu behandeln, sondern Ursachen zu erkennen, Selbstheilungskräfte zu aktivieren und nachhaltige Gesundheit zu fördern."
 
-#: src/pages/index/+Page.tsx:280
+#: src/pages/index/+Page.tsx:298
 msgid "Mein Ziel ist es, Sie nicht abhängig von Therapie zu machen, sondern Sie in Ihre eigene Körperkompetenz und Selbstregulation zurückzuführen."
 msgstr "Mein Ziel ist es, Sie nicht abhängig von Therapie zu machen, sondern Sie in Ihre eigene Körperkompetenz und Selbstregulation zurückzuführen."
 
@@ -531,17 +463,13 @@ msgstr "Rechtsgrundlage: Art. 9 Abs. 2 lit. a DSGVO (ausdrückliche Einwilligung
 msgid "Schließen"
 msgstr "Schließen"
 
+#: src/pages/index/+Page.tsx:80
+msgid "Schwerpunkte"
+msgstr "Schwerpunkte"
+
 #: src/pages/contact/components/contact-formular.component.tsx:74
 msgid "Senden"
 msgstr "Senden"
-
-#: src/pages/data-security/+Page.tsx:101
-#~ msgid "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch gegen die Verarbeitung sowie das Recht auf Datenübertragbarkeit Ihrer personenbezogenen Daten. Sie können eine erteilte Einwilligung jederzeit widerrufen. Bitte wenden Sie sich dazu an die oben genannte Kontaktadresse."
-#~ msgstr "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch gegen die Verarbeitung sowie das Recht auf Datenübertragbarkeit Ihrer personenbezogenen Daten. Sie können eine erteilte Einwilligung jederzeit widerrufen. Bitte wenden Sie sich dazu an die oben genannte Kontaktadresse."
-
-#: src/pages/data-security/+Page.tsx:113
-#~ msgid "Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren."
-#~ msgstr "Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren."
 
 #: src/pages/data-security/+Page.tsx:207
 msgid "Sie haben jederzeit das Recht:"
@@ -555,7 +483,7 @@ msgstr "Sie müssen den Datenschutzbestimmungen zustimmen."
 msgid "Sofern Sie mir im Rahmen einer Anfrage oder Terminvereinbarung gesundheitsbezogene Informationen übermitteln, erfolgt die Verarbeitung dieser besonders sensiblen Daten ausschließlich zur Vorbereitung oder Durchführung einer Behandlung."
 msgstr "Sofern Sie mir im Rahmen einer Anfrage oder Terminvereinbarung gesundheitsbezogene Informationen übermitteln, erfolgt die Verarbeitung dieser besonders sensiblen Daten ausschließlich zur Vorbereitung oder Durchführung einer Behandlung."
 
-#: src/pages/index/+Page.tsx:297
+#: src/pages/index/+Page.tsx:315
 msgid "Stimmen aus der Praxis"
 msgstr "Stimmen aus der Praxis"
 
@@ -568,10 +496,6 @@ msgstr "Technisch notwendige Cookies dienen der Funktionalität der Website. Es 
 msgid "Tel: {0}"
 msgstr "Tel: {0}"
 
-#: src/pages/data-security/+Page.tsx:29
-#~ msgid "Telefon: [Ihre Telefonnummer]"
-#~ msgstr "Telefon: [Ihre Telefonnummer]"
-
 #: src/pages/data-security/+Page.tsx:113
 msgid "Telefonnummer"
 msgstr "Telefonnummer"
@@ -580,27 +504,23 @@ msgstr "Telefonnummer"
 msgid "Termin Buchen"
 msgstr "Termin Buchen"
 
-#: src/pages/treatments/acupuncture/+Page.tsx:100
-#: src/pages/treatments/hormone-balance/+Page.tsx:125
-#: src/pages/treatments/psychosomatics/+Page.tsx:92
+#: src/pages/treatments/acupuncture/+Page.tsx:101
+#: src/pages/treatments/hormone-balance/+Page.tsx:129
+#: src/pages/treatments/psychosomatics/+Page.tsx:96
 msgid "Termin vereinbaren"
 msgstr "Termin vereinbaren"
 
+#: src/pages/index/+Page.tsx:98
+msgid "Therapieformen"
+msgstr "Therapieformen"
+
 #: src/pages/index/+Page.tsx:80
-msgid "Therapieformen & Schwerpunkte"
-msgstr "Therapieformen & Schwerpunkte"
+#~ msgid "Therapieformen & Schwerpunkte"
+#~ msgstr "Therapieformen & Schwerpunkte"
 
-#: src/pages/imprint/+Page.tsx:41
-#~ msgid "Urkunde: Erlaubnis zur berufsmäßigen Ausübung der Heilkunde ohne Bestallung (Deutschland) Ausgestellt am 24.05.2018"
-#~ msgstr "Urkunde: Erlaubnis zur berufsmäßigen Ausübung der Heilkunde ohne Bestallung (Deutschland) Ausgestellt am 24.05.2018"
-
-#: src/pages/index/+Page.tsx:264
+#: src/pages/index/+Page.tsx:282
 msgid "Ursachenorientiertes Arbeiten"
 msgstr "Ursachenorientiertes Arbeiten"
-
-#: src/pages/data-security/+Page.tsx:13
-#~ msgid "Verantwortlich für die Datenverarbeitung auf dieser Website ist:"
-#~ msgstr "Verantwortlich für die Datenverarbeitung auf dieser Website ist:"
 
 #: src/pages/data-security/+Page.tsx:103
 msgid "Wenn Sie das Kontaktformular nutzen, werden folgende Daten erhoben:"
@@ -610,24 +530,20 @@ msgstr "Wenn Sie das Kontaktformular nutzen, werden folgende Daten erhoben:"
 msgid "Wenn Sie mich per E-Mail oder Kontaktformular kontaktieren, werden Ihre Angaben inklusive der von Ihnen angegebenen Kontaktdaten gespeichert, um Ihre Anfrage zu bearbeiten und für den Fall von Anschlussfragen."
 msgstr "Wenn Sie mich per E-Mail oder Kontaktformular kontaktieren, werden Ihre Angaben inklusive der von Ihnen angegebenen Kontaktdaten gespeichert, um Ihre Anfrage zu bearbeiten und für den Fall von Anschlussfragen."
 
-#: src/pages/data-security/+Page.tsx:134
-#~ msgid "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder bei Änderungen des Dienstes sowie der Datenverarbeitung anzupassen."
-#~ msgstr "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder bei Änderungen des Dienstes sowie der Datenverarbeitung anzupassen."
-
-#: src/pages/index/+Page.tsx:227
+#: src/pages/index/+Page.tsx:245
 msgid "Wofür meine Praxis steht"
 msgstr "Wofür meine Praxis steht"
 
-#: src/pages/index/+Page.tsx:247
+#: src/pages/index/+Page.tsx:265
 msgid "Zeit für Ihre Anliegen, Wünsche und Ziele- in Ihrem Tempo."
 msgstr "Zeit für Ihre Anliegen, Wünsche und Ziele- in Ihrem Tempo."
 
 #: src/pages/treatments/acupuncture/+Page.tsx:95
-#: src/pages/treatments/hormone-balance/+Page.tsx:122
-#: src/pages/treatments/psychosomatics/+Page.tsx:89
+#: src/pages/treatments/hormone-balance/+Page.tsx:123
+#: src/pages/treatments/psychosomatics/+Page.tsx:90
 msgid "Zurück zu allen Behandlungen"
 msgstr "Zurück zu allen Behandlungen"
 
-#: src/pages/imprint/+Page.tsx:82
+#: src/pages/imprint/+Page.tsx:83
 msgid "Zuständige Aufsichtsbehörde:"
 msgstr "Zuständige Aufsichtsbehörde:"

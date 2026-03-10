@@ -8,6 +8,7 @@ import { TwoColumns } from '@/components/two-columns.component';
 import config from '@/config/config';
 import { ArrowUpRightIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/solid';
 import { Trans } from '@lingui/react/macro';
+import { ImageCard } from '@/components/image.component';
 
 function getNavigationUrl(address: string, coordinates?: { lat: string; lng: string }) {
   try {
@@ -103,19 +104,25 @@ export default function ContactView() {
               <TextContent>Kasseler Straße 31</TextContent>
               <TextContent>99817 Eisenach</TextContent>
 
-              <div className="flex mt-8">
+              <div className="flex mt-4">
                 <a
-                  className="cursor-pointer relative max-w-100"
+                  className="cursor-pointer relative w-full max-w-100"
                   href={getNavigationUrl('Kasseler+Straße+31%2C+99817+Eisenach%2C+Germany', {
                     lng: '10.3029087',
                     lat: '50.9795316',
                   })}
                   target="_blank"
                 >
-                  <div className="absolute inset-0 opacity-0 hover:opacity-50 bg-white items-center justify-center flex max-w-100">
+                  <div className="absolute inset-0 opacity-0 hover:opacity-50 bg-white items-center justify-center flex w-full max-w-100">
                     <ArrowUpRightIcon className="size-16" />
                   </div>
-                  <img src={PraxisLocation} className="max-w-100" />
+
+                  <ImageCard
+                    image={PraxisLocation}
+                    size="custom"
+                    className="aspect-square w-full"
+                    imagePosition="bg-bottom"
+                  />
                 </a>
               </div>
             </div>

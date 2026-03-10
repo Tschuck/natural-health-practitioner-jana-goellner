@@ -1,16 +1,17 @@
 import { ConfigModule } from '@/config/config.module';
+import { HealthController } from '@/controllers/health.controller';
 import { SpaController } from '@/controllers/spa.controller';
 import { ContactModule } from '@/modules/contact/contact.module';
-import { TelemtryModule } from '@/modules/telemtry/telemetry.module';
 import { SharedModule } from '@/shared/shared.module';
 import { Module } from '@nestjs/common';
+import { TerminusModule } from '@nestjs/terminus';
 import { ThrottlerModule } from '@nestjs/throttler';
 
 @Module({
   imports: [
+    TerminusModule,
     SharedModule,
     ConfigModule,
-    TelemtryModule,
     ContactModule,
     ThrottlerModule.forRoot({
       throttlers: [
@@ -22,6 +23,6 @@ import { ThrottlerModule } from '@nestjs/throttler';
       ],
     }),
   ],
-  controllers: [SpaController],
+  controllers: [HealthController, SpaController],
 })
 export class AppModule {}

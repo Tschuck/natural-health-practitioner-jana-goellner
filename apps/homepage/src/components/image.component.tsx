@@ -10,13 +10,14 @@ export const ImageCardSizeClasses = {
 export interface ImageProps {
   image: string;
   className?: string;
+  imagePosition?: string;
   size: keyof typeof ImageCardSizeClasses;
 }
 
-export function ImageCard({ className, size, image }: ImageProps) {
+export function ImageCard({ className, size, image, imagePosition = 'bg-center' }: ImageProps) {
   return (
     <div
-      className={classNames(className, ImageCardSizeClasses[size], 'rounded-2xl bg-center bg-cover')}
+      className={classNames(className, imagePosition, ImageCardSizeClasses[size], 'rounded-2xl bg-cover')}
       style={{ backgroundImage: `url("${image}")` }}
     />
   );

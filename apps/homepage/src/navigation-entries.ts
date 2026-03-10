@@ -1,7 +1,7 @@
 export const links = {
   startPage: { path: '/', name: 'Startseite' },
   aboutMe: { path: '/about-me', name: 'Über mich' },
-  treatments: { path: '/treatments', name: 'Behandungen' },
+  treatments: { path: '/treatments', name: 'Behandlungen' },
   hormoneBalance: { path: '/treatments/hormone-balance', name: 'Hormonbalance' },
   psychosomatics: { path: '/treatments/psychosomatics', name: 'Psychosomatik' },
   acupuncture: { path: '/treatments/acupuncture', name: 'Akupunktur' },

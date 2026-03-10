@@ -1,6 +1,6 @@
 import { Button, ButtonType } from '@//components/button.component';
 import { links } from '@/navigation-entries';
-import { useCookieStore } from '@/stores/cookie-disclamer.store';
+import { useCookieStore } from '@/stores/cookie-disclaimer.store';
 import { Trans } from '@lingui/react/macro';
 import { useEffect, useState } from 'react';
 

@@ -20,7 +20,7 @@ export default function AboutMeView() {
           minHeight="min-h-[25vh]"
           glassBlur="5px"
         >
-          <Header type="h2">"Glück ist, wen das Herz tanzt und die Seele singt."</Header>
+          <Header type="h2">"Glück ist, wenn das Herz tanzt und die Seele singt."</Header>
         </Banner>
 
         <TwoColumns

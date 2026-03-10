@@ -84,13 +84,18 @@ export default function PsychosomatcsView() {
                 />
               </div>
 
-              <div className="mt-8">
-                <Button className="mr-4" type={ButtonType.OUTLINE_GREEN} href={links.treatments.path}>
-                  <Trans>Zurück zu allen Behandlungen</Trans>
-                </Button>
-                <Button type={ButtonType.FILLED_GREEN} href={links.contact.path}>
-                  <Trans>Termin vereinbaren</Trans>
-                </Button>
+              <div className="flex flex-col lg:flex-row gap-4 mt-8">
+                <div>
+                  <Button type={ButtonType.OUTLINE_GREEN} href={links.treatments.path}>
+                    <Trans>Zurück zu allen Behandlungen</Trans>
+                  </Button>
+                </div>
+
+                <div>
+                  <Button type={ButtonType.FILLED_GREEN} href={links.contact.path}>
+                    <Trans>Termin vereinbaren</Trans>
+                  </Button>
+                </div>
               </div>
             </div>
           }

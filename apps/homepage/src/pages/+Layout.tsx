@@ -47,7 +47,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         <CookieDisclaimer />
         <div className="overflow-y-scroll lg:-mr-4" id="jhg-content">
-          {children}
+          <div className="flex items-center justify-center">
+            <div className="max-w-325 overflow-x-hidden">{children}</div>
+          </div>
           <Footer />
         </div>
       </div>

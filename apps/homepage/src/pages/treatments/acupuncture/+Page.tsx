@@ -91,10 +91,11 @@ export default function AcupunctureView() {
 
             <div className="flex flex-col lg:flex-row gap-4 mt-8">
               <div>
-                <Button className="mr-4" type={ButtonType.OUTLINE_GREEN} href={links.treatments.path}>
+                <Button type={ButtonType.OUTLINE_GREEN} href={links.treatments.path}>
                   <Trans>Zurück zu allen Behandlungen</Trans>
                 </Button>
               </div>
+
               <div>
                 <Button type={ButtonType.FILLED_GREEN} href={links.contact.path}>
                   <Trans>Termin vereinbaren</Trans>

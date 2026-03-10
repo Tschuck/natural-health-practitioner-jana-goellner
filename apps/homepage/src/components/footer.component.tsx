@@ -12,9 +12,9 @@ export function Footer() {
       <p className="text-xs">
         <Trans>Kasseler Straße 31, 99817 Eisenach</Trans>
       </p>
-      <p className="text-xs">
+      <a className="text-xs" href={`tel:${config.phoneNumber}`}>
         <Trans>{config.phoneNumber}</Trans>
-      </p>
+      </a>
 
       <div className="flex gap-8">
         <Link href={links.contact.path}>

@@ -13,7 +13,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/solid';
 import { Trans } from '@lingui/react/macro';
 import { Button, ButtonType } from '@/components/button.component';
 
-export default function TreamentsView() {
+export default function TreatmentsView() {
   const treatments = [
     {
       name: 'Hormonbalance',

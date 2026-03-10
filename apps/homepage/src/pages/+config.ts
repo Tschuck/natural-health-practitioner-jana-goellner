@@ -3,7 +3,7 @@ import vikeReact from 'vike-react/config';
 import vikeReactZustand from 'vike-react-zustand/config';
 
 export default {
-  title: 'Heilpraktikerin Jana Goellner',
+  title: 'Heilpraktikerin Jana Göllner',
   prerender: true,
 
   extends: [vikeReact, vikeReactZustand],

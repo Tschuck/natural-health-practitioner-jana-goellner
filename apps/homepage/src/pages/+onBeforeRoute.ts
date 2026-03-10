@@ -1,10 +1,8 @@
-export { onBeforeRoute };
-
 import { activateLocaleMessages, defaultLocale, loadCatalog } from '@/i18n/i18n';
 import { modifyUrl } from 'vike/modifyUrl';
 import { PageContext, Url } from 'vike/types';
 
-async function onBeforeRoute(pageContext: PageContext) {
+export async function onBeforeRoute(pageContext: PageContext) {
   const { urlWithoutLocale, locale } = extractLocale(pageContext.urlParsed);
   const messages = await loadCatalog(locale);
   activateLocaleMessages(locale, messages);

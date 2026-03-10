@@ -60,7 +60,7 @@ export default function ContactFormular() {
           </div>
           <div className="text-xs italic">
             <p>
-              <Trans>Beim absenden dieses Formulars bestätigen Sie die Datenschutzbestimmungen.</Trans>
+              <Trans>Beim Absenden dieses Formulars bestätigen Sie die Datenschutzbestimmungen.</Trans>
             </p>
 
             <Link href={links.dataSecurity.path} openInNewTab={true} className=" text-xs italic flex mt-2 items-center">
