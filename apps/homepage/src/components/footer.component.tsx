@@ -9,6 +9,13 @@ export function Footer() {
     <div className="pt-12 pb-20 lg:pb-14 flex flex-col justify-center items-center gap-4 text-hjg-dark-green shadow-2xl">
       <img src={MainLogo} className="h-14" />
 
+      <p className="text-xs -mb-4">
+        <Trans>Heilpraktiker in Eisenach</Trans>
+      </p>
+      <p className="text-xs">
+        <Trans>Akupunktur, Hormone, Schilddrüse, Psychosomatik</Trans>
+      </p>
+
       <p className="text-xs">
         <Trans>Kasseler Straße 31, 99817 Eisenach</Trans>
       </p>

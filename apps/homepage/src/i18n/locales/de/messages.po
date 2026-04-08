@@ -13,37 +13,37 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/index/+Page.tsx:357
+#: src/pages/index/+Page.tsx:359
 msgid "— Julia, 38 Jahre"
 msgstr "— Julia, 38 Jahre"
 
-#: src/pages/index/+Page.tsx:338
+#: src/pages/index/+Page.tsx:340
 msgid "— Lisa, 34 Jahre"
 msgstr "— Lisa, 34 Jahre"
 
-#: src/pages/index/+Page.tsx:371
+#: src/pages/index/+Page.tsx:373
 msgid "— Tobias, 32 Jahre"
 msgstr "— Tobias, 32 Jahre"
 
-#: src/pages/index/+Page.tsx:330
+#: src/pages/index/+Page.tsx:332
 msgid "„Ich bin wegen chronischer Verspannungen und Kopfschmerzen gekommen. Die Akupunktur war sehr sanft und gleichzeitig erstaunlich wirkungsvoll. Schon nach wenigen Sitzungen waren die Beschwerden deutlich reduziert. Besonders schätze ich die ruhige, zugewandte Art und die Zeit, die sich hier wirklich genommen wird.\""
 msgstr "„Ich bin wegen chronischer Verspannungen und Kopfschmerzen gekommen. Die Akupunktur war sehr sanft und gleichzeitig erstaunlich wirkungsvoll. Schon nach wenigen Sitzungen waren die Beschwerden deutlich reduziert. Besonders schätze ich die ruhige, zugewandte Art und die Zeit, die sich hier wirklich genommen wird.\""
 
-#: src/pages/index/+Page.tsx:363
+#: src/pages/index/+Page.tsx:365
 msgid "„Ich kam mit erhöhtem Blutdruck, Muskelverspannungen und auffälligen Blutwerten. Wir haben alle Ursachen abgetestet und mit Hilfe eines Bluttests, meine Schwachpunkte gefunden. Die Ernährungstipps und Empfehlungen zu Nahrungsergänzung waren sehr hilfreich. Mein Blutdruck hat sich stabilisiert und die Verspannungen sind dank Akupunktur besser geworden.\""
 msgstr "„Ich kam mit erhöhtem Blutdruck, Muskelverspannungen und auffälligen Blutwerten. Wir haben alle Ursachen abgetestet und mit Hilfe eines Bluttests, meine Schwachpunkte gefunden. Die Ernährungstipps und Empfehlungen zu Nahrungsergänzung waren sehr hilfreich. Mein Blutdruck hat sich stabilisiert und die Verspannungen sind dank Akupunktur besser geworden.\""
 
-#: src/pages/index/+Page.tsx:348
+#: src/pages/index/+Page.tsx:350
 msgid "„Ich kam mit starker Erschöpfung, Zyklusproblemen und dem Gefühl, dass mein Körper nicht mehr ‚richtig funktioniert‘. Schon nach den ersten Terminen hatte ich das erste Mal das Gefühl, wirklich gesehen zu werden. Die ganzheitliche Herangehensweise, die ausführlichen Erklärungen und der individuell abgestimmte Therapieplan haben mir sehr geholfen. Heute fühle ich mich wieder deutlich stabiler, energiegeladener und verbundener mit meinem Körper.“"
 msgstr "„Ich kam mit starker Erschöpfung, Zyklusproblemen und dem Gefühl, dass mein Körper nicht mehr ‚richtig funktioniert‘. Schon nach den ersten Terminen hatte ich das erste Mal das Gefühl, wirklich gesehen zu werden. Die ganzheitliche Herangehensweise, die ausführlichen Erklärungen und der individuell abgestimmte Therapieplan haben mir sehr geholfen. Heute fühle ich mich wieder deutlich stabiler, energiegeladener und verbundener mit meinem Körper.“"
 
 #. placeholder {0}: config.phoneNumber
 #. placeholder {0}: links.contact.name
 #. placeholder {0}: links.dataSecurity.name
-#: src/components/footer.component.tsx:16
-#: src/components/footer.component.tsx:21
-#: src/components/footer.component.tsx:24
-#: src/components/footer.component.tsx:27
+#: src/components/footer.component.tsx:23
+#: src/components/footer.component.tsx:28
+#: src/components/footer.component.tsx:31
+#: src/components/footer.component.tsx:34
 #: src/components/side-panel.component.tsx:39
 #: src/pages/faq/+Page.tsx:100
 #: src/pages/imprint/+Page.tsx:43
@@ -121,9 +121,13 @@ msgstr "9. Ihre Rechte"
 msgid "99817 Eisenach"
 msgstr "99817 Eisenach"
 
-#: src/pages/index/+Page.tsx:270
+#: src/pages/index/+Page.tsx:272
 msgid "Achtsamkeit & Wertschätzung"
 msgstr "Achtsamkeit & Wertschätzung"
+
+#: src/components/footer.component.tsx:16
+msgid "Akupunktur, Hormone, Schilddrüse, Psychosomatik"
+msgstr "Akupunktur, Hormone, Schilddrüse, Psychosomatik"
 
 #: src/pages/imprint/+Page.tsx:14
 msgid "Angaben gemäß §§ 5 und 6 DDG"
@@ -260,7 +264,7 @@ msgstr "E-Mail-Adresse"
 msgid "E-Mail: {0}"
 msgstr "E-Mail: {0}"
 
-#: src/pages/index/+Page.tsx:319
+#: src/pages/index/+Page.tsx:321
 msgid "Ein Stück Weg gemeinsam gegangen Jeder Mensch bringt seine eigene Geschichte mit. Umso dankbarer bin ich für das Vertrauen, das mir in meiner Praxis entgegengebracht wird. Die folgenden Rückmeldungen geben einen kleinen Einblick in die Erfahrungen von Menschen, die ich ein Stück auf ihrem Weg begleiten durfte."
 msgstr "Ein Stück Weg gemeinsam gegangen Jeder Mensch bringt seine eigene Geschichte mit. Umso dankbarer bin ich für das Vertrauen, das mir in meiner Praxis entgegengebracht wird. Die folgenden Rückmeldungen geben einen kleinen Einblick in die Erfahrungen von Menschen, die ich ein Stück auf ihrem Weg begleiten durfte."
 
@@ -289,10 +293,18 @@ msgid "Es erfolgt keine Speicherung von Logfiles oder anderen personenbezogenen 
 msgstr "Es erfolgt keine Speicherung von Logfiles oder anderen personenbezogenen Daten beim Besuch der Website. Die Datenübertragung dient ausschließlich der technischen Bereitstellung der Website."
 
 #: src/pages/index/+Page.tsx:37
-msgid "Fühlen Sie sich aus dem Gleichgewicht geraten? Ich unterstütze Sie bei hormonellen Beschwerden, Stressfolgen und psychosomatischen Symptomen – für mehr Wohlbefinden, Klarheit und Lebensqualität."
-msgstr "Fühlen Sie sich aus dem Gleichgewicht geraten? Ich unterstütze Sie bei hormonellen Beschwerden, Stressfolgen und psychosomatischen Symptomen – für mehr Wohlbefinden, Klarheit und Lebensqualität."
+msgid "Fühlen Sie sich aus dem Gleichgewicht geraten? Als Heilpraktiker unterstütze ich Sie bei hormonellen Beschwerden, Stressfolgen und psychosomatischen Symptomen – für mehr Wohlbefinden, Klarheit und Lebensqualität."
+msgstr "Fühlen Sie sich aus dem Gleichgewicht geraten? Als Heilpraktiker unterstütze ich Sie bei hormonellen Beschwerden, Stressfolgen und psychosomatischen Symptomen – für mehr Wohlbefinden, Klarheit und Lebensqualität."
 
-#: src/pages/index/+Page.tsx:249
+#: src/pages/index/+Page.tsx:37
+#~ msgid "Fühlen Sie sich aus dem Gleichgewicht geraten? Als Heilpraktiker unterstütze Ich Sie bei hormonellen Beschwerden, Stressfolgen und psychosomatischen Symptomen – für mehr Wohlbefinden, Klarheit und Lebensqualität."
+#~ msgstr "Fühlen Sie sich aus dem Gleichgewicht geraten? Als Heilpraktiker unterstütze Ich Sie bei hormonellen Beschwerden, Stressfolgen und psychosomatischen Symptomen – für mehr Wohlbefinden, Klarheit und Lebensqualität."
+
+#: src/pages/index/+Page.tsx:37
+#~ msgid "Fühlen Sie sich aus dem Gleichgewicht geraten? Ich unterstütze Sie bei hormonellen Beschwerden, Stressfolgen und psychosomatischen Symptomen – für mehr Wohlbefinden, Klarheit und Lebensqualität."
+#~ msgstr "Fühlen Sie sich aus dem Gleichgewicht geraten? Ich unterstütze Sie bei hormonellen Beschwerden, Stressfolgen und psychosomatischen Symptomen – für mehr Wohlbefinden, Klarheit und Lebensqualität."
+
+#: src/pages/index/+Page.tsx:251
 msgid "Ganzheitlichkeit"
 msgstr "Ganzheitlichkeit"
 
@@ -312,6 +324,10 @@ msgstr "Gesundheitsamt Eisenach"
 msgid "Haftpflichtversicherung"
 msgstr "Haftpflichtversicherung"
 
+#: src/components/footer.component.tsx:13
+msgid "Heilpraktiker in Eisenach"
+msgstr "Heilpraktiker in Eisenach"
+
 #: src/pages/data-security/+Page.tsx:19
 #: src/pages/imprint/+Page.tsx:26
 msgid "Heilpraktikerin"
@@ -321,7 +337,7 @@ msgstr "Heilpraktikerin"
 msgid "heilpraktikerin-jana-goellner.de"
 msgstr "heilpraktikerin-jana-goellner.de"
 
-#: src/pages/index/+Page.tsx:294
+#: src/pages/index/+Page.tsx:296
 msgid "Hilfe zur Selbsthilfe"
 msgstr "Hilfe zur Selbsthilfe"
 
@@ -329,15 +345,15 @@ msgstr "Hilfe zur Selbsthilfe"
 msgid "https://www.wartburgkreis.de/landratsamt/aemter-einrichtungen/gesundheitsamt"
 msgstr "https://www.wartburgkreis.de/landratsamt/aemter-einrichtungen/gesundheitsamt"
 
-#: src/pages/index/+Page.tsx:253
+#: src/pages/index/+Page.tsx:255
 msgid "Ich betrachte Körper, Geist und Seele als Einheit. Nachhaltige Veränderung entsteht, wenn alle Ebenen einbezogen werden."
 msgstr "Ich betrachte Körper, Geist und Seele als Einheit. Nachhaltige Veränderung entsteht, wenn alle Ebenen einbezogen werden."
 
-#: src/pages/index/+Page.tsx:185
+#: src/pages/index/+Page.tsx:187
 msgid "Ich bin staatlich geprüfte Hebamme, Heilpraktikerin und Hormonpraktikerin mit langjähriger Erfahrung in der Begleitung von Frauen, Familien und Menschen in sensiblen Lebensphasen."
 msgstr "Ich bin staatlich geprüfte Hebamme, Heilpraktikerin und Hormonpraktikerin mit langjähriger Erfahrung in der Begleitung von Frauen, Familien und Menschen in sensiblen Lebensphasen."
 
-#: src/pages/index/+Page.tsx:286
+#: src/pages/index/+Page.tsx:288
 msgid "Ich möchte nicht \"einfach nur Symptome lindern\", sondern den Ursprüngen der Beschwerden auf den Grund gehen um eine nachhaltige Änderung zu bewirken."
 msgstr "Ich möchte nicht \"einfach nur Symptome lindern\", sondern den Ursprüngen der Beschwerden auf den Grund gehen um eine nachhaltige Änderung zu bewirken."
 
@@ -353,7 +369,7 @@ msgstr "Ihre Nachricht"
 msgid "In Github ansehen"
 msgstr "In Github ansehen"
 
-#: src/pages/index/+Page.tsx:261
+#: src/pages/index/+Page.tsx:263
 msgid "Individualität"
 msgstr "Individualität"
 
@@ -366,7 +382,7 @@ msgstr "Jana Göllner"
 msgid "Jeder Mensch bringt seine eigene Geschichte, seine eigenen Symptome und seine eigenen Ressourcen mit – ich begegne Ihnen dort, wo Sie gerade stehen, und begleite Sie ein Stück auf Ihrem Weg zurück zu mehr Balance, Vertrauen und innerer Gesundheit."
 msgstr "Jeder Mensch bringt seine eigene Geschichte, seine eigenen Symptome und seine eigenen Ressourcen mit – ich begegne Ihnen dort, wo Sie gerade stehen, und begleite Sie ein Stück auf Ihrem Weg zurück zu mehr Balance, Vertrauen und innerer Gesundheit."
 
-#: src/pages/index/+Page.tsx:274
+#: src/pages/index/+Page.tsx:276
 msgid "Jeder Mensch ist einzigartig. Ihre Geschichte, Ihre Symptome und Ihre Ressourcen bestimmen den Therapieansatz – nicht ein Standardkonzept."
 msgstr "Jeder Mensch ist einzigartig. Ihre Geschichte, Ihre Symptome und Ihre Ressourcen bestimmen den Therapieansatz – nicht ein Standardkonzept."
 
@@ -374,7 +390,7 @@ msgstr "Jeder Mensch ist einzigartig. Ihre Geschichte, Ihre Symptome und Ihre Re
 msgid "Jetzt anrufen"
 msgstr "Jetzt anrufen"
 
-#: src/pages/index/+Page.tsx:45
+#: src/pages/index/+Page.tsx:46
 msgid "Jetzt Erstgespräch vereinbaren"
 msgstr "Jetzt Erstgespräch vereinbaren"
 
@@ -383,7 +399,7 @@ msgstr "Jetzt Erstgespräch vereinbaren"
 msgid "Kasseler Straße 31"
 msgstr "Kasseler Straße 31"
 
-#: src/components/footer.component.tsx:13
+#: src/components/footer.component.tsx:20
 msgid "Kasseler Straße 31, 99817 Eisenach"
 msgstr "Kasseler Straße 31, 99817 Eisenach"
 
@@ -401,7 +417,7 @@ msgid "Mail: {0}"
 msgstr "Mail: {0}"
 
 #: src/pages/contact/components/contact-formular.component.tsx:67
-#: src/pages/index/+Page.tsx:209
+#: src/pages/index/+Page.tsx:211
 msgid "Mehr erfahren"
 msgstr "Mehr erfahren"
 
@@ -422,15 +438,15 @@ msgstr "Mein Ansatz"
 msgid "Mein beruflicher Weg"
 msgstr "Mein beruflicher Weg"
 
-#: src/pages/index/+Page.tsx:192
+#: src/pages/index/+Page.tsx:194
 msgid "Mein therapeutischer Ansatz verbindet Naturheilkunde, Hormonbalance, Traditionelle Chinesische Medizin (TCM), Akupunktur und psychosomatische Verfahren. Dabei betrachte ich den Menschen immer ganzheitlich – mit Körper, Geist und Seele."
 msgstr "Mein therapeutischer Ansatz verbindet Naturheilkunde, Hormonbalance, Traditionelle Chinesische Medizin (TCM), Akupunktur und psychosomatische Verfahren. Dabei betrachte ich den Menschen immer ganzheitlich – mit Körper, Geist und Seele."
 
-#: src/pages/index/+Page.tsx:200
+#: src/pages/index/+Page.tsx:202
 msgid "Mein Ziel ist es, nicht nur Symptome zu behandeln, sondern Ursachen zu erkennen, Selbstheilungskräfte zu aktivieren und nachhaltige Gesundheit zu fördern."
 msgstr "Mein Ziel ist es, nicht nur Symptome zu behandeln, sondern Ursachen zu erkennen, Selbstheilungskräfte zu aktivieren und nachhaltige Gesundheit zu fördern."
 
-#: src/pages/index/+Page.tsx:298
+#: src/pages/index/+Page.tsx:300
 msgid "Mein Ziel ist es, Sie nicht abhängig von Therapie zu machen, sondern Sie in Ihre eigene Körperkompetenz und Selbstregulation zurückzuführen."
 msgstr "Mein Ziel ist es, Sie nicht abhängig von Therapie zu machen, sondern Sie in Ihre eigene Körperkompetenz und Selbstregulation zurückzuführen."
 
@@ -463,7 +479,7 @@ msgstr "Rechtsgrundlage: Art. 9 Abs. 2 lit. a DSGVO (ausdrückliche Einwilligung
 msgid "Schließen"
 msgstr "Schließen"
 
-#: src/pages/index/+Page.tsx:80
+#: src/pages/index/+Page.tsx:81
 msgid "Schwerpunkte"
 msgstr "Schwerpunkte"
 
@@ -483,7 +499,7 @@ msgstr "Sie müssen den Datenschutzbestimmungen zustimmen."
 msgid "Sofern Sie mir im Rahmen einer Anfrage oder Terminvereinbarung gesundheitsbezogene Informationen übermitteln, erfolgt die Verarbeitung dieser besonders sensiblen Daten ausschließlich zur Vorbereitung oder Durchführung einer Behandlung."
 msgstr "Sofern Sie mir im Rahmen einer Anfrage oder Terminvereinbarung gesundheitsbezogene Informationen übermitteln, erfolgt die Verarbeitung dieser besonders sensiblen Daten ausschließlich zur Vorbereitung oder Durchführung einer Behandlung."
 
-#: src/pages/index/+Page.tsx:315
+#: src/pages/index/+Page.tsx:317
 msgid "Stimmen aus der Praxis"
 msgstr "Stimmen aus der Praxis"
 
@@ -510,7 +526,7 @@ msgstr "Termin Buchen"
 msgid "Termin vereinbaren"
 msgstr "Termin vereinbaren"
 
-#: src/pages/index/+Page.tsx:98
+#: src/pages/index/+Page.tsx:100
 msgid "Therapieformen"
 msgstr "Therapieformen"
 
@@ -518,7 +534,7 @@ msgstr "Therapieformen"
 #~ msgid "Therapieformen & Schwerpunkte"
 #~ msgstr "Therapieformen & Schwerpunkte"
 
-#: src/pages/index/+Page.tsx:282
+#: src/pages/index/+Page.tsx:284
 msgid "Ursachenorientiertes Arbeiten"
 msgstr "Ursachenorientiertes Arbeiten"
 
@@ -530,11 +546,11 @@ msgstr "Wenn Sie das Kontaktformular nutzen, werden folgende Daten erhoben:"
 msgid "Wenn Sie mich per E-Mail oder Kontaktformular kontaktieren, werden Ihre Angaben inklusive der von Ihnen angegebenen Kontaktdaten gespeichert, um Ihre Anfrage zu bearbeiten und für den Fall von Anschlussfragen."
 msgstr "Wenn Sie mich per E-Mail oder Kontaktformular kontaktieren, werden Ihre Angaben inklusive der von Ihnen angegebenen Kontaktdaten gespeichert, um Ihre Anfrage zu bearbeiten und für den Fall von Anschlussfragen."
 
-#: src/pages/index/+Page.tsx:245
+#: src/pages/index/+Page.tsx:247
 msgid "Wofür meine Praxis steht"
 msgstr "Wofür meine Praxis steht"
 
-#: src/pages/index/+Page.tsx:265
+#: src/pages/index/+Page.tsx:267
 msgid "Zeit für Ihre Anliegen, Wünsche und Ziele- in Ihrem Tempo."
 msgstr "Zeit für Ihre Anliegen, Wünsche und Ziele- in Ihrem Tempo."
 

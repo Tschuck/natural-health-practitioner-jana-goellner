@@ -13,16 +13,16 @@ const distClient = join(root, 'dist', 'client');
 
 const routes = [
   '/',
-  '/about-me',
-  '/treatments',
-  '/treatments/acupuncture',
-  '/treatments/hormone-balance',
-  '/treatments/psychosomatics',
+  '/ueber-mich',
+  '/behandlungen',
+  '/behandlungen/akupunktur',
+  '/behandlungen/hormon-balance',
+  '/behandlungen/psychosomatik',
   '/downloads',
   '/faq',
   '/contact',
-  '/imprint',
-  '/data-security',
+  '/impressum',
+  '/datenschutz',
 ];
 
 const BASE_URL = process.env.VITE_PUBLIC_URL || 'https://heilpraktikerin-jana-goellner.de';
@@ -30,7 +30,7 @@ const today = new Date().toISOString().split('T')[0];
 
 function getPriority(route: string) {
   if (route === '/') return '1.0';
-  if (route.startsWith('/treatments')) return '0.8';
+  if (route.startsWith('/behandlungen')) return '0.8';
   return '0.6';
 }
 

@@ -35,8 +35,9 @@ export default function IndexPage() {
         <Header type="h2">Zurück in Ihre innere Balance – ganzheitlich & individuell begleitet</Header>
         <TextContent className="text-base">
           <Trans>
-            Fühlen Sie sich aus dem Gleichgewicht geraten? Ich unterstütze Sie bei hormonellen Beschwerden, Stressfolgen
-            und psychosomatischen Symptomen – für mehr Wohlbefinden, Klarheit und Lebensqualität.
+            Fühlen Sie sich aus dem Gleichgewicht geraten? Als Heilpraktiker unterstütze ich Sie bei hormonellen
+            Beschwerden, Stressfolgen und psychosomatischen Symptomen – für mehr Wohlbefinden, Klarheit und
+            Lebensqualität.
           </Trans>
         </TextContent>
 
@@ -90,6 +91,7 @@ export default function IndexPage() {
                   'Wechseljahresbeschwerden',
                   'Testosteronmangel',
                   'Pschosomatische Beschwerden (Schlafprobleme, Verdauungsbeschwerden, Magenprobleme u.a.)',
+                  'Übergewicht, Gewicht regulieren',
                 ]}
               />
 

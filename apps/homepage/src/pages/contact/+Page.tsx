@@ -52,7 +52,7 @@ export default function ContactView() {
         rightClass="h-full"
         right={
           <>
-            <Header type="h4">Direkt kontaktieren</Header>
+            <Header type="h4">Direkt Heilpraktiker kontaktieren</Header>
 
             <table className="mt-2">
               <tbody>
@@ -100,7 +100,7 @@ export default function ContactView() {
             </div>
 
             <div className="mt-8">
-              <Header type="h4">Praxis</Header>
+              <Header type="h4">Heilpraktiker Praxis Jana Göllner</Header>
               <TextContent>Kasseler Straße 31</TextContent>
               <TextContent>99817 Eisenach</TextContent>
 

@@ -93,8 +93,8 @@ export default function AboutMeView() {
               </header>
 
               <TextContent>
-                In meiner Praxis verbinde ich naturheilkundliche Verfahren, moderne Hormontherapie, Traditionelle
-                Chinesische Medizin, Akupunktur und psychotherapeutisch orientierte Methoden.
+                In meiner Praxis verbinde ich naturheilkundliche Verfahren, Traditionelle Chinesische Medizin,
+                Akupunktur und psychotherapeutisch orientierte Methoden.
               </TextContent>
 
               <TextContent>
