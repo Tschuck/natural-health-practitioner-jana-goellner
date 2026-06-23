@@ -51,7 +51,7 @@ export default function AboutMeView() {
         />
 
         <TwoColumns
-          className="mt-8"
+          className="lg:mt-8"
           leftAlign="start"
           left={
             <>
@@ -107,7 +107,7 @@ export default function AboutMeView() {
                 aktivieren und nachhaltige Veränderungen zu ermöglichen.
               </TextContent>
 
-              <Header type="h3">
+              <Header type="h3" className="lg:mt-0 mt-8">
                 <Trans>Auch persönlich wichtig</Trans>
               </Header>
 
